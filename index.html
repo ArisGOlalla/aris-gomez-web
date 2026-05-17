@@ -164,49 +164,63 @@
       h2 { font-size: 34px; }
       .grid { grid-template-columns: 1fr; }
     }
-    .available-section {
+   .available-section {
   text-align: center;
-  background:
-    radial-gradient(circle at top right, rgba(215,180,106,.13), transparent 30%),
-    linear-gradient(135deg,#09030f,#1b0a25,#09030f);
+  padding: 100px 8%;
+  background: #0b0312;
+}
+
+.available-section h2 {
+  font-size: 42px;
+  color: #f3d47f;
+  margin-bottom: 22px;
 }
 
 .available-text {
-  max-width: 850px;
-  margin: 0 auto 45px;
-  color: #f6ead2;
+  max-width: 720px;
+  margin: 0 auto 55px;
+  color: #d8c9ad;
+  font-size: 18px;
 }
 
 .available-grid {
-  max-width: 1100px;
+  max-width: 980px;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 18px;
 }
 
 .available-card {
-  background: rgba(255,255,255,.05);
+  background: transparent;
   border: 1px solid rgba(215,180,106,.28);
-  border-radius: 28px;
-  padding: 32px 24px;
-  box-shadow: 0 25px 70px rgba(0,0,0,.35);
+  border-radius: 20px;
+  padding: 28px 20px;
+  box-shadow: none;
 }
 
 .available-card h3 {
   color: #f3d47f;
-  font-size: 26px;
-  margin-bottom: 10px;
+  font-size: 22px;
+  margin-bottom: 8px;
 }
 
 .available-card p {
-  font-size: 17px;
-  color: #d8c9ad;
+  font-size: 15px;
+  color: #cbbd9c;
 }
 
 .available-card.active {
-  border-color: #f3d47f;
-  background: rgba(215,180,106,.10);
+  background: rgba(215,180,106,.08);
+  border-color: rgba(215,180,106,.55);
+}
+
+.available-card .btn {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 11px 22px;
+  border-radius: 999px;
+  font-size: 14px;
 }
   </style>
 </head>
