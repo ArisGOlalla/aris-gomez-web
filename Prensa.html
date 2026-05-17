@@ -1,93 +1,328 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2869
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prensa | Aris Gómez</title>
 
-\f0\fs24 \cf0 <!DOCTYPE html>\
-<html lang="es">\
-<head>\
-<meta charset="UTF-8">\
-<meta name="viewport" content="width=device-width, initial-scale=1.0">\
-\
-<title>Prensa | Aris G\'f3mez</title>\
-\
-<style>\
-\
-body\{\
-font-family:Arial;\
-background:#12051f;\
-color:white;\
-padding:40px;\
-\}\
-\
-h1\{\
-color:#f3d36d;\
-\}\
-\
-.card\{\
-background:#1d0b2d;\
-padding:25px;\
-margin:20px 0;\
-border-radius:20px;\
-\}\
-\
-a\{\
-display:inline-block;\
-margin-top:10px;\
-padding:10px 20px;\
-background:#f3d36d;\
-color:black;\
-text-decoration:none;\
-border-radius:30px;\
-\}\
-\
-</style>\
-</head>\
-\
-<body>\
-\
-<h1>Prensa</h1>\
-\
-<div class="card">\
-<h2>Madrid Diario</h2>\
-\
-<p>\
-Publicaci\'f3n sobre Aris G\'f3mez y su libro.\
-</p>\
-\
-<a href="https://www.madridiario.es/" target="_blank">\
-Leer art\'edculo\
-</a>\
-\
-</div>\
-\
-<div class="card">\
-<h2>El Confidencial Digital</h2>\
-\
-<p>\
-Entrevista y aparici\'f3n en prensa.\
-</p>\
-\
-<a href="https://www.elconfidencialdigital.com/" target="_blank">\
-Leer art\'edculo\
-</a>\
-\
-</div>\
-\
-<div class="card">\
-<h2>Periodista Digital</h2>\
-\
-<p>\
-Publicaci\'f3n cultural sobre la obra.\
-</p>\
-\
-<a href="https://www.periodistadigital.com/" target="_blank">\
-Leer art\'edculo\
-</a>\
-\
-</div>\
-\
-</body>\
-</html>}
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, serif;
+  background: #050208;
+  color: #f6ead2;
+  line-height: 1.7;
+}
+
+header {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 90px 10%;
+  background:
+    radial-gradient(circle at top left, rgba(91,36,92,.55), transparent 35%),
+    radial-gradient(circle at bottom right, rgba(215,180,106,.18), transparent 30%),
+    linear-gradient(135deg,#050208,#1b0a25,#050208);
+}
+
+.gold {
+  color: #d7b46a;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 72px;
+  color: #f3d47f;
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: 46px;
+  color: #f3d47f;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+h3 {
+  color: #f3d47f;
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+p {
+  font-size: 19px;
+  margin-bottom: 18px;
+}
+
+section {
+  padding: 100px 10%;
+}
+
+.intro {
+  max-width: 850px;
+  margin: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+  gap: 28px;
+  max-width: 1150px;
+  margin: 50px auto 0;
+}
+
+.card {
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(215,180,106,.25);
+  border-radius: 28px;
+  padding: 34px;
+  box-shadow: 0 30px 80px rgba(0,0,0,.4);
+  transition: .3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  border-color: #d7b46a;
+}
+
+.card span {
+  display: block;
+  color: #d7b46a;
+  letter-spacing: 2px;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 13px 25px;
+  background: #d7b46a;
+  color: #050208;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: bold;
+}
+
+.media-dark {
+  background: #030303;
+}
+
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(190px,1fr));
+  gap: 22px;
+  max-width: 1150px;
+  margin: 50px auto 0;
+}
+
+.logo-box {
+  padding: 28px;
+  border-radius: 24px;
+  border: 1px solid rgba(215,180,106,.25);
+  background: rgba(255,255,255,.04);
+  text-align: center;
+}
+
+.logo-box img {
+  max-width: 130px;
+  height: 70px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.legal {
+  background:
+    radial-gradient(circle at top right, rgba(215,180,106,.14), transparent 30%),
+    linear-gradient(135deg,#050208,#1b0a25,#050208);
+}
+
+.legal-card {
+  max-width: 900px;
+  margin: 50px auto 0;
+  padding: 50px;
+  border-radius: 32px;
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(215,180,106,.28);
+  text-align: center;
+}
+
+.back {
+  text-align: center;
+}
+
+.back a {
+  display: inline-block;
+  padding: 15px 32px;
+  background: #d7b46a;
+  color: #050208;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: bold;
+}
+
+footer {
+  padding: 45px 10%;
+  text-align: center;
+  background: #030106;
+  border-top: 1px solid rgba(215,180,106,.25);
+}
+
+@media(max-width:800px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 34px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="intro">
+    <p class="gold">Prensa · Televisión · Medios nacionales</p>
+    <h1>Aris Gómez en medios</h1>
+    <p>
+      Apariciones, entrevistas y cobertura mediática relacionadas con
+      Aris Gómez, su historia y su obra <em>Aris: de la oscuridad a la libertad</em>.
+    </p>
+  </div>
+</header>
+
+<section>
+  <p class="gold" style="text-align:center;">Selección editorial</p>
+  <h2>Medios destacados</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <span>Prensa digital</span>
+      <h3>Madrid Diario</h3>
+      <p>Publicación sobre la historia de Aris Gómez y el mensaje de superación de su libro.</p>
+      <a href="https://www.madridiario.es/" target="_blank">Leer publicación</a>
+    </div>
+
+    <div class="card">
+      <span>Prensa digital</span>
+      <h3>El Confidencial Digital</h3>
+      <p>Aparición mediática vinculada a su historia y presencia pública.</p>
+      <a href="https://www.elconfidencialdigital.com/" target="_blank">Leer publicación</a>
+    </div>
+
+    <div class="card">
+      <span>Cultura y libros</span>
+      <h3>Periodista Digital</h3>
+      <p>Cobertura cultural sobre la obra y el recorrido emocional detrás del libro.</p>
+      <a href="https://www.periodistadigital.com/" target="_blank">Leer publicación</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="media-dark">
+  <p class="gold" style="text-align:center;">Televisión</p>
+  <h2>Apariciones en televisión</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <span>Telecinco</span>
+      <h3>Código 10</h3>
+      <p>Participación televisiva donde Aris Gómez dio voz públicamente a su historia.</p>
+    </div>
+
+    <div class="card">
+      <span>Cuatro</span>
+      <h3>En boca de todos</h3>
+      <p>Intervención televisiva centrada en el testimonio y la visibilización del caso.</p>
+    </div>
+
+    <div class="card">
+      <span>Telecinco</span>
+      <h3>Ana Rosa Quintana</h3>
+      <p>Aparición en televisión nacional compartiendo públicamente su historia.</p>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <p class="gold" style="text-align:center;">Medios nacionales</p>
+  <h2>Presencia mediática</h2>
+
+  <div class="logo-grid">
+
+    <div class="logo-box">
+      <img src="telecinco.png" alt="Telecinco">
+      <h3>Telecinco</h3>
+    </div>
+
+    <div class="logo-box">
+      <img src="mediaset.png" alt="Mediaset">
+      <h3>Mediaset</h3>
+    </div>
+
+    <div class="logo-box">
+      <img src="cuatro.png" alt="Cuatro">
+      <h3>Cuatro</h3>
+    </div>
+
+    <div class="logo-box">
+      <img src="codigo10.png" alt="Código 10">
+      <h3>Código 10</h3>
+    </div>
+
+    <div class="logo-box">
+      <img src="20minutos.png" alt="20 Minutos">
+      <h3>20 Minutos</h3>
+    </div>
+
+    <div class="logo-box">
+      <img src="estrelladigital.png" alt="Estrella Digital">
+      <h3>Estrella Digital</h3>
+    </div>
+
+  </div>
+</section>
+
+<section class="legal">
+  <p class="gold" style="text-align:center;">Equipo jurídico</p>
+  <h2>Representación legal</h2>
+
+  <div class="legal-card">
+    <h3>Alfredo Arrién Paredes</h3>
+    <p>
+      La representación jurídica de Aris Gómez está vinculada al acompañamiento,
+      defensa y seguimiento legal del caso.
+    </p>
+    <p>
+      Este apartado recoge el papel profesional del equipo legal dentro del recorrido
+      público y mediático del caso.
+    </p>
+  </div>
+</section>
+
+<section class="back">
+  <a href="index.html">Volver a la web oficial</a>
+</section>
+
+<footer>
+  <p>© 2026 Aris Gómez · Web oficial</p>
+</footer>
+
+</body>
+</html>
