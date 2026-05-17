@@ -1,55 +1,418 @@
-<section class="platforms-dark">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<div class="platforms-header">
-<h2>Disponible en plataformas oficiales</h2>
+<title>Aris Gómez | Autora</title>
 
-<a href="https://libros.cc/ARIS-DE-LA-OSCURIDAD-A-LA-LIBERTAD.htm?isbn=9791370463540"
-target="_blank">
-Ver distribución →
-</a>
-</div>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-<div class="platforms-row">
+body {
+  font-family: Georgia, serif;
+  background: #050208;
+  color: #f6ead2;
+  line-height: 1.7;
+}
 
-<a class="platform-slide active"
-href="https://libros.cc/ARIS-DE-LA-OSCURIDAD-A-LA-LIBERTAD.htm?isbn=9791370463540"
-target="_blank">
+header {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 90px 10%;
+  background:
+    radial-gradient(circle at top right, rgba(91,36,92,.55), transparent 35%),
+    linear-gradient(135deg,#050208,#1b0a25,#050208);
+}
 
-<span>DISPONIBLE</span>
-<h3>Distribución Oficial</h3>
-<p>Accede a la ficha oficial del libro</p>
+.gold {
+  color: #d7b46a;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
 
-</a>
+h1 {
+  font-size: 78px;
+  color: #f3d47f;
+  margin: 20px 0;
+  line-height: 1;
+}
 
-<div class="platform-slide">
-<span>PRÓXIMAMENTE</span>
-<h3>Casa del Libro</h3>
-<p>Distribución nacional</p>
-</div>
+h2 {
+  font-size: 48px;
+  color: #f3d47f;
+  margin-bottom: 25px;
+  line-height: 1.1;
+}
 
-<div class="platform-slide">
-<span>PRÓXIMAMENTE</span>
-<h3>El Corte Inglés</h3>
-<p>Librerías asociadas</p>
-</div>
+h3 {
+  color: #f3d47f;
+  font-size: 28px;
+  margin-bottom: 12px;
+}
 
-<div class="platform-slide">
-<span>DIGITAL</span>
-<h3>Apple Books</h3>
-<p>Versión eBook</p>
-</div>
+p {
+  font-size: 20px;
+  margin-bottom: 18px;
+}
 
-<div class="platform-slide">
-<span>DIGITAL</span>
-<h3>Google Books</h3>
-<p>Distribución internacional</p>
-</div>
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background: #d7b46a;
+  color: #050208;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: bold;
+  margin: 8px;
+  transition: .3s;
+}
 
-<div class="platform-slide">
-<span>DIGITAL</span>
-<h3>Kobo</h3>
-<p>Lectura online</p>
-</div>
+.btn:hover {
+  background: white;
+  transform: translateY(-3px);
+}
 
-</div>
+section {
+  padding: 100px 10%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.card {
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(215,180,106,.25);
+  border-radius: 30px;
+  padding: 35px;
+  box-shadow: 0 30px 80px rgba(0,0,0,.45);
+}
+
+img {
+  width: 100%;
+  border-radius: 24px;
+}
+
+.book {
+  background:
+    radial-gradient(circle at center, rgba(91,36,92,.35), transparent 35%),
+    #09030f;
+}
+
+/* DISTRIBUCIÓN */
+
+.platforms {
+  background: #030303;
+  overflow: hidden;
+}
+
+.platforms-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  gap: 20px;
+}
+
+.platforms-header a {
+  color: #d7b46a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.platforms-row {
+  display: flex;
+  gap: 22px;
+  overflow-x: auto;
+  padding-bottom: 20px;
+}
+
+.platform-slide {
+  min-width: 270px;
+  height: 350px;
+  border-radius: 26px;
+  padding: 28px;
+  background:
+    linear-gradient(to top, rgba(0,0,0,.9), rgba(0,0,0,.15)),
+    radial-gradient(circle at top, rgba(215,180,106,.22), transparent 40%),
+    #151515;
+  border: 1px solid rgba(255,255,255,.08);
+  color: white;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: .3s;
+}
+
+.platform-slide:hover {
+  transform: translateY(-8px);
+  border-color: #d7b46a;
+}
+
+.platform-slide span {
+  color: #d7b46a;
+  letter-spacing: 2px;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+.platform-slide h3 {
+  color: white;
+  font-size: 32px;
+  line-height: 1;
+}
+
+.platform-slide p {
+  font-size: 16px;
+  color: rgba(255,255,255,.75);
+}
+
+/* PRENSA */
+
+.press-preview {
+  background:
+    radial-gradient(circle at center, rgba(91,36,92,.35), transparent 35%),
+    #050208;
+  text-align: center;
+}
+
+.press-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.press-card {
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(215,180,106,.25);
+  border-radius: 24px;
+  padding: 30px;
+}
+
+.quote {
+  text-align: center;
+  font-size: 42px;
+  color: #f3d47f;
+  font-style: italic;
+  max-width: 900px;
+  margin: auto;
+}
+
+footer {
+  padding: 100px 10%;
+  text-align: center;
+  background: #030106;
+  border-top: 1px solid rgba(215,180,106,.25);
+}
+
+@media(max-width:800px) {
+  h1 {
+    font-size: 52px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .platforms-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .platform-slide {
+    min-width: 235px;
+    height: 310px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div>
+    <p class="gold">Escritora · Superación · Testimonio</p>
+    <h1>Aris Gómez</h1>
+    <p>
+      Autora de <em>Aris: de la oscuridad a la libertad</em>,
+      una historia de resiliencia, transformación y reconstrucción personal.
+    </p>
+
+    <a class="btn" href="#libro">Descubrir el libro</a>
+    <a class="btn" href="Prensa.html">En medios</a>
+  </div>
+</header>
+
+<section>
+  <div class="grid">
+    <div>
+      <p class="gold">Sobre la autora</p>
+      <h2>Una voz nacida desde la experiencia</h2>
+      <p>
+        Aris Gómez comparte a través de su escritura un recorrido marcado
+        por la resiliencia, el dolor transformado en fortaleza y la búsqueda
+        de libertad emocional.
+      </p>
+      <p>
+        Su obra busca dar voz a historias silenciadas y transmitir un mensaje
+        de esperanza, reconstrucción y crecimiento personal.
+      </p>
+    </div>
+
+    <div class="card">
+      <img src="autor.png" alt="Aris Gómez autora">
+    </div>
+  </div>
 </section>
+
+<section id="libro" class="book">
+  <div class="grid">
+    <div class="card">
+      <img src="portada.jpg" alt="Portada del libro Aris de la oscuridad a la libertad">
+    </div>
+
+    <div>
+      <p class="gold">Libro</p>
+      <h2><em>Aris: de la oscuridad a la libertad</em></h2>
+      <p>
+        Un relato autobiográfico que aborda el dolor, la supervivencia,
+        la sanación emocional y el camino hacia la reconstrucción personal.
+      </p>
+
+      <p><strong class="gold">Editorial:</strong> Editorial Círculo Rojo</p>
+      <p><strong class="gold">ISBN:</strong> 979-13-7046-354-0</p>
+      <p><strong class="gold">Idioma:</strong> Español</p>
+
+      <a class="btn"
+      href="https://libros.cc/ARIS-DE-LA-OSCURIDAD-A-LA-LIBERTAD.htm?isbn=9791370463540"
+      target="_blank">
+        Comprar libro
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="platforms">
+  <div class="platforms-header">
+    <h2>Disponible en plataformas oficiales</h2>
+
+    <a href="https://libros.cc/ARIS-DE-LA-OSCURIDAD-A-LA-LIBERTAD.htm?isbn=9791370463540"
+    target="_blank">
+      Ver distribución →
+    </a>
+  </div>
+
+  <div class="platforms-row">
+
+    <a class="platform-slide"
+    href="https://libros.cc/ARIS-DE-LA-OSCURIDAD-A-LA-LIBERTAD.htm?isbn=9791370463540"
+    target="_blank">
+      <span>DISPONIBLE</span>
+      <h3>Distribución Oficial</h3>
+      <p>Accede a la ficha actual del libro</p>
+    </a>
+
+    <div class="platform-slide">
+      <span>PRÓXIMAMENTE</span>
+      <h3>Casa del Libro</h3>
+      <p>Venta nacional</p>
+    </div>
+
+    <div class="platform-slide">
+      <span>PRÓXIMAMENTE</span>
+      <h3>El Corte Inglés</h3>
+      <p>Librerías asociadas</p>
+    </div>
+
+    <div class="platform-slide">
+      <span>DIGITAL</span>
+      <h3>Apple Books</h3>
+      <p>Versión eBook</p>
+    </div>
+
+    <div class="platform-slide">
+      <span>DIGITAL</span>
+      <h3>Google Books</h3>
+      <p>Distribución internacional</p>
+    </div>
+
+    <div class="platform-slide">
+      <span>DIGITAL</span>
+      <h3>Kobo</h3>
+      <p>Lectura online</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="press-preview">
+  <p class="gold">Prensa · Televisión · Medios</p>
+  <h2>Presencia en medios</h2>
+
+  <p>
+    Apariciones, entrevistas y cobertura mediática relacionadas con
+    Aris Gómez, su historia y su obra.
+  </p>
+
+  <div class="press-grid">
+    <div class="press-card">
+      <h3>Televisión</h3>
+      <p>Código 10, En boca de todos y Ana Rosa Quintana.</p>
+    </div>
+
+    <div class="press-card">
+      <h3>Prensa digital</h3>
+      <p>Medios nacionales y publicaciones digitales.</p>
+    </div>
+
+    <div class="press-card">
+      <h3>Cobertura mediática</h3>
+      <p>Un recorrido público vinculado al caso y al libro.</p>
+    </div>
+  </div>
+
+  <br><br>
+
+  <a class="btn" href="Prensa.html">Ver cobertura mediática</a>
+</section>
+
+<section>
+  <p class="quote">
+    “Incluso después de la oscuridad más profunda,
+    siempre existe un camino hacia la libertad.”
+  </p>
+</section>
+
+<footer>
+  <p class="gold">Contacto</p>
+  <h2>Colaboraciones · Entrevistas · Medios</h2>
+
+  <p>
+    Para entrevistas, colaboraciones o eventos relacionados con el libro,
+    puedes contactar a través de redes sociales o correo profesional.
+  </p>
+
+  <a class="btn" href="https://www.goodreads.com/" target="_blank">Goodreads</a>
+  <a class="btn" href="https://instagram.com/arisgolalla" target="_blank">Instagram</a>
+  <a class="btn" href="Prensa.html">En medios</a>
+  <a class="btn" href="mailto:oscuridadylibertad@hotmail.com">Email</a>
+</footer>
+
+</body>
+</html>
