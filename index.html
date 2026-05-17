@@ -164,6 +164,50 @@
       h2 { font-size: 34px; }
       .grid { grid-template-columns: 1fr; }
     }
+    .available-section {
+  text-align: center;
+  background:
+    radial-gradient(circle at top right, rgba(215,180,106,.13), transparent 30%),
+    linear-gradient(135deg,#09030f,#1b0a25,#09030f);
+}
+
+.available-text {
+  max-width: 850px;
+  margin: 0 auto 45px;
+  color: #f6ead2;
+}
+
+.available-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
+  gap: 24px;
+}
+
+.available-card {
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(215,180,106,.28);
+  border-radius: 28px;
+  padding: 32px 24px;
+  box-shadow: 0 25px 70px rgba(0,0,0,.35);
+}
+
+.available-card h3 {
+  color: #f3d47f;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.available-card p {
+  font-size: 17px;
+  color: #d8c9ad;
+}
+
+.available-card.active {
+  border-color: #f3d47f;
+  background: rgba(215,180,106,.10);
+}
   </style>
 </head>
 
@@ -221,6 +265,49 @@
         <a class="btn" href="#">Próximamente en Amazon</a>
       </div>
     </div>
+    <section class="available-section">
+  <p class="gold">DISTRIBUCIÓN OFICIAL</p>
+  <h2>Disponible en plataformas oficiales</h2>
+
+  <p class="available-text">
+    La obra está incluida en el sistema de distribución bajo demanda y digital
+    de Editorial Círculo Rojo, con presencia prevista en plataformas nacionales
+    e internacionales.
+  </p>
+
+  <div class="available-grid">
+    <div class="available-card active">
+      <h3>Amazon</h3>
+      <p>Disponible actualmente</p>
+      <a class="btn" href="TU-ENLACE-AMAZON" target="_blank">Comprar libro</a>
+    </div>
+
+    <div class="available-card">
+      <h3>Casa del Libro</h3>
+      <p>Próximamente</p>
+    </div>
+
+    <div class="available-card">
+      <h3>El Corte Inglés</h3>
+      <p>Próximamente</p>
+    </div>
+
+    <div class="available-card">
+      <h3>Apple Books</h3>
+      <p>Próximamente</p>
+    </div>
+
+    <div class="available-card">
+      <h3>Google Books</h3>
+      <p>Próximamente</p>
+    </div>
+
+    <div class="available-card">
+      <h3>Kobo</h3>
+      <p>Próximamente</p>
+    </div>
+  </div>
+</section>
   </section>
 
   <section class="press-section">
