@@ -240,6 +240,49 @@
   text-decoration: none;
   font-weight: bold;
 }
+
+    .media-premium {
+  padding: 110px 10%;
+  background:
+    radial-gradient(circle at top left, rgba(215,180,106,.14), transparent 32%),
+    linear-gradient(135deg,#07020d,#1b0a25,#07020d);
+}
+
+.media-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 28px;
+}
+
+.media-card {
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(215,180,106,.28);
+  border-radius: 30px;
+  padding: 35px;
+  text-align: center;
+  transition: .35s ease;
+  box-shadow: 0 25px 70px rgba(0,0,0,.4);
+}
+
+.media-card:hover {
+  transform: translateY(-8px);
+  border-color: #f3d47f;
+}
+
+.media-card img {
+  width: 130px;
+  height: 75px;
+  object-fit: contain;
+  margin-bottom: 25px;
+  filter: brightness(1.08);
+}
+
+.media-card h3 {
+  color: #f3d47f;
+  font-size: 22px;
+}
   </style>
 </head>
 
@@ -416,23 +459,52 @@ Publicación relacionada con la repercusión mediática
 
   </div>
 </section>
-  <section>
+<section class="media-premium">
+
   <div class="section-title">
-    <p>Medios nacionales</p>
-    <h2>Medios donde ha aparecido Aris Gómez</h2>
+    <p>Prensa · Televisión · Medios nacionales</p>
+    <h2>Presencia mediática</h2>
   </div>
 
-  <div class="media-logos">
-    <div>Telecinco</div>
-    <div>Cuatro</div>
-    <div>Código 10</div>
-    <div>En boca de todos</div>
-    <div>El programa de Ana Rosa</div>
-    <div>20 Minutos</div>
-    <div>Estrella Digital</div>
-    <div>Madrid Diario</div>
-    <div>Periodista Digital</div>
+  <div class="media-grid">
+
+    <div class="media-card">
+      <img src="telecinco.png" alt="Telecinco">
+      <h3>Telecinco</h3>
+    </div>
+
+    <div class="media-card">
+      <img src="mediaset.png" alt="Mediaset España">
+      <h3>Mediaset España</h3>
+    </div>
+
+    <div class="media-card">
+      <img src="cuatro.png" alt="Cuatro">
+      <h3>Cuatro</h3>
+    </div>
+
+    <div class="media-card">
+      <img src="anarosa.png" alt="Ana Rosa Quintana">
+      <h3>Ana Rosa Quintana</h3>
+    </div>
+
+    <div class="media-card">
+      <img src="codigo10.png" alt="Código 10">
+      <h3>Código 10</h3>
+    </div>
+
+    <div class="media-card">
+      <img src="20minutos.png" alt="20 Minutos">
+      <h3>20 Minutos</h3>
+    </div>
+
+    <div class="media-card">
+      <img src="estrelladigital.png" alt="Estrella Digital">
+      <h3>Estrella Digital</h3>
+    </div>
+
   </div>
+
 </section>
 
 <section class="legal-section">
