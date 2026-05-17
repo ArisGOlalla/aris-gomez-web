@@ -1,380 +1,55 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aris Gómez | Autora</title>
+<section class="platforms-dark">
 
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+<div class="platforms-header">
+<h2>Disponible en plataformas oficiales</h2>
 
-    body {
-      font-family: Georgia, serif;
-      background: #09030f;
-      color: #f6ead2;
-      line-height: 1.6;
-    }
+<a href="https://libros.cc/ARIS-DE-LA-OSCURIDAD-A-LA-LIBERTAD.htm?isbn=9791370463540"
+target="_blank">
+Ver distribución →
+</a>
+</div>
 
-    header {
-      min-height: 90vh;
-      display: flex;
-      align-items: center;
-      padding: 80px 10%;
-      background:
-        radial-gradient(circle at top right, #5b245c, transparent 35%),
-        linear-gradient(135deg, #09030f, #2b102f, #09030f);
-    }
+<div class="platforms-row">
 
-    h1 {
-      font-size: 70px;
-      color: #f3d47f;
-      margin-bottom: 20px;
-    }
+<a class="platform-slide active"
+href="https://libros.cc/ARIS-DE-LA-OSCURIDAD-A-LA-LIBERTAD.htm?isbn=9791370463540"
+target="_blank">
 
-    h2 {
-      color: #f3d47f;
-      font-size: 42px;
-      margin-bottom: 20px;
-    }
+<span>DISPONIBLE</span>
+<h3>Distribución Oficial</h3>
+<p>Accede a la ficha oficial del libro</p>
 
-    h3 {
-      color: #f3d47f;
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 20px;
-      margin-bottom: 18px;
-    }
-
-    .gold { color: #d7b46a; }
-
-    .btn {
-      display: inline-block;
-      margin: 10px;
-      padding: 14px 26px;
-      background: #d7b46a;
-      color: #09030f;
-      text-decoration: none;
-      border-radius: 14px;
-      font-weight: bold;
-    }
-
-    section {
-      padding: 90px 10%;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 60px;
-      align-items: center;
-    }
-
-    img {
-      max-width: 100%;
-      border-radius: 22px;
-      border: 1px solid rgba(215,180,106,.45);
-      box-shadow: 0 25px 60px rgba(0,0,0,.6);
-    }
-
-    .card {
-      background: #16091f;
-      padding: 35px;
-      border-radius: 28px;
-      border: 1px solid rgba(215,180,106,.35);
-    }
-
-    .book {
-      background: linear-gradient(135deg, #16091f, #2b102f, #09030f);
-    }
-
-    .quote {
-      text-align: center;
-      max-width: 900px;
-      margin: auto;
-      font-size: 42px;
-      color: #f3d47f;
-      font-style: italic;
-    }
-
-    .press-section {
-      background:
-        radial-gradient(circle at center, rgba(91,36,92,.45), transparent 35%),
-        #09030f;
-      text-align: center;
-    }
-
-    .press-intro {
-      max-width: 850px;
-      margin: 0 auto 50px;
-      color: #f6ead2;
-    }
-
-    .press-stats {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 25px;
-      margin: 50px auto;
-      max-width: 1000px;
-    }
-
-    .stat-card {
-      background: rgba(22, 9, 31, .9);
-      border: 1px solid rgba(215,180,106,.35);
-      border-radius: 24px;
-      padding: 30px;
-      box-shadow: 0 20px 50px rgba(0,0,0,.35);
-    }
-
-    .stat-card strong {
-      display: block;
-      font-size: 42px;
-      color: #f3d47f;
-      margin-bottom: 10px;
-    }
-
-    .media-list {
-      max-width: 1000px;
-      margin: 40px auto 0;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 18px;
-    }
-
-    .media-item {
-      padding: 18px;
-      border-radius: 18px;
-      background: rgba(255,255,255,.04);
-      border: 1px solid rgba(215,180,106,.25);
-      color: #f6ead2;
-      font-size: 18px;
-    }
-
-    footer {
-      padding: 70px 10%;
-      text-align: center;
-      background: #050208;
-      border-top: 1px solid rgba(215,180,106,.35);
-    }
-
-    @media (max-width: 800px) {
-      h1 { font-size: 48px; }
-      h2 { font-size: 34px; }
-      .grid { grid-template-columns: 1fr; }
-    }
- <section class="platforms-dark">
-  <div class="platforms-header">
-    <h2>Disponible en plataformas oficiales</h2>
-    <a href="https://libros.cc/ARIS-DE-LA-OSCURIDAD-A-LA-LIBERTAD.htm?isbn=9791370463540" target="_blank">
-      Ver distribución →
-    </a>
-  </div>
-
-  <div class="platforms-row">
-    <a class="platform-slide active" href="https://libros.cc/ARIS-DE-LA-OSCURIDAD-A-LA-LIBERTAD.htm?isbn=9791370463540" target="_blank">
-      <span>DISPONIBLE</span>
-      <h3>Distribución Oficial</h3>
-      <p>Accede a la ficha actual del libro</p>
-    </a>
-
-    <div class="platform-slide">
-      <span>PRÓXIMAMENTE</span>
-      <h3>Casa del Libro</h3>
-      <p>Venta nacional</p>
-    </div>
-
-    <div class="platform-slide">
-      <span>PRÓXIMAMENTE</span>
-      <h3>El Corte Inglés</h3>
-      <p>Librerías asociadas</p>
-    </div>
-
-    <div class="platform-slide">
-      <span>DIGITAL</span>
-      <h3>Apple Books</h3>
-      <p>Versión eBook</p>
-    </div>
-
-    <div class="platform-slide">
-      <span>DIGITAL</span>
-      <h3>Google Books</h3>
-      <p>Distribución internacional</p>
-    </div>
-
-    <div class="platform-slide">
-      <span>DIGITAL</span>
-      <h3>Kobo</h3>
-      <p>Lectura online</p>
-    </div>
-  </div>
-</section>
-  </style>
-</head>
-
-<body>
-
-  <header>
-    <div>
-      <p class="gold">ESCRITORA · SUPERACIÓN · TESTIMONIO</p>
-      <h1>Aris Gómez</h1>
-      <p>
-        Autora de <em class="gold">Aris: de la oscuridad a la libertad</em>,
-        una historia de resiliencia, transformación y reconstrucción personal.
-      </p>
-      <a class="btn" href="#libro">Descubrir el libro</a>
-    </div>
-  </header>
-
-  <section>
-    <div class="grid">
-      <div>
-        <p class="gold">SOBRE LA AUTORA</p>
-        <h2>Una voz nacida desde la experiencia y la superación</h2>
-        <p>
-          Aris Gómez comparte a través de su escritura un recorrido marcado por
-          la resiliencia, el dolor transformado en fortaleza y la búsqueda de libertad emocional.
-        </p>
-        <p>
-          Su obra busca dar voz a historias silenciadas y transmitir un mensaje de esperanza,
-          reconstrucción y crecimiento personal.
-        </p>
-      </div>
-
-      <div class="card">
-        <img src="autora.png" alt="Aris Gómez autora">
-      </div>
-    </div>
-  </section>
-
-  <section id="libro" class="book">
-    <div class="grid">
-      <div class="card">
-        <img src="portada.jpg" alt="Portada del libro Aris: de la oscuridad a la libertad">
-      </div>
-
-      <div>
-        <p class="gold">LIBRO</p>
-        <h2><em>Aris: de la oscuridad a la libertad</em></h2>
-        <p>
-          Un relato autobiográfico que aborda el dolor, la supervivencia,
-          la sanación emocional y el camino hacia la reconstrucción personal.
-        </p>
-        <p><strong class="gold">Editorial:</strong> Editorial Círculo Rojo</p>
-        <p><strong class="gold">ISBN:</strong> 979-13-7046-354-0</p>
-        <p><strong class="gold">Idioma:</strong> Español</p>
-        <a class="btn" href="#">Próximamente en Amazon</a>
-      </div>
-    </div>
-    <section class="available-section">
-  <p class="gold">DISTRIBUCIÓN OFICIAL</p>
-  <h2>Disponible en plataformas oficiales</h2>
-
-  <p class="available-text">
-    La obra está incluida en el sistema de distribución bajo demanda y digital
-    de Editorial Círculo Rojo, con presencia prevista en plataformas nacionales
-    e internacionales.
-  </p>
-
-  <div class="available-grid">
-    <div class="available-card active">
-     <h3>Distribución oficial</h3>
-<p>Disponible actualmente</p>
-<a class="btn"
-   href="https://libros.cc/ARIS-DE-LA-OSCURIDAD-A-LA-LIBERTAD.htm?isbn=9791370463540"
-   target="_blank">
-   Disponible online
 </a>
 
-    <div class="available-card">
-      <h3>Casa del Libro</h3>
-      <p>Próximamente</p>
-    </div>
+<div class="platform-slide">
+<span>PRÓXIMAMENTE</span>
+<h3>Casa del Libro</h3>
+<p>Distribución nacional</p>
+</div>
 
-    <div class="available-card">
-      <h3>El Corte Inglés</h3>
-      <p>Próximamente</p>
-    </div>
+<div class="platform-slide">
+<span>PRÓXIMAMENTE</span>
+<h3>El Corte Inglés</h3>
+<p>Librerías asociadas</p>
+</div>
 
-    <div class="available-card">
-      <h3>Apple Books</h3>
-      <p>Próximamente</p>
-    </div>
+<div class="platform-slide">
+<span>DIGITAL</span>
+<h3>Apple Books</h3>
+<p>Versión eBook</p>
+</div>
 
-    <div class="available-card">
-      <h3>Google Books</h3>
-      <p>Próximamente</p>
-    </div>
+<div class="platform-slide">
+<span>DIGITAL</span>
+<h3>Google Books</h3>
+<p>Distribución internacional</p>
+</div>
 
-    <div class="available-card">
-      <h3>Kobo</h3>
-      <p>Próximamente</p>
-    </div>
-  </div>
+<div class="platform-slide">
+<span>DIGITAL</span>
+<h3>Kobo</h3>
+<p>Lectura online</p>
+</div>
+
+</div>
 </section>
-  </section>
-
-  <section class="press-section">
-    <p class="gold">PRENSA</p>
-    <h2>Aris Gómez en medios</h2>
-
-    <p class="press-intro">
-      <strong>“ARIS: de la oscuridad a la libertad”</strong> ha tenido presencia en medios
-      digitales nacionales, consolidando la presentación pública de la obra y su mensaje
-      de superación, verdad y libertad emocional.
-    </p>
-
-    <div class="press-stats">
-      <div class="stat-card">
-        <strong>125</strong>
-        <p>publicaciones en medios digitales</p>
-      </div>
-
-      <div class="stat-card">
-        <strong>610.970</strong>
-        <p>impresiones estimadas</p>
-      </div>
-
-      <div class="stat-card">
-        <strong>12.265€</strong>
-        <p>valor estimado de aparición en medios</p>
-      </div>
-    </div>
-
-    <h3>Medios destacados</h3>
-
-    <div class="media-list">
-      <div class="media-item">Periodista Digital</div>
-      <div class="media-item">Madrid Diario</div>
-      <div class="media-item">Diario Siglo XXI</div>
-      <div class="media-item">Cantabria Económica</div>
-      <div class="media-item">El Boletín</div>
-      <div class="media-item">Región Digital</div>
-      <div class="media-item">Hechos de Hoy</div>
-      <div class="media-item">Digital Sevilla</div>
-    </div>
-  </section>
-
-  <section>
-    <p class="quote">
-      “Incluso después de la oscuridad más profunda, siempre existe un camino hacia la libertad.”
-    </p>
-  </section>
-
-  <footer>
-    <p class="gold">CONTACTO</p>
-    <h2>Colaboraciones · Entrevistas · Medios</h2>
-    <p>
-      Para entrevistas, colaboraciones o eventos relacionados con el libro,
-      puedes contactar a través de redes sociales o correo profesional.
-    </p>
-
-    <a class="btn" href="https://www.goodreads.com/" target="_blank">Goodreads</a>
-    <a class="btn" href="https://instagram.com/arisgolalla" target="_blank">Instagram</a>
-    <a class="btn" href="prensa.html">En Medios</a>
-    <a class="btn" href="mailto:oscuridadylibertad@hotmail.com">Email</a>
-  </footer>
-
-</body>
-</html>
