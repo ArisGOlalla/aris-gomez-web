@@ -1,101 +1,253 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prensa | Aris Gómez</title>
 
-<title>Prensa | Aris Gómez</title>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
 
-<style>
+    body {
+      font-family: Georgia, serif;
+      background:#07020d;
+      color:#f7ead2;
+      line-height:1.6;
+    }
 
-body{
-font-family:Arial;
-background:#12051f;
-color:white;
-padding:40px;
-}
+    header {
+      min-height:80vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:80px 10%;
+      background:
+        radial-gradient(circle at top left, rgba(126,50,127,.45), transparent 35%),
+        radial-gradient(circle at bottom right, rgba(215,180,106,.18), transparent 30%),
+        linear-gradient(135deg,#07020d,#230d2f,#07020d);
+    }
 
-h1{
-color:#f3d36d;
-text-align:center;
-margin-bottom:50px;
-}
+    .eyebrow {
+      color:#d7b46a;
+      letter-spacing:4px;
+      font-size:14px;
+      text-transform:uppercase;
+      margin-bottom:20px;
+    }
 
-.card{
-background:#1d0b2d;
-padding:30px;
-margin:25px auto;
-border-radius:25px;
-max-width:800px;
-}
+    h1 {
+      font-size:72px;
+      color:#f3d47f;
+      margin-bottom:25px;
+      line-height:1.05;
+    }
 
-.card h2{
-color:#f3d36d;
-}
+    header p {
+      font-size:22px;
+      max-width:760px;
+      margin:auto;
+    }
 
-.card p{
-margin:15px 0;
-}
+    section {
+      padding:90px 10%;
+    }
 
-a{
-display:inline-block;
-margin-top:15px;
-padding:12px 24px;
-background:#f3d36d;
-color:black;
-text-decoration:none;
-border-radius:40px;
-font-weight:bold;
-}
+    .stats {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:25px;
+      max-width:1000px;
+      margin:auto;
+    }
 
-</style>
+    .stat {
+      background:rgba(255,255,255,.04);
+      border:1px solid rgba(215,180,106,.35);
+      border-radius:28px;
+      padding:35px;
+      text-align:center;
+      box-shadow:0 25px 60px rgba(0,0,0,.35);
+    }
+
+    .stat strong {
+      display:block;
+      font-size:48px;
+      color:#f3d47f;
+      margin-bottom:10px;
+    }
+
+    .section-title {
+      text-align:center;
+      margin-bottom:55px;
+    }
+
+    .section-title p {
+      color:#d7b46a;
+      letter-spacing:3px;
+      text-transform:uppercase;
+      font-size:14px;
+    }
+
+    .section-title h2 {
+      color:#f3d47f;
+      font-size:46px;
+      margin-top:10px;
+    }
+
+    .press-grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:28px;
+      max-width:1100px;
+      margin:auto;
+    }
+
+    .press-card {
+      position:relative;
+      overflow:hidden;
+      background:linear-gradient(145deg,rgba(255,255,255,.07),rgba(255,255,255,.02));
+      border:1px solid rgba(215,180,106,.28);
+      border-radius:30px;
+      padding:35px;
+      min-height:260px;
+      box-shadow:0 30px 80px rgba(0,0,0,.45);
+      transition:.35s ease;
+    }
+
+    .press-card:hover {
+      transform:translateY(-8px);
+      border-color:#f3d47f;
+    }
+
+    .press-card span {
+      color:#d7b46a;
+      font-size:13px;
+      letter-spacing:2px;
+      text-transform:uppercase;
+    }
+
+    .press-card h3 {
+      color:#f3d47f;
+      font-size:30px;
+      margin:18px 0;
+    }
+
+    .press-card p {
+      color:#f7ead2;
+      font-size:18px;
+      margin-bottom:28px;
+    }
+
+    .press-card a {
+      display:inline-block;
+      padding:13px 24px;
+      border-radius:999px;
+      background:#d7b46a;
+      color:#07020d;
+      text-decoration:none;
+      font-weight:bold;
+    }
+
+    .back {
+      text-align:center;
+      padding-bottom:90px;
+    }
+
+    .back a {
+      color:#f3d47f;
+      text-decoration:none;
+      border-bottom:1px solid #f3d47f;
+      font-size:18px;
+    }
+
+    footer {
+      padding:45px 10%;
+      text-align:center;
+      background:#030106;
+      color:#bfae93;
+      border-top:1px solid rgba(215,180,106,.25);
+    }
+
+    @media(max-width:800px) {
+      h1 { font-size:48px; }
+      header p { font-size:18px; }
+      .section-title h2 { font-size:34px; }
+    }
+  </style>
 </head>
 
 <body>
 
-<h1>📰 En Prensa</h1>
+<header>
+  <div>
+    <p class="eyebrow">Medios · Entrevistas · Apariciones</p>
+    <h1>Aris Gómez en prensa</h1>
+    <p>
+      Una selección de apariciones en medios sobre la autora y su obra
+      <em>“Aris: de la oscuridad a la libertad”</em>.
+    </p>
+  </div>
+</header>
 
-<div class="card">
+<section>
+  <div class="stats">
+    <div class="stat">
+      <strong>125</strong>
+      <p>publicaciones en medios digitales</p>
+    </div>
 
-<h2>Madrid Diario</h2>
+    <div class="stat">
+      <strong>610.970</strong>
+      <p>impresiones estimadas</p>
+    </div>
 
-<p>
-Publicación sobre Aris Gómez y su libro.
-</p>
+    <div class="stat">
+      <strong>12.265€</strong>
+      <p>valor estimado de presencia mediática</p>
+    </div>
+  </div>
+</section>
 
-<a href="https://www.madridiario.es/" target="_blank">
-Leer artículo
-</a>
+<section>
+  <div class="section-title">
+    <p>Selección editorial</p>
+    <h2>Medios destacados</h2>
+  </div>
 
+  <div class="press-grid">
+
+    <div class="press-card">
+      <span>Prensa digital</span>
+      <h3>Madrid Diario</h3>
+      <p>Publicación sobre la historia de Aris Gómez y el mensaje de superación de su libro.</p>
+      <a href="https://www.madridiario.es/actualidad-empresarial/aris-gomez-supervivencia-transformacion" target="_blank">Leer publicación</a>
+    </div>
+
+    <div class="press-card">
+      <span>Medios</span>
+      <h3>El Confidencial Digital</h3>
+      <p>Aparición mediática vinculada al lanzamiento y la presencia pública de la autora.</p>
+      <a href="https://www.elconfidencialdigital.com/articulo/medios/aris-gomez-transforma-dolor-literatura/202505161234567.html" target="_blank">Leer publicación</a>
+    </div>
+
+    <div class="press-card">
+      <span>Cultura y libros</span>
+      <h3>Periodista Digital</h3>
+      <p>Cobertura cultural sobre la obra y el recorrido emocional detrás del libro.</p>
+      <a href="https://www.periodistadigital.com/cultura/libros/20250516/aris-gomez-transforma-dolor-libro-noticia-689405089421/" target="_blank">Leer publicación</a>
+    </div>
+
+  </div>
+</section>
+
+<div class="back">
+  <a href="index.html">Volver a la web oficial</a>
 </div>
 
-<div class="card">
-
-<h2>El Confidencial Digital</h2>
-
-<p>
-Entrevista y aparición en medios.
-</p>
-
-<a href="https://www.elconfidencialdigital.com/" target="_blank">
-Leer artículo
-</a>
-
-</div>
-
-<div class="card">
-
-<h2>Periodista Digital</h2>
-
-<p>
-Cobertura cultural sobre “De la Oscuridad a la Libertad”.
-</p>
-
-<a href="https://www.periodistadigital.com/" target="_blank">
-Leer artículo
-</a>
-
-</div>
+<footer>
+  © 2026 Aris Gómez · Web oficial
+</footer>
 
 </body>
 </html>
