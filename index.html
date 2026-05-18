@@ -214,35 +214,42 @@ overflow-x:hidden;
 
 .top-nav{
 position:relative;
-padding:24px 6%;
-display:block;
-text-align:center;
+padding:22px 0 18px;
+text-align:left;
 }
 
 .logo-nav{
-font-size:34px;
-line-height:1.1;
-margin-bottom:22px;
+font-size:32px;
+line-height:1;
+padding:0 6%;
+margin-bottom:18px;
 }
 
 .menu-nav{
-display:grid;
-grid-template-columns:1fr 1fr;
+display:flex;
 gap:12px;
-width:100%;
+overflow-x:auto;
+white-space:nowrap;
+padding:0 6% 8px;
+scrollbar-width:none;
+}
+
+.menu-nav::-webkit-scrollbar{
+display:none;
 }
 
 .menu-nav a{
+flex:0 0 auto;
 font-size:15px;
-padding:12px 10px;
+padding:10px 18px;
 border-radius:999px;
 background:rgba(255,255,255,.04);
 border:1px solid rgba(215,180,106,.18);
-white-space:normal;
+white-space:nowrap;
 }
 
 .hero-premium{
-padding:60px 6% 70px;
+padding:58px 6% 70px;
 min-height:auto;
 overflow:hidden;
 }
@@ -250,7 +257,7 @@ overflow:hidden;
 .hero-inner{
 display:flex;
 flex-direction:column;
-gap:42px;
+gap:38px;
 text-align:center;
 width:100%;
 }
@@ -262,10 +269,9 @@ line-height:1.8;
 }
 
 .hero-copy h1{
-font-size:56px;
+font-size:58px;
 line-height:.95;
 margin-bottom:22px;
-word-break:normal;
 }
 
 .hero-subtitle{
@@ -275,8 +281,9 @@ max-width:100%;
 }
 
 .hero-image-wrap{
-margin-top:20px;
+margin-top:10px;
 width:100%;
+overflow:hidden;
 }
 
 .hero-image-wrap img{
