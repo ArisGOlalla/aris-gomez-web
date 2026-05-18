@@ -318,7 +318,86 @@ padding:35px 7%;
 }
 
 </style>
+  /* LOGOS PREMIUM */
+
+.featured-logos{
+padding:70px 0;
+border-top:1px solid rgba(215,180,106,.12);
+border-bottom:1px solid rgba(215,180,106,.12);
+background:#040106;
+overflow:hidden;
+position:relative;
+}
+
+.featured-title{
+text-align:center;
+font-size:12px;
+letter-spacing:5px;
+text-transform:uppercase;
+color:#d7b46a;
+margin-bottom:40px;
+}
+
+.logo-marquee{
+overflow:hidden;
+white-space:nowrap;
+position:relative;
+}
+
+.logo-track{
+display:inline-flex;
+gap:90px;
+animation:scrollLogos 32s linear infinite;
+}
+
+.logo-track span{
+font-size:42px;
+font-weight:bold;
+letter-spacing:2px;
+color:rgba(215,180,106,.88);
+opacity:.85;
+transition:.3s;
+}
+
+.logo-track span:hover{
+opacity:1;
+transform:scale(1.05);
+}
+
+@keyframes scrollLogos{
+0%{
+transform:translateX(0);
+}
+100%{
+transform:translateX(-50%);
+}
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.featured-logos{
+padding:50px 0;
+}
+
+.logo-track{
+gap:42px;
+}
+
+.logo-track span{
+font-size:24px;
+}
+
+.featured-title{
+font-size:10px;
+letter-spacing:4px;
+margin-bottom:28px;
+}
+
+}
 </style>
+  
 
 </head>
 
@@ -402,6 +481,39 @@ siempre existe un camino hacia la libertad.”
 </div>
 
 </header>
+  <section class="featured-logos">
+
+<p class="featured-title">APARICIONES · PRENSA · ENTREVISTAS</p>
+
+<div class="logo-marquee">
+
+<div class="logo-track">
+
+<span>EL TIEMPO</span>
+<span>ANTENA 3</span>
+<span>LA VANGUARDIA</span>
+<span>TELECINCO</span>
+<span>COPE</span>
+<span>EUROPA PRESS</span>
+<span>LA RAZÓN</span>
+<span>ABC</span>
+
+<!-- repetidos para efecto infinito -->
+
+<span>EL TIEMPO</span>
+<span>ANTENA 3</span>
+<span>LA VANGUARDIA</span>
+<span>TELECINCO</span>
+<span>COPE</span>
+<span>EUROPA PRESS</span>
+<span>LA RAZÓN</span>
+<span>ABC</span>
+
+</div>
+
+</div>
+
+</section>
 
 <footer>
 
