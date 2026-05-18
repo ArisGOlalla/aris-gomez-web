@@ -6,7 +6,6 @@
 <title>Contacto | Aris Gómez</title>
 
 <style>
-
 *{
 margin:0;
 padding:0;
@@ -14,187 +13,189 @@ box-sizing:border-box;
 }
 
 body{
-font-family:Georgia, serif;
-background:#020103;
-color:#f5e8d0;
+font-family:Georgia,serif;
+background:#030104;
+color:#f6ead2;
 overflow-x:hidden;
 }
 
-/* FONDO */
+/* DESKTOP */
 
-.bg-light{
-position:fixed;
-width:900px;
-height:900px;
-border-radius:50%;
-background:radial-gradient(circle, rgba(97,31,101,.45), transparent 65%);
-top:-250px;
-right:-250px;
-z-index:0;
-filter:blur(40px);
+.contact-page{
+min-height:100vh;
+display:grid;
+grid-template-columns:45% 55%;
+background:#030104;
 }
 
-/* LAYOUT */
-
-.contact-wrapper{
-position:relative;
-z-index:2;
+.contact-left{
 min-height:100vh;
-padding:70px 8%;
+background:
+linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.75)),
+url("autora.png") center/cover;
+}
+
+.contact-right{
+min-height:100vh;
+padding:90px 8%;
 display:flex;
 flex-direction:column;
 justify-content:center;
+background:
+radial-gradient(circle at top right,rgba(91,36,92,.45),transparent 35%),
+linear-gradient(135deg,#050208,#16051c,#050208);
 }
-
-/* VOLVER */
 
 .back{
 position:absolute;
-top:40px;
-left:8%;
+top:34px;
+right:8%;
+color:#d7b46a;
 text-decoration:none;
-color:#cfa85d;
-letter-spacing:4px;
 font-size:12px;
+letter-spacing:3px;
 text-transform:uppercase;
 }
 
-/* TITULO */
-
-.mini{
+.kicker{
+color:#d7b46a;
+letter-spacing:5px;
 font-size:12px;
-letter-spacing:6px;
 text-transform:uppercase;
-color:#cfa85d;
-margin-bottom:30px;
+margin-bottom:26px;
 }
 
 h1{
-font-size:120px;
-line-height:.88;
-max-width:850px;
+font-size:78px;
+line-height:.95;
 color:#f3d47f;
-margin-bottom:40px;
-font-weight:normal;
+font-weight:500;
+letter-spacing:-3px;
+font-family:"Times New Roman",Georgia,serif;
+margin-bottom:34px;
 }
 
-.description{
-max-width:620px;
+.intro{
 font-size:22px;
-line-height:1.9;
-color:rgba(255,255,255,.72);
-margin-bottom:90px;
+line-height:1.8;
+color:rgba(255,255,255,.76);
+max-width:720px;
+margin-bottom:60px;
 }
 
-/* LINKS PREMIUM */
+.contact-list{
+max-width:760px;
+border-top:1px solid rgba(215,180,106,.22);
+}
 
-.links-grid{
+.contact-row{
 display:grid;
-grid-template-columns:repeat(2,minmax(240px,320px));
+grid-template-columns:180px 1fr;
 gap:30px;
+padding:28px 0;
+border-bottom:1px solid rgba(215,180,106,.16);
+align-items:center;
 }
 
-.contact-link{
-text-decoration:none;
-color:white;
-padding:34px;
-border-top:1px solid rgba(215,180,106,.35);
-transition:.4s ease;
-position:relative;
-overflow:hidden;
-}
-
-.contact-link::before{
-content:"";
-position:absolute;
-left:0;
-bottom:0;
-width:0%;
-height:1px;
-background:#d7b46a;
-transition:.5s;
-}
-
-.contact-link:hover::before{
-width:100%;
-}
-
-.contact-link:hover{
-transform:translateX(10px);
-}
-
-.contact-link span{
-display:block;
-font-size:11px;
-letter-spacing:4px;
+.contact-row span{
+color:#d7b46a;
+letter-spacing:3px;
+font-size:12px;
 text-transform:uppercase;
-color:#cfa85d;
-margin-bottom:14px;
 }
 
-.contact-link strong{
-font-size:34px;
-font-weight:normal;
-line-height:1.1;
-display:block;
-margin-bottom:10px;
+.contact-row a{
+color:white;
+font-size:24px;
+text-decoration:none;
+transition:.3s;
 }
 
-.contact-link p{
+.contact-row a:hover{
+color:#d7b46a;
+padding-left:10px;
+}
+
+.note{
+margin-top:50px;
 font-size:15px;
-line-height:1.7;
-color:rgba(255,255,255,.52);
-}
-
-/* FOOTER */
-
-.footer{
-margin-top:100px;
-font-size:14px;
-color:rgba(255,255,255,.35);
+color:rgba(255,255,255,.45);
 }
 
 /* MOBILE */
 
 @media(max-width:900px){
 
-.contact-wrapper{
-padding:90px 8% 60px;
+.contact-page{
+display:block;
+min-height:100vh;
+background:
+radial-gradient(circle at top right,rgba(91,36,92,.42),transparent 38%),
+linear-gradient(135deg,#050208,#16051c,#050208);
+}
+
+.contact-left{
+display:none;
+}
+
+.contact-right{
+min-height:100vh;
+padding:70px 7% 60px;
+display:block;
 }
 
 .back{
-top:28px;
-left:8%;
+position:relative;
+top:auto;
+right:auto;
+display:inline-block;
+margin-bottom:46px;
+font-size:12px;
+}
+
+.kicker{
+font-size:11px;
+letter-spacing:4px;
+margin-bottom:22px;
 }
 
 h1{
-font-size:62px;
-line-height:.95;
+font-size:48px;
+line-height:1;
+letter-spacing:-2px;
 margin-bottom:28px;
 }
 
-.description{
+.intro{
 font-size:18px;
-line-height:1.8;
-margin-bottom:60px;
+line-height:1.7;
+margin-bottom:42px;
 }
 
-.links-grid{
-grid-template-columns:1fr;
-gap:12px;
+.contact-list{
+border-top:1px solid rgba(215,180,106,.18);
 }
 
-.contact-link{
-padding:26px 0;
+.contact-row{
+display:block;
+padding:24px 0;
 }
 
-.contact-link strong{
-font-size:28px;
+.contact-row span{
+display:block;
+font-size:11px;
+margin-bottom:8px;
 }
 
-.footer{
-margin-top:70px;
-font-size:13px;
+.contact-row a{
+font-size:20px;
+line-height:1.4;
+word-break:break-word;
+}
+
+.note{
+margin-top:36px;
+font-size:14px;
 }
 
 }
@@ -204,95 +205,55 @@ font-size:13px;
 
 <body>
 
-<div class="bg-light"></div>
+<div class="contact-page">
 
-<section class="contact-wrapper">
+<div class="contact-left"></div>
 
-<a href="index.html" class="back">Volver</a>
+<div class="contact-right">
 
-<div class="mini">Contacto privado</div>
+<a class="back" href="index.html">Volver al inicio</a>
 
-<h1>
-Conecta<br>
-con Aris Gómez
-</h1>
+<div class="kicker">Contacto privado</div>
 
-<p class="description">
-Un espacio reservado para colaboraciones, prensa,
-entrevistas, formación y proyectos editoriales.
-Cada mensaje es tratado de forma directa y personalizada.
+<h1>Conecta con Aris Gómez</h1>
+
+<p class="intro">
+Para entrevistas, colaboraciones, prensa, formación,
+conferencias o proyectos editoriales, puedes contactar
+a través de los canales oficiales.
 </p>
 
-<div class="links-grid">
+<div class="contact-list">
 
-<a class="contact-link" href="mailto:oscuridadylibertad@hotmail.com">
-
+<div class="contact-row">
 <span>Email</span>
+<a href="mailto:info.quirofenix@gmail.com">info.quirofenix@gmail.com</a>
+</div>
 
-<strong>
-Contacto<br>
-profesional
-</strong>
-
-<p>
-Consultas privadas, colaboraciones,
-prensa y proyectos editoriales.
-</p>
-
-</a>
-
-<a class="contact-link" href="https://instagram.com/oscuridadylibertad" target="_blank">
-
+<div class="contact-row">
 <span>Instagram</span>
+<a href="https://instagram.com/oscuridadylibertad" target="_blank">@oscuridadylibertad</a>
+</div>
 
-<strong>
-@oscuridadylibertad
-</strong>
-
-<p>
-Reflexiones, inspiración,
-contenido y actualidad.
-</p>
-
-</a>
-
-<a class="contact-link" href="Prensa.html">
-
+<div class="contact-row">
 <span>Medios</span>
+<a href="Prensa.html">Prensa y entrevistas</a>
+</div>
 
-<strong>
-Prensa y entrevistas
-</strong>
-
-<p>
-Solicitudes de participación,
-entrevistas y apariciones.
-</p>
-
-</a>
-
-<a class="contact-link" href="cursos.html">
-
+<div class="contact-row">
 <span>Formación</span>
+<a href="cursos.html">Cursos y mentorías</a>
+</div>
 
-<strong>
-Cursos y mentorías
-</strong>
+</div>
 
-<p>
-Acceso a programas,
-experiencias y formación.
+<p class="note">
+© 2026 Aris Gómez · Contacto oficial
 </p>
 
-</a>
-
 </div>
 
-<div class="footer">
-© 2026 Aris Gómez · Official Contact
 </div>
-
-</section>
 
 </body>
 </html>
