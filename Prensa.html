@@ -22,307 +22,395 @@ line-height:1.7;
 overflow-x:hidden;
 }
 
-header{
-min-height:90vh;
-display:flex;
-align-items:center;
-justify-content:center;
-padding:100px 8%;
-background:
-radial-gradient(circle at top left, rgba(91,36,92,.45), transparent 35%),
-radial-gradient(circle at bottom right, rgba(215,180,106,.18), transparent 30%),
-linear-gradient(135deg,#050208,#18071f,#050208);
+a{
+color:inherit;
+text-decoration:none;
 }
 
+/* HERO */
+
 .hero{
-max-width:1200px;
-width:100%;
-display:grid;
-grid-template-columns:1.2fr .8fr;
-gap:70px;
+min-height:90vh;
+padding:110px 8%;
+display:flex;
 align-items:center;
+
+background:
+radial-gradient(circle at top right, rgba(91,36,92,.48), transparent 34%),
+linear-gradient(135deg,#050208,#17071f,#050208);
+}
+
+.hero-inner{
+max-width:1200px;
 }
 
 .kicker{
-color:#d7b46a;
-letter-spacing:3px;
-text-transform:uppercase;
-font-size:14px;
-margin-bottom:24px;
 display:block;
+color:#d7b46a;
+letter-spacing:4px;
+text-transform:uppercase;
+font-size:12px;
+margin-bottom:24px;
 }
 
 h1{
-font-size:76px;
-line-height:1;
-color:white;
-margin-bottom:28px;
+font-size:88px;
+line-height:.95;
+color:#f3d47f;
+font-weight:500;
+letter-spacing:-3px;
+font-family:"Times New Roman",Georgia,serif;
+margin-bottom:34px;
 }
 
 .hero p{
-font-size:21px;
+font-size:23px;
+max-width:850px;
 color:rgba(255,255,255,.78);
-max-width:760px;
+line-height:1.8;
 }
 
-.hero-card{
-padding:50px;
-border-radius:34px;
-background:
-linear-gradient(160deg, rgba(215,180,106,.12), rgba(255,255,255,.03)),
-#120818;
-border:1px solid rgba(215,180,106,.28);
-box-shadow:0 30px 90px rgba(0,0,0,.55);
-}
-
-.hero-card strong{
-display:block;
-font-size:60px;
-color:white;
-margin:15px 0 8px;
-}
-
-.hero-card p{
-font-size:17px;
-color:rgba(255,255,255,.72);
-}
-
-.divider{
-height:1px;
-background:rgba(215,180,106,.22);
-margin:30px 0;
-}
+/* SECCIONES */
 
 section{
-padding:110px 8%;
+padding:100px 8%;
 }
 
-.section-title{
-text-align:center;
-margin-bottom:60px;
+.section-head{
+max-width:1100px;
+margin:0 auto 55px;
 }
 
-.section-title span{
-color:#d7b46a;
-letter-spacing:3px;
-font-size:13px;
-text-transform:uppercase;
+.section-head span{
 display:block;
+color:#d7b46a;
+letter-spacing:4px;
+text-transform:uppercase;
+font-size:12px;
 margin-bottom:18px;
 }
 
-.section-title h2{
-font-size:58px;
-color:white;
+.section-head h2{
+font-size:54px;
+line-height:1.05;
+color:#f3d47f;
+font-weight:500;
+letter-spacing:-2px;
+font-family:"Times New Roman",Georgia,serif;
 }
 
-.media-grid{
+/* BIO */
+
+.bio-box{
+max-width:1100px;
+margin:auto;
+padding:48px;
+border-radius:34px;
+
+background:
+linear-gradient(160deg, rgba(215,180,106,.10), rgba(255,255,255,.02)),
+#120818;
+
+border:1px solid rgba(215,180,106,.18);
+}
+
+.bio-box p{
+font-size:20px;
+color:rgba(255,255,255,.76);
+margin-bottom:22px;
+}
+
+/* TEMAS */
+
+.topics-grid{
+max-width:1100px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:22px;
+}
+
+.topic{
+padding:34px;
+border-radius:28px;
+
+background:rgba(255,255,255,.035);
+
+border:1px solid rgba(215,180,106,.16);
+}
+
+.topic span{
+display:block;
+color:#d7b46a;
+letter-spacing:3px;
+font-size:11px;
+text-transform:uppercase;
+margin-bottom:14px;
+}
+
+.topic h3{
+font-size:27px;
+color:white;
+font-weight:500;
+line-height:1.2;
+}
+
+/* ESTADISTICAS */
+
+.stats{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:22px;
+max-width:1100px;
+margin:0 auto 55px;
+}
+
+.stat{
+padding:38px;
+border-radius:30px;
+text-align:center;
+
+background:#0d0611;
+
+border:1px solid rgba(215,180,106,.16);
+}
+
+.stat strong{
+display:block;
+font-size:48px;
+color:#d7b46a;
+font-weight:500;
+font-family:"Times New Roman",Georgia,serif;
+margin-bottom:8px;
+}
+
+.stat p{
+color:rgba(255,255,255,.68);
+font-size:16px;
+}
+
+/* PRENSA */
+
+.press-grid{
 max-width:1200px;
 margin:auto;
 display:grid;
-grid-template-columns:1.3fr 1fr 1fr;
+grid-template-columns:repeat(3,1fr);
 gap:24px;
 }
 
-.media-card{
-text-decoration:none;
-color:white;
-min-height:290px;
-padding:34px;
+.press-card{
+min-height:250px;
 border-radius:30px;
+padding:32px;
+
 display:flex;
 flex-direction:column;
-justify-content:flex-end;
+justify-content:space-between;
+
 background:
-linear-gradient(to top, rgba(0,0,0,.92), rgba(0,0,0,.18)),
-radial-gradient(circle at top right, rgba(215,180,106,.16), transparent 40%),
-#141414;
-border:1px solid rgba(255,255,255,.08);
-transition:.35s ease;
+linear-gradient(to top, rgba(0,0,0,.85), rgba(255,255,255,.025)),
+#120818;
+
+border:1px solid rgba(215,180,106,.16);
+
+transition:.3s ease;
 }
 
-.media-card.large{
-grid-row:span 2;
-min-height:604px;
-}
-
-.media-card:hover{
+.press-card:hover{
 transform:translateY(-8px);
 border-color:#d7b46a;
 }
 
-.media-card span{
+.press-card span{
 color:#d7b46a;
-letter-spacing:2px;
+letter-spacing:3px;
+font-size:11px;
 text-transform:uppercase;
-font-size:12px;
-margin-bottom:14px;
+margin-bottom:16px;
+display:block;
 }
 
-.media-card h3{
-font-size:38px;
-line-height:1;
+.press-card h3{
+font-size:30px;
+line-height:1.1;
+color:white;
+font-weight:500;
 margin-bottom:16px;
 }
 
-.media-card p{
+.press-card p{
 font-size:16px;
-color:rgba(255,255,255,.72);
+color:rgba(255,255,255,.68);
+line-height:1.7;
 }
 
-.tv-section{
-background:
-linear-gradient(135deg,#030303,#12071a,#030303);
+/* LIBRO */
+
+.book-section{
+background:#030303;
 }
 
-.tv-grid{
-max-width:1200px;
+.book-card{
+max-width:1100px;
 margin:auto;
+
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:24px;
-}
-
-.tv-card{
-padding:40px;
-border-radius:28px;
-background:rgba(255,255,255,.04);
-border:1px solid rgba(215,180,106,.18);
-transition:.3s;
-}
-
-.tv-card:hover{
-transform:translateY(-8px);
-border-color:#d7b46a;
-}
-
-.tv-card span{
-color:#d7b46a;
-font-size:12px;
-letter-spacing:2px;
-text-transform:uppercase;
-display:block;
-margin-bottom:15px;
-}
-
-.tv-card h3{
-font-size:32px;
-margin-bottom:14px;
-color:white;
-}
-
-.tv-card p{
-color:rgba(255,255,255,.72);
-}
-
-.logos{
-max-width:1200px;
-margin:70px auto 0;
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-gap:24px;
-}
-
-.logo-box{
-padding:32px;
-border-radius:24px;
-background:rgba(255,255,255,.03);
-border:1px solid rgba(215,180,106,.16);
-display:flex;
+grid-template-columns:.75fr 1.25fr;
+gap:50px;
 align-items:center;
-justify-content:center;
-min-height:130px;
-transition:.3s;
-}
 
-.logo-box:hover{
-border-color:#d7b46a;
-transform:translateY(-6px);
-}
+padding:50px;
+border-radius:36px;
 
-.logo-box img{
-max-width:120px;
-max-height:60px;
-object-fit:contain;
-filter:brightness(1.05);
-}
-
-.legal{
 background:
-radial-gradient(circle at top right, rgba(215,180,106,.12), transparent 32%),
-linear-gradient(135deg,#050208,#16091f,#050208);
-}
-
-.legal-card{
-max-width:950px;
-margin:auto;
-padding:60px;
-border-radius:34px;
-background:
-linear-gradient(160deg, rgba(215,180,106,.12), rgba(255,255,255,.02)),
+linear-gradient(160deg, rgba(215,180,106,.10), rgba(255,255,255,.02)),
 #120818;
-border:1px solid rgba(215,180,106,.25);
-text-align:center;
-box-shadow:0 35px 90px rgba(0,0,0,.5);
+
+border:1px solid rgba(215,180,106,.18);
 }
 
-.legal-card h3{
+.book-card img{
+width:100%;
+border-radius:28px;
+border:1px solid rgba(215,180,106,.16);
+}
+
+.book-card h3{
 font-size:42px;
-color:white;
-margin-bottom:20px;
+line-height:1.05;
+color:#f3d47f;
+font-weight:500;
+font-family:"Times New Roman",Georgia,serif;
+margin-bottom:22px;
 }
 
-.legal-card p{
+.book-card p{
 font-size:19px;
-color:rgba(255,255,255,.75);
+color:rgba(255,255,255,.74);
+margin-bottom:14px;
+line-height:1.8;
 }
 
-.back{
-text-align:center;
-padding-top:20px;
-}
-
-.back a{
+.book-card a{
 display:inline-block;
-padding:16px 36px;
+margin-top:24px;
+padding:16px 32px;
 border-radius:999px;
 background:#d7b46a;
 color:#050208;
 font-weight:bold;
-text-decoration:none;
 }
 
-footer{
-padding:50px 8%;
+/* CONTACTO */
+
+.contact{
 text-align:center;
-background:#030106;
-border-top:1px solid rgba(215,180,106,.18);
+
+background:
+radial-gradient(circle at top, rgba(215,180,106,.10), transparent 40%),
+#050208;
+}
+
+.contact h2{
+font-size:58px;
+color:#f3d47f;
+font-weight:500;
+letter-spacing:-2px;
+font-family:"Times New Roman",Georgia,serif;
+margin-bottom:24px;
+}
+
+.contact p{
+font-size:20px;
+color:rgba(255,255,255,.72);
+max-width:720px;
+margin:0 auto 34px;
+}
+
+.contact a{
+display:inline-block;
+padding:17px 36px;
+border-radius:999px;
+background:#d7b46a;
+color:#050208;
+font-weight:bold;
+}
+
+/* VOLVER */
+
+.back{
+text-align:center;
+padding:55px 8%;
+background:#030103;
+}
+
+.back a{
+color:#d7b46a;
+letter-spacing:2px;
+text-transform:uppercase;
+font-size:13px;
+}
+
+/* FOOTER */
+
+footer{
+padding:40px 8%;
+text-align:center;
+background:#020103;
+border-top:1px solid rgba(215,180,106,.12);
 }
 
 footer p{
-color:rgba(255,255,255,.55);
-font-size:15px;
+color:rgba(255,255,255,.45);
 }
 
-@media(max-width:950px){
+/* MOBILE */
+
+@media(max-width:900px){
 
 .hero{
-grid-template-columns:1fr;
-}
-
-.media-grid{
-grid-template-columns:1fr;
-}
-
-.media-card.large{
-min-height:320px;
+min-height:auto;
+padding:90px 7%;
 }
 
 h1{
-font-size:52px;
+font-size:54px;
+letter-spacing:-2px;
 }
 
-.section-title h2{
+.hero p{
+font-size:19px;
+}
+
+.section-head h2{
+font-size:38px;
+}
+
+.bio-box{
+padding:32px;
+}
+
+.bio-box p{
+font-size:18px;
+}
+
+.topics-grid,
+.stats,
+.press-grid,
+.book-card{
+grid-template-columns:1fr;
+}
+
+.book-card{
+padding:32px;
+}
+
+.book-card h3{
+font-size:34px;
+}
+
+.contact h2{
 font-size:40px;
 }
 
@@ -333,38 +421,23 @@ font-size:40px;
 
 <body>
 
-<header>
+<header class="hero">
 
-<div class="hero">
+<div class="hero-inner">
 
-<div>
+<span class="kicker">
+Press kit oficial
+</span>
 
-<span class="kicker">· PRENSA · TELEVISIÓN · MEDIOS</span>
-
-<h1>Aris Gómez en medios</h1>
+<h1>
+Prensa y medios
+</h1>
 
 <p>
-La historia de Aris Gómez y su obra
-<em>Aris: de la oscuridad a la libertad</em>
-han tenido presencia en televisión, prensa digital
-y medios nacionales.
+Información oficial para periodistas, medios de comunicación,
+entrevistas, colaboraciones editoriales y cobertura profesional
+sobre Aris Gómez, su historia pública y su obra.
 </p>
-
-</div>
-
-<div class="hero-card">
-
-<span class="kicker">Impacto mediático</span>
-
-<strong>125</strong>
-<p>publicaciones digitales</p>
-
-<div class="divider"></div>
-
-<strong>610.970</strong>
-<p>impresiones estimadas</p>
-
-</div>
 
 </div>
 
@@ -372,60 +445,291 @@ y medios nacionales.
 
 <section>
 
-<div class="section-title">
-<span>Selección editorial</span>
-<h2>Medios destacados</h2>
+<div class="section-head">
+
+<span>Perfil para medios</span>
+
+<h2>
+Biografía breve
+</h2>
+
 </div>
 
-<div class="media-grid">
+<div class="bio-box">
 
-<a class="media-card large" href="https://www.madridiario.es/" target="_blank">
+<p>
+Aris Gómez es escritora y autora de
+<em>Aris: de la oscuridad a la libertad</em>,
+una obra testimonial centrada en la resiliencia,
+la reconstrucción emocional y la transformación personal.
+</p>
+
+<p>
+Su historia ha despertado interés mediático
+por su dimensión humana, social y judicial,
+así como por el mensaje de superación que transmite
+a través de su libro y proyectos formativos.
+</p>
+
+<p>
+Actualmente desarrolla una marca personal vinculada
+a la escritura, la formación especializada,
+la prevención y el impacto social.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-head">
+
+<span>Temas de entrevista</span>
+
+<h2>
+Áreas sobre las que puede hablar
+</h2>
+
+</div>
+
+<div class="topics-grid">
+
+<div class="topic">
+<span>01</span>
+<h3>Resiliencia y reconstrucción personal</h3>
+</div>
+
+<div class="topic">
+<span>02</span>
+<h3>Superación de experiencias traumáticas</h3>
+</div>
+
+<div class="topic">
+<span>03</span>
+<h3>Violencia y visibilización social</h3>
+</div>
+
+<div class="topic">
+<span>04</span>
+<h3>Proceso judicial y defensa de la verdad</h3>
+</div>
+
+<div class="topic">
+<span>05</span>
+<h3>Escritura testimonial y transformación</h3>
+</div>
+
+<div class="topic">
+<span>06</span>
+<h3>Impacto social y formación</h3>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="section-head">
+
+<span>Cobertura</span>
+
+<h2>
+Apariciones destacadas
+</h2>
+
+</div>
+
+<div class="stats">
+
+<div class="stat">
+<strong>125</strong>
+<p>publicaciones digitales</p>
+</div>
+
+<div class="stat">
+<strong>610.970</strong>
+<p>impresiones estimadas</p>
+</div>
+
+<div class="stat">
+<strong>12.265€</strong>
+<p>valor estimado de aparición</p>
+</div>
+
+</div>
+
+<div class="press-grid">
+
+<a class="press-card" href="https://www.20minutos.es/gente/actriz-aris-gomez-se-querella-contra-torbe-productor-cine-para-adultos-por-presuntas-injurias-calumnias-amenazas_6950636_0.html" target="_blank">
+
+<div>
 
 <span>Prensa nacional</span>
 
-<h3>Madrid Diario</h3>
+<h3>
+20 Minutos
+</h3>
 
 <p>
-Publicación destacada sobre la historia de Aris Gómez
-y el lanzamiento editorial de su obra.
+Cobertura nacional sobre la querella presentada
+por Aris Gómez contra Ignacio Allende “Torbe”.
 </p>
+
+</div>
 
 </a>
 
-<a class="media-card" href="https://www.periodistadigital.com/" target="_blank">
+<a class="press-card" href="https://www.telecinco.es/noticias/sociedad/20260325/actriz-aris-gomez-querella-ignacio-allende-torbe-injurias-calumnias-amenazas_18_018722242.html" target="_blank">
 
-<span>Cultura y libros</span>
+<div>
 
-<h3>Periodista Digital</h3>
+<span>Televisión nacional</span>
+
+<h3>
+Telecinco
+</h3>
 
 <p>
-Cobertura mediática sobre la obra y su mensaje de
-superación personal.
+Cobertura informativa sobre el proceso judicial
+y su repercusión pública.
 </p>
+
+</div>
 
 </a>
 
-<a class="media-card" href="https://www.diariosigloxxi.com/" target="_blank">
+<a class="press-card" href="https://www.cuatro.com/noticias/sociedad/20251126/testigo-caso-torbe-continua-lucha-judicial-productor-porno-codigo-10_18_017689670.html" target="_blank">
 
-<span>Actualidad nacional</span>
+<div>
 
-<h3>Diario Siglo XXI</h3>
+<span>Actualidad TV</span>
+
+<h3>
+Cuatro · Código 10
+</h3>
 
 <p>
-Difusión editorial y presencia pública de la autora.
+Cobertura televisiva sobre la continuidad
+de la lucha judicial y la repercusión mediática.
 </p>
+
+</div>
 
 </a>
 
-<a class="media-card" href="https://www.cantabriaeconomica.com/" target="_blank">
+<a class="press-card" href="https://www.estrelladigital.es/articulo/noticias-en-la-red/aris-gomez-querella-torbe-injurias-amenazas/20260325234021443983.html" target="_blank">
+
+<div>
 
 <span>Prensa digital</span>
 
-<h3>Cantabria Económica</h3>
+<h3>
+Estrella Digital
+</h3>
 
 <p>
-Aparición dentro del informe nacional de publicaciones.
+Artículo centrado en las injurias,
+amenazas y repercusión pública del caso.
 </p>
+
+</div>
+
+</a>
+
+<a class="press-card" href="https://www.mundodeportivo.com/actualidad/20250219/1002411018/aris-gomez-victima-torbe-pronuncia-deja-cosas-claras-detencion-productor-cine-adultos-me-sorprendido-cuestion-dct.html" target="_blank">
+
+<div>
+
+<span>Entrevista / actualidad</span>
+
+<h3>
+Mundo Deportivo
+</h3>
+
+<p>
+Declaraciones públicas de Aris Gómez
+tras la detención del productor.
+</p>
+
+</div>
+
+</a>
+
+<a class="press-card" href="https://www.periodistadigital.com/" target="_blank">
+
+<div>
+
+<span>Informe editorial</span>
+
+<h3>
+Periodista Digital
+</h3>
+
+<p>
+Uno de los medios destacados dentro
+del informe de impacto mediático.
+</p>
+
+</div>
+
+</a>
+
+<a class="press-card" href="https://www.cantabriaeconomica.com/" target="_blank">
+
+<div>
+
+<span>Informe editorial</span>
+
+<h3>
+Cantabria Económica
+</h3>
+
+<p>
+Cobertura destacada vinculada al lanzamiento
+y difusión de la obra testimonial.
+</p>
+
+</div>
+
+</a>
+
+<a class="press-card" href="https://www.diariosigloxxi.com/" target="_blank">
+
+<div>
+
+<span>Informe editorial</span>
+
+<h3>
+Diario Siglo XXI
+</h3>
+
+<p>
+Publicación incluida entre los medios
+de mayor alcance del informe.
+</p>
+
+</div>
+
+</a>
+
+<a class="press-card" href="https://www.hechosdehoy.com/" target="_blank">
+
+<div>
+
+<span>Informe editorial</span>
+
+<h3>
+Hechos de Hoy
+</h3>
+
+<p>
+Medio destacado dentro de la difusión
+nacional y publicaciones editoriales.
+</p>
+
+</div>
 
 </a>
 
@@ -433,119 +737,88 @@ Aparición dentro del informe nacional de publicaciones.
 
 </section>
 
-<section class="tv-section">
+<section class="book-section">
 
-<div class="section-title">
-<span>Televisión nacional</span>
-<h2>Apariciones en televisión</h2>
+<div class="section-head">
+
+<span>Libro oficial</span>
+
+<h2>
+Obra publicada
+</h2>
+
 </div>
 
-<div class="tv-grid">
+<div class="book-card">
 
-<div class="tv-card">
+<img src="portada.jpg" alt="Libro Aris Gómez">
 
-<span>Telecinco</span>
+<div>
 
-<h3>Código 10</h3>
+<span class="kicker">
+Editorial Círculo Rojo
+</span>
+
+<h3>
+Aris: de la oscuridad a la libertad
+</h3>
 
 <p>
-Programa donde Aris Gómez dio voz públicamente
-a su historia y testimonio.
+Una obra testimonial basada en hechos reales
+que explora la resiliencia, la supervivencia emocional
+y el proceso de reconstrucción personal.
 </p>
-
-</div>
-
-<div class="tv-card">
-
-<span>Cuatro</span>
-
-<h3>En boca de todos</h3>
 
 <p>
-Intervención televisiva centrada en el caso y
-su repercusión pública.
+El libro aborda la transformación interior,
+la recuperación de la identidad y el camino
+hacia la libertad emocional.
 </p>
-
-</div>
-
-<div class="tv-card">
-
-<span>Telecinco</span>
-
-<h3>Ana Rosa Quintana</h3>
 
 <p>
-Participación en televisión nacional compartiendo
-su experiencia públicamente.
+ISBN: 979-1370463540
 </p>
 
-</div>
+<a href="https://libros.cc/ARIS-DE-LA-OSCURIDAD-A-LA-LIBERTAD.htm?isbn=9791370463540" target="_blank">
+Ver libro oficial
+</a>
 
-</div>
-
-<div class="logos">
-
-<div class="logo-box">
-<img src="telecinco.png" alt="Telecinco">
-</div>
-
-<div class="logo-box">
-<img src="mediaset.png" alt="Mediaset">
-</div>
-
-<div class="logo-box">
-<img src="cuatro.png" alt="Cuatro">
-</div>
-
-<div class="logo-box">
-<img src="codigo10.png" alt="Código 10">
-</div>
-
-<div class="logo-box">
-<img src="20minutos.png" alt="20 Minutos">
-</div>
-
-<div class="logo-box">
-<img src="estrelladigital.png" alt="Estrella Digital">
 </div>
 
 </div>
 
 </section>
 
-<section class="legal">
+<section class="contact">
 
-<div class="section-title">
-<span>Representación legal</span>
-<h2>Equipo jurídico</h2>
-</div>
-
-<div class="legal-card">
-
-<h3>Alfredo Arrién Paredes</h3>
+<h2>
+Contacto de prensa
+</h2>
 
 <p>
-La representación legal del caso está vinculada
-al seguimiento jurídico, defensa y acompañamiento
-profesional de Aris Gómez.
+Para entrevistas, solicitudes de medios,
+colaboraciones o información adicional,
+puedes contactar directamente por email.
 </p>
 
-</div>
+<a href="mailto:info.quirofenix@gmail.com">
+info.quirofenix@gmail.com
+</a>
 
 </section>
 
-<section class="back">
+<div class="back">
 
 <a href="index.html">
-Volver a la web oficial
+Volver al inicio
 </a>
 
-</section>
+</div>
 
 <footer>
 
 <p>
-© 2026 Aris Gómez · Web oficial
+© 2026 Aris Gómez · Press kit oficial
 </p>
 
 </footer>
