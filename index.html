@@ -1,299 +1,496 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Aris Gómez | Autora</title>
 
 <style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-body {
-  font-family: Georgia, serif;
-  background: #050208;
-  color: #f6ead2;
-  line-height: 1.7;
+html{
+scroll-behavior:smooth;
 }
 
-<header class="hero-premium">
+body{
+font-family:Georgia, serif;
+background:#050208;
+color:#f6ead2;
+line-height:1.7;
+overflow-x:hidden;
+}
 
-  <div class="hero-overlay"></div>
+/* NAVBAR */
 
-  <div class="hero-inner">
+.top-nav{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+z-index:999;
 
-    <div class="hero-copy">
+display:flex;
+justify-content:space-between;
+align-items:center;
 
-      <span class="hero-kicker">
-        Escritora · Superación · Testimonio
-      </span>
+padding:28px 7%;
 
-      <h1>
-        Aris Gómez
-      </h1>
+background:rgba(5,2,8,.82);
+backdrop-filter:blur(12px);
 
-      <p class="hero-subtitle">
-        Una voz nacida desde la experiencia.
-        Historias reales de resiliencia, transformación
-        y reconstrucción emocional.
-      </p>
+border-bottom:1px solid rgba(215,180,106,.12);
+}
 
-    </div>
+.logo-nav{
+font-size:22px;
+font-weight:bold;
+color:#f3d47f;
+}
 
-    <div class="hero-image-wrap">
+.menu-nav{
+display:flex;
+gap:34px;
+}
 
-      <img src="autora.png" alt="Aris Gómez">
+.menu-nav a{
+text-decoration:none;
+color:white;
+font-size:15px;
+transition:.3s;
+}
 
-      <div class="floating-card">
+.menu-nav a:hover{
+color:#d7b46a;
+}
 
-        <span>Autora</span>
+/* HERO */
 
-        <p>
-          “Incluso después de la oscuridad más profunda,
-          siempre existe un camino hacia la libertad.”
-        </p>
+.hero-premium{
+position:relative;
+min-height:100vh;
+display:flex;
+align-items:center;
+padding:140px 8%;
+overflow:hidden;
 
-      </div>
+background:
+radial-gradient(circle at top right, rgba(98,44,112,.55), transparent 30%),
+linear-gradient(135deg,#050208,#16051c,#050208);
+}
 
-    </div>
+.hero-overlay{
+position:absolute;
+inset:0;
+background:
+linear-gradient(to right, rgba(0,0,0,.55), transparent 55%);
+}
 
-  </div>
+.hero-inner{
+position:relative;
+z-index:2;
 
-</header>
-  <nav class="top-nav">
+max-width:1400px;
+width:100%;
+margin:auto;
 
-  <div class="logo-nav">
-    Aris Gómez
-  </div>
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:80px;
+align-items:center;
+}
+
+.hero-kicker{
+display:block;
+margin-bottom:26px;
+color:#d7b46a;
+letter-spacing:4px;
+text-transform:uppercase;
+font-size:13px;
+}
+
+.hero-copy h1{
+font-size:110px;
+line-height:.92;
+margin-bottom:28px;
+color:#f3d47f;
+}
+
+.hero-subtitle{
+font-size:24px;
+line-height:1.6;
+max-width:650px;
+color:rgba(255,255,255,.82);
+}
+
+.hero-image-wrap{
+position:relative;
+display:flex;
+justify-content:center;
+}
+
+.hero-image-wrap img{
+width:100%;
+max-width:540px;
+border-radius:34px;
+
+box-shadow:
+0 40px 120px rgba(0,0,0,.65);
+
+border:1px solid rgba(215,180,106,.18);
+}
+
+.floating-card{
+position:absolute;
+bottom:-40px;
+left:-20px;
+
+max-width:320px;
+
+padding:30px;
+
+border-radius:28px;
+
+background:
+linear-gradient(160deg, rgba(215,180,106,.10), rgba(255,255,255,.02)),
+rgba(18,8,24,.96);
+
+backdrop-filter:blur(14px);
+
+border:1px solid rgba(215,180,106,.18);
+
+box-shadow:
+0 20px 70px rgba(0,0,0,.45);
+}
+
+.floating-card span{
+display:block;
+margin-bottom:14px;
+
+color:#d7b46a;
+
+letter-spacing:3px;
+text-transform:uppercase;
+font-size:12px;
+}
+
+.floating-card p{
+font-size:20px;
+line-height:1.6;
+color:white;
+font-style:italic;
+}
+
+/* SECCIONES */
+
+section{
+padding:120px 8%;
+}
+
+.grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:70px;
+align-items:center;
+max-width:1300px;
+margin:auto;
+}
+
+.gold{
+color:#d7b46a;
+letter-spacing:3px;
+text-transform:uppercase;
+font-size:13px;
+margin-bottom:20px;
+display:block;
+}
+
+h2{
+font-size:58px;
+line-height:1.1;
+margin-bottom:30px;
+color:white;
+}
+
+p{
+font-size:20px;
+color:rgba(255,255,255,.75);
+}
+
+.card img{
+width:100%;
+border-radius:28px;
+}
+
+/* LIBRO */
+
+.book{
+background:#07020d;
+}
+
+.book-platforms{
+margin-top:50px;
+display:flex;
+flex-wrap:wrap;
+gap:18px;
+}
+
+.platform{
+padding:18px 28px;
+border-radius:999px;
+
+background:
+linear-gradient(160deg, rgba(215,180,106,.10), rgba(255,255,255,.02)),
+#120818;
+
+border:1px solid rgba(215,180,106,.18);
+
+color:white;
+text-decoration:none;
+transition:.3s;
+}
+
+.platform:hover{
+transform:translateY(-6px);
+border-color:#d7b46a;
+}
+
+/* FOOTER */
+
+footer{
+padding:60px 8%;
+text-align:center;
+background:#020103;
+border-top:1px solid rgba(215,180,106,.12);
+}
+
+footer p{
+color:rgba(255,255,255,.5);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:980px){
+
+.menu-nav{
+gap:18px;
+}
+
+.hero-inner{
+grid-template-columns:1fr;
+}
+
+.hero-copy h1{
+font-size:72px;
+}
+
+.hero-subtitle{
+font-size:20px;
+}
+
+.floating-card{
+position:relative;
+left:auto;
+bottom:auto;
+margin-top:20px;
+max-width:100%;
+}
+
+.grid{
+grid-template-columns:1fr;
+}
+
+h2{
+font-size:42px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav class="top-nav">
+
+<div class="logo-nav">
+Aris Gómez
+</div>
 
 <div class="menu-nav">
 
-  <a href="biografia.html">
-    Biografía
-  </a>
+<a href="biografia.html">
+Biografía
+</a>
 
-  <a href="libros.html">
-    Libros
-  </a>
+<a href="libros.html">
+Libros
+</a>
 
-  <a href="cursos.html">
-    Cursos
-  </a>
+<a href="cursos.html">
+Cursos
+</a>
 
-  <a href="historiasdeexito.html">
-    Historias de éxito
-  </a>
+<a href="historiasdeexito.html">
+Historias de éxito
+</a>
 
-  <a href="contacto.html">
-    Contacto
-  </a>
+<a href="contacto.html">
+Contacto
+</a>
 
 </div>
-</nav>
-  <div>
-    <p class="gold">Escritora · Superación · Testimonio</p>
-    <h1>Aris Gómez</h1>
-    <p>
-      Autora de <em>Aris: de la oscuridad a la libertad</em>,
-      una historia de resiliencia, transformación y reconstrucción personal.
-    </p>
 
-    <a class="btn" href="#libro">Descubrir el libro</a>
-   <a class="btn" href="Prensa.html">En medios</a>
-  </div>
+</nav>
+
+<header class="hero-premium">
+
+<div class="hero-overlay"></div>
+
+<div class="hero-inner">
+
+<div class="hero-copy">
+
+<span class="hero-kicker">
+Escritora · Superación · Testimonio
+</span>
+
+<h1>
+Aris Gómez
+</h1>
+
+<p class="hero-subtitle">
+Una voz nacida desde la experiencia.
+Historias reales de resiliencia,
+transformación y reconstrucción emocional.
+</p>
+
+</div>
+
+<div class="hero-image-wrap">
+
+<img src="autora.png" alt="Aris Gómez">
+
+<div class="floating-card">
+
+<span>
+Autora
+</span>
+
+<p>
+“Incluso después de la oscuridad más profunda,
+siempre existe un camino hacia la libertad.”
+</p>
+
+</div>
+
+</div>
+
+</div>
+
 </header>
 
 <section>
-  <div class="grid">
-    <div>
-      <section id="biografia">
-      <h2>Una voz nacida desde la experiencia</h2>
-      <p>
-        Aris Gómez comparte a través de su escritura un recorrido marcado
-        por la resiliencia, el dolor transformado en fortaleza y la búsqueda
-        de libertad emocional.
-      </p>
-      <p>
-        Su obra busca dar voz a historias silenciadas y transmitir un mensaje
-        de esperanza, reconstrucción y crecimiento personal.
-      </p>
-    </div>
 
-    <div class="card">
-      <img src="autora.png" alt="Aris Gómez autora">
-    </div>
-  </div>
-</section>
+<div class="grid">
 
-<section id="libro" class="book">
-  <div class="grid">
-    <div class="card">
-      <img src="portada.jpg" alt="Portada del libro Aris de la oscuridad a la libertad">
-    </div>
+<div>
 
-    <div>
-      <p class="gold">Libro</p>
-      <h2><em>Aris: de la oscuridad a la libertad</em></h2>
-      <p>
-        Un relato autobiográfico que aborda el dolor, la supervivencia,
-        la sanación emocional y el camino hacia la reconstrucción personal.
-      </p>
+<span class="gold">
+Sobre la autora
+</span>
 
-      <p><strong class="gold">Editorial:</strong> Editorial Círculo Rojo</p>
-      <p><strong class="gold">ISBN:</strong> 979-13-7046-354-0</p>
-      <p><strong class="gold">Idioma:</strong> Español</p>
-
-      <a class="btn"
-      href="https://libros.cc/ARIS-DE-LA-OSCURIDAD-A-LA-LIBERTAD.htm?isbn=9791370463540"
-      target="_blank">
-        Comprar libro
-      </a>
-    </div>
-  </div>
-</section>
-  <section id="cursos">
-
-<div class="section-title">
-<span>Crecimiento personal</span>
-<h2>Cursos y mentorías</h2>
-</div>
-
-<div class="tv-grid">
-
-<div class="tv-card">
-<span>Próximamente</span>
-<h3>Reconstrucción emocional</h3>
+<h2>
+Una historia real de transformación
+</h2>
 
 <p>
-Programa centrado en autoestima,
-libertad emocional y superación personal.
+Aris Gómez comparte a través de su escritura
+un recorrido marcado por la resiliencia,
+la fortaleza emocional y la reconstrucción personal.
 </p>
 
 </div>
 
-<div class="tv-card">
-<span>Próximamente</span>
-<h3>Sanar para avanzar</h3>
+<div class="card">
+
+<img src="autora.png" alt="Aris Gómez autora">
+
+</div>
+
+</div>
+
+</section>
+
+<section class="book">
+
+<div class="grid">
+
+<div class="card">
+
+<img src="portada.jpg" alt="Libro Aris de la oscuridad a la libertad">
+
+</div>
+
+<div>
+
+<span class="gold">
+Libro oficial
+</span>
+
+<h2>
+Aris: de la oscuridad a la libertad
+</h2>
 
 <p>
-Herramientas de crecimiento interior,
-fortaleza y transformación personal.
+Un relato autobiográfico sobre supervivencia,
+dolor, superación y libertad emocional.
 </p>
 
+<div class="book-platforms">
+
+<a class="platform"
+href="https://libros.cc/ARIS-DE-LA-OSCURIDAD-A-LA-LIBERTAD.htm?isbn=9791370463540"
+target="_blank">
+
+Distribución oficial
+
+</a>
+
+<a class="platform" href="#">
+Casa del Libro
+</a>
+
+<a class="platform" href="#">
+El Corte Inglés
+</a>
+
+<a class="platform" href="#">
+Apple Books
+</a>
+
+</div>
+
 </div>
 
 </div>
 
-</section>
-
-<section class="platforms">
-  <div class="platforms-header">
-    <h2>Disponible en plataformas oficiales</h2>
-
-    <a href="https://libros.cc/ARIS-DE-LA-OSCURIDAD-A-LA-LIBERTAD.htm?isbn=9791370463540"
-    target="_blank">
-      Ver distribución →
-    </a>
-  </div>
-
-  <div class="platforms-row">
-
-    <a class="platform-slide"
-    href="https://libros.cc/ARIS-DE-LA-OSCURIDAD-A-LA-LIBERTAD.htm?isbn=9791370463540"
-    target="_blank">
-      <span>DISPONIBLE</span>
-      <h3>Distribución Oficial</h3>
-      <p>Accede a la ficha actual del libro</p>
-    </a>
-
-    <div class="platform-slide">
-      <span>PRÓXIMAMENTE</span>
-      <h3>Casa del Libro</h3>
-      <p>Venta nacional</p>
-    </div>
-
-    <div class="platform-slide">
-      <span>PRÓXIMAMENTE</span>
-      <h3>El Corte Inglés</h3>
-      <p>Librerías asociadas</p>
-    </div>
-
-    <div class="platform-slide">
-      <span>DIGITAL</span>
-      <h3>Apple Books</h3>
-      <p>Versión eBook</p>
-    </div>
-
-    <div class="platform-slide">
-      <span>DIGITAL</span>
-      <h3>Google Books</h3>
-      <p>Distribución internacional</p>
-    </div>
-
-    <div class="platform-slide">
-      <span>DIGITAL</span>
-      <h3>Kobo</h3>
-      <p>Lectura online</p>
-    </div>
-
-  </div>
-</section>
-
-<section class="press-preview">
-  <p class="gold">Prensa · Televisión · Medios</p>
-  <h2>Presencia en medios</h2>
-
-  <p>
-    Apariciones, entrevistas y cobertura mediática relacionadas con
-    Aris Gómez, su historia y su obra.
-  </p>
-
-  <div class="press-grid">
-    <div class="press-card">
-      <h3>Televisión</h3>
-      <p>Código 10, En boca de todos y Ana Rosa Quintana.</p>
-    </div>
-
-    <div class="press-card">
-      <h3>Prensa digital</h3>
-      <p>Medios nacionales y publicaciones digitales.</p>
-    </div>
-
-    <div class="press-card">
-      <h3>Cobertura mediática</h3>
-      <p>Un recorrido público vinculado al caso y al libro.</p>
-    </div>
-  </div>
-
-  <br><br>
-
-  <a class="btn" href="<a class="btn" href="Prensa.html">Ver cobertura mediática</a>
-</section>
-
-<section>
-  <p class="quote">
-    “Incluso después de la oscuridad más profunda,
-    siempre existe un camino hacia la libertad.”
-  </p>
 </section>
 
 <footer>
-  <p class="gold">Contacto</p>
-  <h2>Colaboraciones · Entrevistas · Medios</h2>
 
-  <p>
-    Para entrevistas, colaboraciones o eventos relacionados con el libro,
-    puedes contactar a través de redes sociales o correo profesional.
-  </p>
+<p>
+© 2026 Aris Gómez · Sitio oficial
+</p>
 
-  <a class="btn" href="https://www.goodreads.com/" target="_blank">Goodreads</a>
-  <a class="btn" href="https://instagram.com/arisgolalla" target="_blank">Instagram</a>
-  <a class="btn" href="href="Prensa.html">En medios</a>
-  <a class="btn" href="mailto:oscuridadylibertad@hotmail.com">Email</a>
 </footer>
 
 </body>
