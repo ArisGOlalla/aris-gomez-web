@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cursos | Aris Gómez</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Georgia,serif;
+background:#050208;
+color:#f6ead2;
+line-height:1.7;
+overflow-x:hidden;
+}
+
+header{
+min-height:80vh;
+display:flex;
+align-items:center;
+padding:120px 8%;
+background:
+radial-gradient(circle at top left, rgba(91,36,92,.45), transparent 35%),
+linear-gradient(135deg,#050208,#18071f,#050208);
+}
+
+.hero{
+max-width:1200px;
+margin:auto;
+}
+
+.kicker{
+color:#d7b46a;
+letter-spacing:3px;
+text-transform:uppercase;
+font-size:13px;
+display:block;
+margin-bottom:24px;
+}
+
+h1{
+font-size:74px;
+line-height:1;
+margin-bottom:30px;
+color:white;
+max-width:850px;
+}
+
+.hero p{
+font-size:22px;
+max-width:850px;
+color:rgba(255,255,255,.78);
+}
+
+.price-box{
+margin-top:45px;
+display:inline-block;
+padding:18px 34px;
+border-radius:999px;
+background:#d7b46a;
+color:#050208;
+font-weight:bold;
+font-size:20px;
+}
+
+section{
+padding:110px 8%;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:60px;
+}
+
+.section-title span{
+color:#d7b46a;
+letter-spacing:3px;
+font-size:13px;
+text-transform:uppercase;
+display:block;
+margin-bottom:18px;
+}
+
+.section-title h2{
+font-size:54px;
+color:white;
+}
+
+.modules-grid{
+max-width:1200px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:24px;
+}
+
+.module-card{
+padding:40px;
+border-radius:28px;
+background:
+linear-gradient(160deg, rgba(215,180,106,.10), rgba(255,255,255,.02)),
+#130818;
+border:1px solid rgba(215,180,106,.18);
+transition:.3s;
+}
+
+.module-card:hover{
+transform:translateY(-8px);
+border-color:#d7b46a;
+}
+
+.module-card span{
+color:#d7b46a;
+font-size:12px;
+letter-spacing:2px;
+text-transform:uppercase;
+display:block;
+margin-bottom:14px;
+}
+
+.module-card h3{
+font-size:32px;
+margin-bottom:18px;
+color:white;
+}
+
+.module-card p{
+color:rgba(255,255,255,.72);
+font-size:16px;
+}
+
+.info-section{
+background:#030303;
+}
+
+.info-grid{
+max-width:1200px;
+margin:auto;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+}
+
+.info-card{
+padding:45px;
+border-radius:30px;
+background:rgba(255,255,255,.03);
+border:1px solid rgba(215,180,106,.15);
+}
+
+.info-card h3{
+font-size:34px;
+margin-bottom:20px;
+color:white;
+}
+
+.info-card p{
+color:rgba(255,255,255,.72);
+}
+
+.cta{
+text-align:center;
+padding:120px 8%;
+}
+
+.cta h2{
+font-size:54px;
+margin-bottom:30px;
+color:white;
+}
+
+.cta a{
+display:inline-block;
+padding:18px 42px;
+border-radius:999px;
+background:#d7b46a;
+color:#050208;
+font-weight:bold;
+text-decoration:none;
+font-size:18px;
+}
+
+footer{
+padding:50px 8%;
+text-align:center;
+background:#030106;
+border-top:1px solid rgba(215,180,106,.15);
+}
+
+footer p{
+color:rgba(255,255,255,.55);
+}
+
+@media(max-width:900px){
+
+h1{
+font-size:48px;
+}
+
+.section-title h2{
+font-size:38px;
+}
+
+.info-grid{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="hero">
+
+<span class="kicker">
+Especialización profesional
+</span>
+
+<h1>
+Intervención integral con víctimas de trata
+</h1>
+
+<p>
+Programa especializado orientado a profesionales,
+juristas, criminólogos, psicólogos y personal de intervención.
+</p>
+
+<div class="price-box">
+Primera edición · 297€
+</div>
+
+</div>
+
+</header>
+
+<section>
+
+<div class="section-title">
+
+<span>Programa formativo</span>
+
+<h2>Contenido del curso</h2>
+
+</div>
+
+<div class="modules-grid">
+
+<div class="module-card">
+
+<span>Módulo 1</span>
+
+<h3>Fundamentación y marco teórico</h3>
+
+<p>
+Conceptos esenciales, trata de seres humanos
+y diferencias con el tráfico de migrantes.
+</p>
+
+</div>
+
+<div class="module-card">
+
+<span>Módulo 2</span>
+
+<h3>El ciclo de la trata</h3>
+
+<p>
+Captación, traslado, explotación y mecanismos
+de control psicológico.
+</p>
+
+</div>
+
+<div class="module-card">
+
+<span>Módulo 3</span>
+
+<h3>Detección e identificación</h3>
+
+<p>
+Indicadores físicos, conductuales y barreras
+en la detección temprana.
+</p>
+
+</div>
+
+<div class="module-card">
+
+<span>Módulo 4</span>
+
+<h3>Intervención con menores</h3>
+
+<p>
+Protocolos específicos y estrategias
+de protección integral.
+</p>
+
+</div>
+
+<div class="module-card">
+
+<span>Módulo 5</span>
+
+<h3>Recursos y actuación</h3>
+
+<p>
+Primera acogida, derivación y periodo
+de restablecimiento y reflexión.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="info-section">
+
+<div class="info-grid">
+
+<div class="info-card">
+
+<h3>¿A quién va dirigido?</h3>
+
+<p>
+Fuerzas y cuerpos de seguridad, psicólogos,
+trabajadores sociales, criminólogos, abogados,
+peritos y personal de emergencia.
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Metodología</h3>
+
+<p>
+Formación e-learning con materiales técnicos,
+herramientas prácticas y evaluación final
+de aprovechamiento.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="cta">
+
+<h2>
+Solicita acceso prioritario
+</h2>
+
+<a href="mailto:info.quirofenix@gmail.com">
+Reservar plaza
+</a>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 Aris Gómez · Formación especializada
+</p>
+
+</footer>
+
+</body>
+</html>
