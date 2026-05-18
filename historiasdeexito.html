@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Historias de éxito | Aris Gómez</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+  font-family:Georgia,serif;
+  background:#050208;
+  color:#f6ead2;
+  line-height:1.7;
+  overflow-x:hidden;
+}
+
+header{
+  min-height:90vh;
+  display:flex;
+  align-items:center;
+  padding:120px 8%;
+  background:
+    radial-gradient(circle at top right, rgba(91,36,92,.55), transparent 35%),
+    linear-gradient(135deg,#050208,#18071f,#050208);
+}
+
+.hero{
+  max-width:1100px;
+}
+
+.kicker{
+  color:#d7b46a;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  font-size:13px;
+  display:block;
+  margin-bottom:24px;
+}
+
+h1{
+  font-size:78px;
+  line-height:1;
+  color:white;
+  margin-bottom:34px;
+}
+
+.hero p{
+  font-size:22px;
+  max-width:850px;
+  color:rgba(255,255,255,.78);
+}
+
+section{
+  padding:120px 8%;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:70px;
+}
+
+.section-title span{
+  color:#d7b46a;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  font-size:13px;
+  display:block;
+  margin-bottom:18px;
+}
+
+.section-title h2{
+  font-size:56px;
+  color:white;
+}
+
+.story-grid{
+  max-width:1250px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:1.3fr 1fr 1fr;
+  gap:26px;
+}
+
+.story-card{
+  min-height:330px;
+  border-radius:32px;
+  padding:38px;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  background:
+    linear-gradient(to top, rgba(0,0,0,.94), rgba(0,0,0,.18)),
+    radial-gradient(circle at top right, rgba(215,180,106,.18), transparent 40%),
+    #151515;
+  border:1px solid rgba(215,180,106,.16);
+  transition:.35s ease;
+}
+
+.story-card.large{
+  grid-row:span 2;
+  min-height:690px;
+}
+
+.story-card:hover{
+  transform:translateY(-8px);
+  border-color:#d7b46a;
+}
+
+.story-card span{
+  color:#d7b46a;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  font-size:12px;
+  margin-bottom:16px;
+}
+
+.story-card h3{
+  font-size:36px;
+  line-height:1.05;
+  color:white;
+  margin-bottom:18px;
+}
+
+.story-card p{
+  color:rgba(255,255,255,.72);
+  font-size:17px;
+}
+
+.impact{
+  background:#030303;
+}
+
+.impact-text{
+  max-width:950px;
+  margin:auto;
+  text-align:center;
+}
+
+.impact-text h2{
+  font-size:54px;
+  color:white;
+  margin-bottom:30px;
+}
+
+.impact-text p{
+  font-size:21px;
+  color:rgba(255,255,255,.75);
+}
+
+.cta{
+  text-align:center;
+  background:
+    radial-gradient(circle at top, rgba(215,180,106,.12), transparent 40%),
+    #050208;
+}
+
+.cta h2{
+  font-size:56px;
+  color:white;
+  margin-bottom:30px;
+}
+
+.cta p{
+  max-width:760px;
+  margin:0 auto 40px;
+  color:rgba(255,255,255,.72);
+  font-size:20px;
+}
+
+.cta a{
+  display:inline-block;
+  padding:18px 44px;
+  border-radius:999px;
+  background:#d7b46a;
+  color:#050208;
+  font-weight:bold;
+  text-decoration:none;
+}
+
+footer{
+  padding:50px 8%;
+  text-align:center;
+  background:#020103;
+  border-top:1px solid rgba(215,180,106,.15);
+}
+
+footer p{
+  color:rgba(255,255,255,.5);
+}
+
+@media(max-width:950px){
+  h1{font-size:52px;}
+  .section-title h2{font-size:40px;}
+  .story-grid{grid-template-columns:1fr;}
+  .story-card.large{min-height:360px;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="hero">
+    <span class="kicker">Historias de éxito</span>
+
+    <h1>Relatos que transforman</h1>
+
+    <p>
+      Historias reales de superación, reconstrucción emocional y fortaleza.
+      Un espacio creado para visibilizar procesos de cambio, resiliencia
+      y libertad personal.
+    </p>
+  </div>
+</header>
+
+<section>
+  <div class="section-title">
+    <span>Impacto humano</span>
+    <h2>Historias con propósito</h2>
+  </div>
+
+  <div class="story-grid">
+
+    <div class="story-card large">
+      <span>Historia principal</span>
+      <h3>De la oscuridad a la libertad</h3>
+      <p>
+        Un relato de supervivencia, reconstrucción y renacimiento personal.
+        La historia de Aris Gómez se convierte en una voz para quienes aún
+        buscan salir del silencio.
+      </p>
+    </div>
+
+    <div class="story-card">
+      <span>Superación</span>
+      <h3>Cuando el dolor se convierte en fuerza</h3>
+      <p>
+        Historias de personas que han atravesado etapas difíciles y han logrado
+        reconstruir su vida desde la dignidad y la esperanza.
+      </p>
+    </div>
+
+    <div class="story-card">
+      <span>Resiliencia</span>
+      <h3>Volver a empezar</h3>
+      <p>
+        Relatos de transformación emocional, nuevos comienzos y decisiones
+        valientes después de momentos límite.
+      </p>
+    </div>
+
+    <div class="story-card">
+      <span>Voz social</span>
+      <h3>Romper el silencio</h3>
+      <p>
+        Un espacio para visibilizar realidades que muchas veces permanecen
+        ocultas y necesitan ser escuchadas.
+      </p>
+    </div>
+
+    <div class="story-card">
+      <span>Comunidad</span>
+      <h3>Inspirar a otras personas</h3>
+      <p>
+        Cada historia puede convertirse en una guía para quienes necesitan
+        creer que también es posible sanar.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="impact">
+  <div class="impact-text">
+    <h2>Una plataforma para dar voz</h2>
+    <p>
+      Esta sección nace para reunir testimonios importantes, relatos de cambio
+      y experiencias de vida que puedan inspirar, acompañar y abrir conversación.
+    </p>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Comparte una historia</h2>
+  <p>
+    Si tienes una historia de superación, transformación o reconstrucción personal,
+    este espacio puede convertirse en una forma de dar voz a tu proceso.
+  </p>
+
+  <a href="mailto:info.quirofenix@gmail.com">
+    Contactar
+  </a>
+</section>
+
+<footer>
+  <p>© 2026 Aris Gómez · Historias de éxito</p>
+</footer>
+
+</body>
+</html>
