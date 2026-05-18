@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contacto | Aris Gómez</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Georgia, serif;
+background:#050208;
+color:#f6ead2;
+line-height:1.7;
+overflow-x:hidden;
+}
+
+/* HERO */
+
+.hero{
+min-height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:120px 8%;
+
+background:
+radial-gradient(circle at top right, rgba(98,44,112,.45), transparent 35%),
+linear-gradient(135deg,#050208,#16051c,#050208);
+}
+
+.hero-content{
+max-width:1000px;
+text-align:center;
+}
+
+.kicker{
+display:block;
+margin-bottom:24px;
+color:#d7b46a;
+font-size:13px;
+letter-spacing:3px;
+text-transform:uppercase;
+}
+
+.hero h1{
+font-size:82px;
+line-height:1;
+margin-bottom:34px;
+color:white;
+}
+
+.hero p{
+font-size:22px;
+color:rgba(255,255,255,.76);
+max-width:760px;
+margin:auto;
+}
+
+/* CONTACTO */
+
+section{
+padding:120px 8%;
+}
+
+.contact-grid{
+max-width:1200px;
+margin:auto;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:34px;
+}
+
+.contact-card{
+padding:60px;
+border-radius:34px;
+
+background:
+linear-gradient(160deg, rgba(215,180,106,.10), rgba(255,255,255,.02)),
+#120818;
+
+border:1px solid rgba(215,180,106,.18);
+
+transition:.35s;
+}
+
+.contact-card:hover{
+transform:translateY(-8px);
+border-color:#d7b46a;
+}
+
+.contact-card span{
+display:block;
+margin-bottom:18px;
+color:#d7b46a;
+font-size:13px;
+letter-spacing:3px;
+text-transform:uppercase;
+}
+
+.contact-card h2{
+font-size:42px;
+margin-bottom:20px;
+color:white;
+}
+
+.contact-card p{
+font-size:19px;
+color:rgba(255,255,255,.72);
+margin-bottom:28px;
+}
+
+.contact-card a{
+display:inline-block;
+padding:16px 34px;
+border-radius:999px;
+background:#d7b46a;
+color:#050208;
+font-weight:bold;
+text-decoration:none;
+transition:.3s;
+}
+
+.contact-card a:hover{
+transform:translateY(-4px);
+}
+
+/* REDES */
+
+.socials{
+background:#030303;
+text-align:center;
+}
+
+.socials h2{
+font-size:56px;
+margin-bottom:50px;
+color:white;
+}
+
+.social-grid{
+max-width:900px;
+margin:auto;
+display:flex;
+justify-content:center;
+gap:24px;
+flex-wrap:wrap;
+}
+
+.social-btn{
+padding:20px 34px;
+border-radius:999px;
+text-decoration:none;
+color:white;
+
+background:
+linear-gradient(160deg, rgba(215,180,106,.10), rgba(255,255,255,.02)),
+#120818;
+
+border:1px solid rgba(215,180,106,.18);
+
+transition:.3s;
+}
+
+.social-btn:hover{
+transform:translateY(-6px);
+border-color:#d7b46a;
+}
+
+/* FOOTER */
+
+footer{
+padding:50px 8%;
+text-align:center;
+background:#020103;
+border-top:1px solid rgba(215,180,106,.15);
+}
+
+footer p{
+color:rgba(255,255,255,.5);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:980px){
+
+.hero h1{
+font-size:56px;
+}
+
+.contact-grid{
+grid-template-columns:1fr;
+}
+
+.socials h2{
+font-size:42px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<span class="kicker">
+Contacto oficial
+</span>
+
+<h1>
+Colaboraciones, medios y proyectos
+</h1>
+
+<p>
+Para entrevistas, colaboraciones,
+eventos, prensa o propuestas profesionales,
+puedes contactar directamente con el equipo.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="contact-grid">
+
+<div class="contact-card">
+
+<span>Email profesional</span>
+
+<h2>
+Contacto directo
+</h2>
+
+<p>
+Consultas profesionales, colaboraciones,
+medios de comunicación y proyectos editoriales.
+</p>
+
+<a href="mailto:info.quirofenix@gmail.com">
+Enviar email
+</a>
+
+</div>
+
+<div class="contact-card">
+
+<span>Instagram oficial</span>
+
+<h2>
+Redes sociales
+</h2>
+
+<p>
+Espacio dedicado a contenido,
+mensajes de inspiración y novedades.
+</p>
+
+<a href="https://instagram.com/" target="_blank">
+Abrir Instagram
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="socials">
+
+<h2>
+Conecta con Aris Gómez
+</h2>
+
+<div class="social-grid">
+
+<a class="social-btn" href="biografia.html">
+Biografía
+</a>
+
+<a class="social-btn" href="libros.html">
+Libros
+</a>
+
+<a class="social-btn" href="cursos.html">
+Cursos
+</a>
+
+<a class="social-btn" href="historiasdeexito.html">
+Historias de éxito
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 Aris Gómez · Contacto oficial
+</p>
+
+</footer>
+
+</body>
+</html>
