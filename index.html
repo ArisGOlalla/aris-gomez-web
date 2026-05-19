@@ -3,262 +3,251 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Aris Gómez</title>
-
-<meta name="description" content="Sitio oficial de Aris Gómez. Autora de De la Oscuridad a la Libertad.">
+<title>Aris Gómez | Autora</title>
 
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
+*{margin:0;padding:0;box-sizing:border-box}
 
 body{
-font-family:Arial,sans-serif;
-background:#05010a;
-color:white;
-overflow-x:hidden;
+  font-family: Georgia, serif;
+  background:#050208;
+  color:#f6ead2;
+  overflow-x:hidden;
 }
 
-/* NAVBAR */
-
-nav{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-display:flex;
-justify-content:center;
-padding:18px 20px;
-z-index:1000;
-
-background:rgba(5,1,10,.75);
-backdrop-filter:blur(18px);
-border-bottom:1px solid rgba(255,255,255,.06);
+.top-nav{
+  height:86px;
+  padding:0 7%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  background:#050208;
+  border-bottom:1px solid rgba(215,180,106,.12);
 }
 
-.nav-links{
-display:flex;
-gap:14px;
-overflow-x:auto;
-white-space:nowrap;
-scrollbar-width:none;
-padding-bottom:5px;
+.logo-nav{
+  color:#f5dc82;
+  font-size:24px;
+  font-weight:bold;
 }
 
-.nav-links::-webkit-scrollbar{
-display:none;
+.menu-nav{
+  display:flex;
+  gap:30px;
 }
 
-.nav-links a{
-text-decoration:none;
-color:white;
-padding:10px 18px;
-border-radius:999px;
-font-size:14px;
-transition:.3s;
-
-background:rgba(255,255,255,.04);
-border:1px solid rgba(255,255,255,.06);
+.menu-nav a{
+  color:#f6ead2;
+  text-decoration:none;
+  font-size:15px;
 }
-
-.nav-links a:hover{
-background:linear-gradient(to right,#d6a3ff,#f3d37b);
-color:#05010a;
-}
-
-/* HERO */
 
 .hero{
-min-height:100vh;
-display:flex;
-align-items:center;
-justify-content:center;
-padding:140px 8% 100px;
-
-background:
-radial-gradient(circle at top right, rgba(215,180,255,.18), transparent 30%),
-radial-gradient(circle at bottom left, rgba(243,211,123,.14), transparent 30%),
-#05010a;
+  min-height:calc(100vh - 86px);
+  padding:90px 7%;
+  display:flex;
+  align-items:center;
+  background:
+    radial-gradient(circle at top right, rgba(91,36,92,.55), transparent 35%),
+    linear-gradient(135deg,#050208,#1b0a25,#050208);
 }
 
-.hero-content{
-max-width:1100px;
-text-align:center;
+.hero-inner{
+  width:100%;
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:80px;
+  align-items:center;
 }
 
-.hero span{
-display:block;
-font-size:13px;
-letter-spacing:4px;
-text-transform:uppercase;
-color:#d7b46a;
-margin-bottom:25px;
+.gold{
+  color:#d7b46a;
+  letter-spacing:6px;
+  text-transform:uppercase;
+  font-size:13px;
+  margin-bottom:25px;
 }
 
-.hero h1{
-font-size:120px;
-line-height:.92;
-letter-spacing:-5px;
-font-weight:300;
-
-background:linear-gradient(to right,#ffffff,#d7b4ff,#f3d37b);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
-
-margin-bottom:35px;
-font-family:Georgia, serif;
+.hero-copy h1{
+  font-size:82px;
+  line-height:.95;
+  color:#f5dc82;
+  margin-bottom:28px;
 }
 
-.hero p{
-font-size:24px;
-line-height:1.8;
-max-width:850px;
-margin:auto;
-color:rgba(255,255,255,.72);
+.hero-subtitle{
+  font-size:21px;
+  line-height:1.7;
+  color:#eee4da;
+  max-width:600px;
 }
 
-/* QUOTE */
-
-.quote{
-padding:120px 8%;
-text-align:center;
-
-background:
-linear-gradient(to bottom,#05010a,#12071b);
+.hero-image{
+  position:relative;
 }
 
-.quote h2{
-font-size:70px;
-line-height:1.15;
-font-weight:300;
-letter-spacing:-3px;
-max-width:1000px;
-margin:auto;
-
-background:linear-gradient(to right,#f3d37b,#ffffff,#c993ff);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
-
-font-family:Georgia, serif;
+.hero-image img{
+  width:100%;
+  max-width:480px;
+  display:block;
+  border-radius:26px;
+  object-fit:cover;
+  margin:auto;
 }
 
-.quote p{
-margin-top:30px;
-font-size:22px;
-color:rgba(255,255,255,.6);
+.floating-card{
+  position:absolute;
+  left:-40px;
+  bottom:-35px;
+  max-width:280px;
+  padding:28px;
+  border-radius:22px;
+  background:linear-gradient(145deg,rgba(45,29,39,.96),rgba(20,12,25,.96));
+  border:1px solid rgba(215,180,106,.25);
+  box-shadow:0 25px 70px rgba(0,0,0,.45);
 }
 
-/* FOOTER */
+.floating-card span{
+  color:#d7b46a;
+  letter-spacing:4px;
+  font-size:12px;
+  text-transform:uppercase;
+}
+
+.floating-card p{
+  margin-top:18px;
+  color:#fff;
+  font-style:italic;
+  font-size:17px;
+  line-height:1.6;
+}
 
 footer{
-padding:60px 20px;
-text-align:center;
-border-top:1px solid rgba(255,255,255,.06);
+  padding:45px 7%;
+  text-align:center;
+  color:rgba(255,255,255,.45);
+  border-top:1px solid rgba(215,180,106,.12);
 }
 
-footer p{
-color:rgba(255,255,255,.45);
-font-size:14px;
-}
-
-/* MOBILE */
-
+/* MÓVIL */
 @media(max-width:900px){
+  .top-nav{
+    height:auto;
+    padding:24px 6%;
+    display:block;
+  }
 
-.hero{
-padding-top:170px;
+  .logo-nav{
+    display:none;
+  }
+
+  .menu-nav{
+    display:flex;
+    gap:14px;
+    overflow-x:auto;
+    white-space:nowrap;
+    padding-bottom:8px;
+  }
+
+  .menu-nav a{
+    flex:0 0 auto;
+    padding:11px 22px;
+    border-radius:999px;
+    border:1px solid rgba(215,180,106,.22);
+    background:rgba(255,255,255,.03);
+    font-size:16px;
+  }
+
+  .hero{
+    padding:70px 6% 80px;
+    min-height:auto;
+  }
+
+  .hero-inner{
+    grid-template-columns:1fr;
+    gap:55px;
+    text-align:center;
+  }
+
+  .gold{
+    font-size:12px;
+    letter-spacing:5px;
+  }
+
+  .hero-copy h1{
+    font-size:58px;
+  }
+
+  .hero-subtitle{
+    font-size:22px;
+    line-height:1.65;
+    margin:auto;
+  }
+
+  .hero-image img{
+    max-width:100%;
+    border-radius:28px;
+  }
+
+  .floating-card{
+    position:relative;
+    left:auto;
+    bottom:auto;
+    margin:25px auto 0;
+    max-width:100%;
+  }
 }
-
-.hero h1{
-font-size:62px;
-letter-spacing:-2px;
-}
-
-.hero p{
-font-size:18px;
-line-height:1.7;
-}
-
-.quote h2{
-font-size:40px;
-letter-spacing:-1px;
-}
-
-.quote p{
-font-size:18px;
-}
-
-.nav-links{
-justify-content:flex-start;
-width:100%;
-padding-left:10px;
-}
-
-}
-
 </style>
 </head>
 
 <body>
 
-<nav>
+<nav class="top-nav">
+  <div class="logo-nav">Aris Gómez</div>
 
-<div class="nav-links">
-
-<a href="biografia.html">Biografía</a>
-<a href="libros.html">Libros</a>
-<a href="historiasdeexito.html">Historias de éxito</a>
-<a href="prensa.html">Prensa</a>
-<a href="contacto.html">Contacto</a>
-
-</div>
-
+  <div class="menu-nav">
+    <a href="biografia.html">Biografía</a>
+    <a href="libros.html">Libros</a>
+    <a href="cursos.html">Cursos</a>
+    <a href="historiasdeexito.html">Historias de éxito</a>
+    <a href="prensa.html">Prensa</a>
+    <a href="contacto.html">Contacto</a>
+  </div>
 </nav>
 
-<section class="hero">
+<header class="hero">
+  <div class="hero-inner">
 
-<div class="hero-content">
+    <div class="hero-copy">
+      <p class="gold">Escritora · Superación · Testimonio</p>
 
-<span>Sitio oficial</span>
+      <h1>Aris Gómez</h1>
 
-<h1>
-Aris<br>
-Gómez
-</h1>
+      <p class="hero-subtitle">
+        Una voz nacida desde la experiencia. Historias reales de resiliencia,
+        transformación y reconstrucción emocional.
+      </p>
+    </div>
 
-<p>
-Autora de “De la Oscuridad a la Libertad”.
-Una historia real de resiliencia, reconstrucción
-emocional y transformación personal.
-</p>
+    <div class="hero-image">
+      <img src="autora.png" alt="Aris Gómez">
 
-</div>
+      <div class="floating-card">
+        <span>Autora</span>
+        <p>
+          “Incluso después de la oscuridad más profunda,
+          siempre existe un camino hacia la libertad.”
+        </p>
+      </div>
+    </div>
 
-</section>
-
-<section class="quote">
-
-<h2>
-“Transformar la oscuridad
-en libertad.”
-</h2>
-
-<p>
-— Aris Gómez
-</p>
-
-</section>
+  </div>
+</header>
 
 <footer>
-
-<p>
-© 2026 Aris Gómez · Sitio oficial
-</p>
-
+  <p>© 2026 Aris Gómez · Sitio oficial</p>
 </footer>
 
 </body>
