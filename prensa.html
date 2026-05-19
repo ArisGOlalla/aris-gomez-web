@@ -3,127 +3,290 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Prensa | Aris Gómez</title>
 
-<meta name="description" content="Entrevistas, artículos y apariciones en medios de Aris Gómez.">
-
 <style>
+*{margin:0;padding:0;box-sizing:border-box}
 
 body{
-background:#0d0b14;
-font-family:Arial, sans-serif;
-margin:0;
-padding:40px;
-color:white;
+  font-family: Georgia, serif;
+  background:#050208;
+  color:#f6ead2;
+  overflow-x:hidden;
 }
 
-h1{
-text-align:center;
-font-size:48px;
-margin-bottom:50px;
-color:#d7b4ff;
+.top-nav{
+  height:86px;
+  padding:0 7%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#050208;
+  border-bottom:1px solid rgba(215,180,106,.12);
+}
+
+.menu-nav{
+  display:flex;
+  gap:40px;
+  justify-content:center;
+  align-items:center;
+}
+
+.menu-nav a{
+  color:#f6ead2;
+  text-decoration:none;
+  font-size:15px;
+}
+
+.hero{
+  padding:120px 7% 80px;
+  background:
+    radial-gradient(circle at top right, rgba(91,36,92,.55), transparent 35%),
+    linear-gradient(135deg,#050208,#1b0a25,#050208);
+  text-align:center;
+}
+
+.gold{
+  color:#d7b46a;
+  letter-spacing:6px;
+  text-transform:uppercase;
+  font-size:13px;
+  margin-bottom:25px;
+}
+
+.hero h1{
+  font-size:86px;
+  line-height:1;
+  color:#f5dc82;
+  margin-bottom:28px;
+  font-family:"Cormorant Garamond", Georgia, serif;
+  font-weight:300;
+  letter-spacing:-2px;
+}
+
+.hero p{
+  font-size:21px;
+  line-height:1.7;
+  color:#eee4da;
+  max-width:780px;
+  margin:auto;
+}
+
+.press-section{
+  padding:90px 7%;
+  background:#050208;
 }
 
 .press-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:25px;
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:26px;
 }
 
 .press-card{
-background:#1a1328;
-padding:25px;
-border-radius:20px;
-text-decoration:none;
-color:white;
-transition:0.3s;
-border:1px solid rgba(255,255,255,0.08);
+  min-height:260px;
+  padding:30px;
+  border-radius:24px;
+  text-decoration:none;
+  color:#f6ead2;
+  background:linear-gradient(145deg,rgba(45,29,39,.96),rgba(20,12,25,.96));
+  border:1px solid rgba(215,180,106,.22);
+  box-shadow:0 25px 70px rgba(0,0,0,.35);
+  transition:.3s;
 }
 
 .press-card:hover{
-transform:translateY(-5px);
-box-shadow:0 0 25px rgba(215,180,255,0.3);
+  transform:translateY(-8px);
+  border-color:rgba(215,180,106,.55);
 }
 
 .press-card span{
-color:#d7b4ff;
-font-size:14px;
-letter-spacing:1px;
+  color:#d7b46a;
+  letter-spacing:4px;
+  font-size:11px;
+  text-transform:uppercase;
 }
 
 .press-card h3{
-margin-top:10px;
-font-size:28px;
-color:#f3d37b;
+  margin:20px 0 15px;
+  font-size:32px;
+  color:#f5dc82;
+  font-weight:300;
+  line-height:1.1;
 }
 
 .press-card p{
-line-height:1.6;
-opacity:0.9;
+  font-size:16px;
+  line-height:1.7;
+  color:rgba(255,255,255,.75);
 }
 
-</style>
+.quote{
+  padding:100px 7%;
+  text-align:center;
+  background:
+    radial-gradient(circle at bottom left, rgba(91,36,92,.35), transparent 35%),
+    #050208;
+  border-top:1px solid rgba(215,180,106,.12);
+}
 
+.quote h2{
+  max-width:900px;
+  margin:auto;
+  font-size:48px;
+  line-height:1.25;
+  color:#f5dc82;
+  font-weight:300;
+}
+
+.quote p{
+  margin-top:25px;
+  color:rgba(255,255,255,.55);
+  font-size:18px;
+}
+
+footer{
+  padding:45px 7%;
+  text-align:center;
+  color:rgba(255,255,255,.45);
+  border-top:1px solid rgba(215,180,106,.12);
+}
+
+/* MÓVIL */
+@media(max-width:900px){
+  .top-nav{
+    height:auto;
+    padding:24px 6%;
+  }
+
+  .menu-nav{
+    justify-content:flex-start;
+    overflow-x:auto;
+    white-space:nowrap;
+    gap:14px;
+    padding-bottom:8px;
+  }
+
+  .menu-nav a{
+    flex:0 0 auto;
+    padding:11px 22px;
+    border-radius:999px;
+    border:1px solid rgba(215,180,106,.22);
+    background:rgba(255,255,255,.03);
+    font-size:16px;
+  }
+
+  .hero{
+    padding:70px 6% 60px;
+  }
+
+  .hero h1{
+    font-size:58px;
+  }
+
+  .hero p{
+    font-size:20px;
+  }
+
+  .press-section{
+    padding:55px 6%;
+  }
+
+  .press-grid{
+    grid-template-columns:1fr;
+  }
+
+  .press-card{
+    min-height:auto;
+  }
+
+  .quote h2{
+    font-size:34px;
+  }
+}
+</style>
 </head>
 
 <body>
 
-<h1>Prensa</h1>
+<nav class="top-nav">
+  <div class="menu-nav">
+    <a href="index.html">Inicio</a>
+    <a href="biografia.html">Biografía</a>
+    <a href="libros.html">Libros</a>
+    <a href="cursos.html">Cursos</a>
+    <a href="historiasdeexito.html">Historias de éxito</a>
+    <a href="contacto.html">Contacto</a>
+  </div>
+</nav>
 
-<div class="press-grid">
+<header class="hero">
+  <p class="gold">Prensa · entrevistas · medios</p>
 
-<a class="press-card" href="https://www.20minutos.es/gente/actriz-aris-gomez-se-querella-contra-torbe-productor-cine-para-adultos-por-presuntas-injurias-calumnias-amenazas_6950636_0.html" target="_blank">
-<div>
-<span>Prensa nacional</span>
-<h3>20 Minutos</h3>
-<p>
-Cobertura nacional sobre la querella presentada por Aris Gómez contra Ignacio Allende Fernández “Torbe”.
-</p>
-</div>
-</a>
+  <h1>Prensa</h1>
 
-<a class="press-card" href="https://www.telecinco.es/noticias/sociedad/20260325/actriz-aris-gomez-querella-ignacio-allende-torbe-injurias-calumnias-amenazas_18_018722242.html" target="_blank">
-<div>
-<span>Televisión nacional</span>
-<h3>Telecinco</h3>
-<p>
-Noticia destacada sobre el proceso judicial y las declaraciones relacionadas con el caso.
-</p>
-</div>
-</a>
+  <p>
+    Apariciones, entrevistas y publicaciones destacadas sobre Aris Gómez,
+    su historia, su testimonio y su obra “De la Oscuridad a la Libertad”.
+  </p>
+</header>
 
-<a class="press-card" href="https://www.cuatro.com/noticias/sociedad/20251126/testigo-caso-torbe-continua-lucha-judicial-productor-porno-codigo-10_18_017689670.html" target="_blank">
-<div>
-<span>Actualidad TV</span>
-<h3>Cuatro · Código 10</h3>
-<p>
-Cobertura televisiva sobre la continuidad de la lucha judicial y la repercusión mediática del caso.
-</p>
-</div>
-</a>
+<section class="press-section">
+  <div class="press-grid">
 
-<a class="press-card" href="https://www.estrelladigital.es/articulo/noticias-en-la-red/aris-gomez-querella-torbe-injurias-amenazas/20260325234021443983.html" target="_blank">
-<div>
-<span>Prensa digital</span>
-<h3>Estrella Digital</h3>
-<p>
-Artículo centrado en las injurias, amenazas y repercusión pública del procedimiento judicial.
-</p>
-</div>
-</a>
+    <a class="press-card" href="https://www.20minutos.es/gente/actriz-aris-gomez-se-querella-contra-torbe-productor-cine-para-adultos-por-presuntas-injurias-calumnias-amenazas_6950636_0.html" target="_blank">
+      <span>Prensa nacional</span>
+      <h3>20 Minutos</h3>
+      <p>Cobertura nacional sobre la querella presentada por Aris Gómez contra Ignacio Allende Fernández “Torbe”.</p>
+    </a>
 
-<a class="press-card" href="https://www.mundodeportivo.com/actualidad/20250219/1002411018/aris-gomez-victima-torbe-pronuncia-deja-cosas-claras-detencion-productor-cine-adultos-me-sorprendido-cuestion-dct.html" target="_blank">
-<div>
-<span>Entrevista / actualidad</span>
-<h3>Mundo Deportivo</h3>
-<p>
-Declaraciones públicas de Aris Gómez tras la detención del productor de cine para adultos.
-</p>
-</div>
-</a>
+    <a class="press-card" href="https://www.telecinco.es/noticias/sociedad/20260325/actriz-aris-gomez-querella-ignacio-allende-torbe-injurias-calumnias-amenazas_18_018722242.html" target="_blank">
+      <span>Televisión nacional</span>
+      <h3>Telecinco</h3>
+      <p>Noticia destacada sobre el proceso judicial y las declaraciones relacionadas con el caso.</p>
+    </a>
 
-</div>
+    <a class="press-card" href="https://www.cuatro.com/noticias/sociedad/20251126/testigo-caso-torbe-continua-lucha-judicial-productor-porno-codigo-10_18_017689670.html" target="_blank">
+      <span>Actualidad TV</span>
+      <h3>Cuatro · Código 10</h3>
+      <p>Cobertura televisiva sobre la continuidad de la lucha judicial y la repercusión mediática.</p>
+    </a>
+
+    <a class="press-card" href="https://www.estrelladigital.es/articulo/noticias-en-la-red/aris-gomez-querella-torbe-injurias-amenazas/20260325234021443983.html" target="_blank">
+      <span>Prensa digital</span>
+      <h3>Estrella Digital</h3>
+      <p>Artículo centrado en las injurias, amenazas y repercusión pública del procedimiento judicial.</p>
+    </a>
+
+    <a class="press-card" href="https://www.mundodeportivo.com/actualidad/20250219/1002411018/aris-gomez-victima-torbe-pronuncia-deja-cosas-claras-detencion-productor-cine-adultos-me-sorprendido-cuestion-dct.html" target="_blank">
+      <span>Entrevista / actualidad</span>
+      <h3>Mundo Deportivo</h3>
+      <p>Declaraciones públicas de Aris Gómez tras la detención del productor de cine para adultos.</p>
+    </a>
+
+    <a class="press-card" href="https://www.periodistadigital.com/" target="_blank">
+      <span>Informe editorial</span>
+      <h3>Periodista Digital</h3>
+      <p>Medio destacado dentro del informe de impacto mediático y difusión editorial.</p>
+    </a>
+
+  </div>
+</section>
+
+<section class="quote">
+  <h2>
+    “Cada aparición en medios forma parte de una historia de verdad,
+    resiliencia y reconstrucción.”
+  </h2>
+
+  <p>— Aris Gómez</p>
+</section>
+
+<footer>
+  <p>© 2026 Aris Gómez · Prensa oficial</p>
+</footer>
 
 </body>
 </html>
