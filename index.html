@@ -20,20 +20,16 @@ body{
   padding:0 7%;
   display:flex;
   align-items:center;
-  justify-content:space-between;
+  justify-content:center;
   background:#050208;
   border-bottom:1px solid rgba(215,180,106,.12);
 }
 
-.logo-nav{
-  color:#f5dc82;
-  font-size:24px;
-  font-weight:bold;
-}
-
 .menu-nav{
   display:flex;
-  gap:30px;
+  gap:40px;
+  justify-content:center;
+  align-items:center;
 }
 
 .menu-nav a{
@@ -71,10 +67,13 @@ body{
 }
 
 .hero-copy h1{
-  font-size:82px;
-  line-height:.95;
+  font-size:86px;
+  line-height:1;
   color:#f5dc82;
   margin-bottom:28px;
+  font-family:"Cormorant Garamond", Georgia, serif;
+  font-weight:300;
+  letter-spacing:-2px;
 }
 
 .hero-subtitle{
@@ -136,18 +135,13 @@ footer{
   .top-nav{
     height:auto;
     padding:24px 6%;
-    display:block;
-  }
-
-  .logo-nav{
-    display:none;
   }
 
   .menu-nav{
-    display:flex;
-    gap:14px;
+    justify-content:flex-start;
     overflow-x:auto;
     white-space:nowrap;
+    gap:14px;
     padding-bottom:8px;
   }
 
@@ -177,7 +171,9 @@ footer{
   }
 
   .hero-copy h1{
-    font-size:58px;
+    font-size:64px;
+    font-weight:300;
+    letter-spacing:-1px;
   }
 
   .hero-subtitle{
@@ -205,8 +201,6 @@ footer{
 <body>
 
 <nav class="top-nav">
-  <div class="logo-nav">Aris Gómez</div>
-
   <div class="menu-nav">
     <a href="biografia.html">Biografía</a>
     <a href="libros.html">Libros</a>
