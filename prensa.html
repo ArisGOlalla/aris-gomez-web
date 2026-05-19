@@ -3,7 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Prensa | Aris Gómez</title>
+<title>Press Kit Oficial | Aris Gómez</title>
+
+<meta name="description" content="Press Kit oficial de Aris Gómez. Biografía, libro, medios, entrevistas y contacto de prensa.">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -39,11 +41,19 @@ body{
 }
 
 .hero{
-  padding:120px 7% 80px;
-  text-align:center;
+  padding:120px 7% 90px;
   background:
     radial-gradient(circle at top right, rgba(91,36,92,.55), transparent 35%),
     linear-gradient(135deg,#050208,#1b0a25,#050208);
+}
+
+.hero-inner{
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:70px;
+  align-items:center;
 }
 
 .gold{
@@ -56,19 +66,37 @@ body{
 
 .hero h1{
   font-family:"Cormorant Garamond", Georgia, serif;
-  font-size:82px;
+  font-size:78px;
   font-weight:300;
-  letter-spacing:-2px;
+  line-height:1;
   color:#f5dc82;
   margin-bottom:28px;
 }
 
 .hero p{
-  max-width:820px;
-  margin:auto;
   font-size:21px;
-  line-height:1.7;
-  color:rgba(255,255,255,.74);
+  line-height:1.75;
+  color:rgba(255,255,255,.75);
+  max-width:720px;
+}
+
+.hero-box{
+  padding:38px;
+  border-radius:28px;
+  background:linear-gradient(145deg,rgba(45,29,39,.96),rgba(20,12,25,.96));
+  border:1px solid rgba(215,180,106,.22);
+  box-shadow:0 25px 70px rgba(0,0,0,.38);
+}
+
+.hero-box h2{
+  color:#f5dc82;
+  font-size:34px;
+  font-weight:300;
+  margin-bottom:20px;
+}
+
+.hero-box p{
+  font-size:17px;
 }
 
 .stats{
@@ -76,19 +104,18 @@ body{
   display:grid;
   grid-template-columns:repeat(3,1fr);
   gap:24px;
-  background:#050208;
 }
 
 .stat{
   padding:38px;
-  border-radius:28px;
   text-align:center;
-  background:linear-gradient(145deg,rgba(45,29,39,.96),rgba(20,12,25,.96));
-  border:1px solid rgba(215,180,106,.22);
+  border-radius:28px;
+  background:rgba(255,255,255,.025);
+  border:1px solid rgba(215,180,106,.18);
 }
 
 .stat h2{
-  font-size:46px;
+  font-size:44px;
   font-weight:300;
   color:#f5dc82;
 }
@@ -99,19 +126,26 @@ body{
   font-size:15px;
 }
 
-.press{
+.section{
   padding:90px 7%;
 }
 
 .section-title{
-  text-align:center;
-  margin-bottom:55px;
+  max-width:1100px;
+  margin:0 auto 45px;
 }
 
 .section-title h2{
   font-size:52px;
   font-weight:300;
   color:#f5dc82;
+  margin-bottom:15px;
+}
+
+.section-title p{
+  font-size:19px;
+  line-height:1.7;
+  color:rgba(255,255,255,.68);
 }
 
 .press-grid{
@@ -124,11 +158,11 @@ body{
 
 .press-card{
   padding:30px;
-  min-height:240px;
+  min-height:235px;
   border-radius:26px;
   text-decoration:none;
   color:#f6ead2;
-  background:rgba(255,255,255,.025);
+  background:linear-gradient(145deg,rgba(45,29,39,.82),rgba(15,8,19,.95));
   border:1px solid rgba(215,180,106,.18);
   transition:.3s;
 }
@@ -136,7 +170,6 @@ body{
 .press-card:hover{
   transform:translateY(-6px);
   border-color:rgba(215,180,106,.55);
-  background:rgba(215,180,106,.05);
 }
 
 .press-card span{
@@ -159,8 +192,36 @@ body{
   color:rgba(255,255,255,.72);
 }
 
-.quote{
-  padding:90px 7%;
+.info-grid{
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:26px;
+}
+
+.info-box{
+  padding:36px;
+  border-radius:28px;
+  border:1px solid rgba(215,180,106,.18);
+  background:rgba(255,255,255,.025);
+}
+
+.info-box h3{
+  font-size:32px;
+  font-weight:300;
+  color:#f5dc82;
+  margin-bottom:18px;
+}
+
+.info-box p{
+  font-size:17px;
+  line-height:1.8;
+  color:rgba(255,255,255,.72);
+}
+
+.contact{
+  padding:100px 7%;
   text-align:center;
   background:
     radial-gradient(circle at bottom left, rgba(91,36,92,.35), transparent 35%),
@@ -168,13 +229,27 @@ body{
   border-top:1px solid rgba(215,180,106,.12);
 }
 
-.quote h2{
-  max-width:900px;
-  margin:auto;
-  font-size:44px;
+.contact h2{
+  font-size:52px;
   font-weight:300;
-  line-height:1.25;
   color:#f5dc82;
+  margin-bottom:20px;
+}
+
+.contact p{
+  font-size:19px;
+  color:rgba(255,255,255,.68);
+  margin-bottom:35px;
+}
+
+.contact a{
+  display:inline-block;
+  padding:16px 34px;
+  border-radius:999px;
+  background:#f5dc82;
+  color:#050208;
+  text-decoration:none;
+  font-weight:bold;
 }
 
 footer{
@@ -211,22 +286,20 @@ footer{
     padding:70px 6% 60px;
   }
 
-  .hero h1{
-    font-size:56px;
-  }
-
-  .hero p{
-    font-size:19px;
-  }
-
+  .hero-inner,
   .stats,
-  .press-grid{
+  .press-grid,
+  .info-grid{
     grid-template-columns:1fr;
   }
 
+  .hero h1{
+    font-size:54px;
+  }
+
   .section-title h2,
-  .quote h2{
-    font-size:34px;
+  .contact h2{
+    font-size:36px;
   }
 }
 </style>
@@ -246,12 +319,28 @@ footer{
 </nav>
 
 <header class="hero">
-  <p class="gold">Prensa · medios · libro</p>
-  <h1>Presencia en medios</h1>
-  <p>
-    Selección de publicaciones, apariciones y notas de prensa vinculadas al lanzamiento
-    del libro “Aris: De la Oscuridad a la Libertad”, publicado con Editorial Círculo Rojo.
-  </p>
+  <div class="hero-inner">
+
+    <div>
+      <p class="gold">Press Kit Oficial</p>
+      <h1>Aris Gómez</h1>
+      <p>
+        Autora de “Aris: De la Oscuridad a la Libertad”, una obra testimonial
+        publicada con Editorial Círculo Rojo. Una voz real sobre resiliencia,
+        transformación personal y reconstrucción emocional.
+      </p>
+    </div>
+
+    <div class="hero-box">
+      <h2>Información para medios</h2>
+      <p>
+        Esta sección reúne datos oficiales, apariciones destacadas, cobertura
+        mediática, información editorial y contacto para entrevistas,
+        colaboraciones y prensa.
+      </p>
+    </div>
+
+  </div>
 </header>
 
 <section class="stats">
@@ -271,10 +360,14 @@ footer{
   </div>
 </section>
 
-<section class="press">
+<section class="section">
   <div class="section-title">
-    <p class="gold">Medios destacados</p>
-    <h2>Publicaciones principales</h2>
+    <p class="gold">Apariciones destacadas</p>
+    <h2>Medios principales</h2>
+    <p>
+      Selección de medios incluidos en el informe de difusión editorial
+      del lanzamiento del libro.
+    </p>
   </div>
 
   <div class="press-grid">
@@ -282,13 +375,13 @@ footer{
     <a class="press-card" href="#" target="_blank">
       <span>Mayor impacto</span>
       <h3>Madrid Diario</h3>
-      <p>Medio destacado en el informe por su alto volumen de impresiones estimadas.</p>
+      <p>Medio destacado por su alto volumen de impresiones estimadas.</p>
     </a>
 
     <a class="press-card" href="#" target="_blank">
       <span>Prensa digital</span>
       <h3>Periodista Digital</h3>
-      <p>Uno de los medios con mayor valor estimado dentro de la difusión editorial.</p>
+      <p>Uno de los medios con mayor valor estimado dentro de la difusión.</p>
     </a>
 
     <a class="press-card" href="#" target="_blank">
@@ -306,7 +399,7 @@ footer{
     <a class="press-card" href="#" target="_blank">
       <span>Actualidad</span>
       <h3>Hechos de Hoy</h3>
-      <p>Artículo destacado dentro del informe de publicaciones del libro.</p>
+      <p>Artículo destacado dentro del informe de publicaciones.</p>
     </a>
 
     <a class="press-card" href="#" target="_blank">
@@ -318,15 +411,57 @@ footer{
   </div>
 </section>
 
-<section class="quote">
-  <h2>
-    “Una historia real convertida en voz pública,
-    memoria y propósito.”
-  </h2>
+<section class="section">
+  <div class="section-title">
+    <p class="gold">Material editorial</p>
+    <h2>Sobre el libro</h2>
+  </div>
+
+  <div class="info-grid">
+
+    <div class="info-box">
+      <h3>La obra</h3>
+      <p>
+        “Aris: De la Oscuridad a la Libertad” es un testimonio de vida
+        sobre dolor, supervivencia, reconstrucción y libertad emocional.
+      </p>
+    </div>
+
+    <div class="info-box">
+      <h3>Temas principales</h3>
+      <p>
+        Resiliencia, trauma, superación, violencia, renacimiento personal,
+        fuerza interior y transformación vital.
+      </p>
+    </div>
+
+    <div class="info-box">
+      <h3>Perfil de autora</h3>
+      <p>
+        Aris Gómez comparte una historia real desde la experiencia,
+        transformando su vivencia en mensaje, propósito y voz pública.
+      </p>
+    </div>
+
+    <div class="info-box">
+      <h3>Solicitudes</h3>
+      <p>
+        Disponible para entrevistas, prensa, colaboraciones editoriales,
+        medios digitales, radio, televisión y proyectos de divulgación.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="contact">
+  <h2>Contacto de prensa</h2>
+  <p>Para entrevistas, colaboraciones, apariciones o solicitudes editoriales.</p>
+  <a href="mailto:oscuridadylibertad@hotmail.com">Contactar</a>
 </section>
 
 <footer>
-  <p>© 2026 Aris Gómez · Prensa oficial</p>
+  <p>© 2026 Aris Gómez · Press Kit Oficial</p>
 </footer>
 
 </body>
