@@ -5,210 +5,237 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Blog de Aris Gómez | Reflexiones, Superación y Crecimiento Personal</title>
+<title>Blog de Aris Gómez | Resiliencia, Superación y Libertad Emocional</title>
 
-<meta name="description" content="Blog oficial de Aris Gómez. Artículos sobre resiliencia, abuso psicológico, crecimiento personal, relaciones tóxicas, bienestar emocional y superación.">
+<meta name="description" content="Blog oficial de Aris Gómez. Reflexiones sobre resiliencia, abuso psicológico, crecimiento personal, relaciones tóxicas, superación personal y experiencias vinculadas al Caso Torbe y la Operación Manguera.">
 
-<meta name="keywords" content="Aris Gómez blog, resiliencia, superación personal, abuso psicológico, relaciones tóxicas, crecimiento personal, autoestima, libertad emocional">
+<meta name="keywords" content="Aris Gómez blog, resiliencia, superación personal, abuso psicológico, relaciones tóxicas, crecimiento personal, autoestima, libertad emocional, Caso Torbe, Operación Manguera">
 
 <meta name="author" content="Aris Gómez">
 
 <link rel="canonical" href="https://arisgomez.com/blog.html">
 
 <meta property="og:title" content="Blog de Aris Gómez">
-<meta property="og:description" content="Reflexiones y artículos sobre resiliencia, superación personal y libertad emocional.">
-<meta property="og:image" content="https://arisgomez.com/logo.png">
+<meta property="og:description" content="Reflexiones sobre resiliencia, abuso psicológico, transformación personal, Caso Torbe y Operación Manguera.">
+<meta property="og:image" content="https://arisgomez.com/autora.png">
 <meta property="og:url" content="https://arisgomez.com/blog.html">
+<meta property="og:type" content="website">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Blog de Aris Gómez">
+<meta name="twitter:description" content="Reflexiones sobre resiliencia, superación personal y libertad emocional.">
+<meta name="twitter:image" content="https://arisgomez.com/autora.png">
 
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 
 :root{
---gold:#e8d39a;
---gold-soft:#fff3b0;
---cream:#f6ead2;
---dark:#050208;
+  --gold:#e8d39a;
+  --gold-soft:#fff3b0;
+  --cream:#f6ead2;
+  --dark:#050208;
 }
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
 body{
-font-family:'Cormorant Garamond',serif;
-background:
-radial-gradient(circle at top right,
-rgba(108,42,120,.35),
-transparent 40%),
-linear-gradient(135deg,#050208,#15031d,#050208);
-color:var(--cream);
-line-height:1.8;
-overflow-x:hidden;
+  font-family:'Cormorant Garamond', Georgia, serif;
+  background:
+    radial-gradient(circle at top right, rgba(108,42,120,.35), transparent 40%),
+    linear-gradient(135deg,#050208 0%,#15031d 45%,#050208 100%);
+  color:var(--cream);
+  line-height:1.75;
+  overflow-x:hidden;
 }
 
 header{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-background:rgba(5,2,8,.92);
-backdrop-filter:blur(10px);
-z-index:1000;
-border-bottom:1px solid rgba(232,211,154,.12);
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  z-index:1000;
+  background:rgba(5,2,8,.92);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(232,211,154,.12);
 }
 
 nav ul{
-display:flex;
-justify-content:center;
-gap:40px;
-list-style:none;
-padding:28px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:42px;
+  list-style:none;
+  padding:28px 6%;
 }
 
 nav a{
-text-decoration:none;
-color:var(--gold-soft);
-font-size:18px;
-transition:.3s;
+  color:var(--gold-soft);
+  text-decoration:none;
+  font-size:18px;
+  font-weight:500;
+  transition:.3s;
 }
 
 nav a:hover{
-color:white;
+  color:white;
 }
 
 .hero{
-padding:180px 8% 100px;
-text-align:center;
+  padding:180px 8% 100px;
+  text-align:center;
+}
+
+.kicker{
+  color:var(--gold);
+  letter-spacing:8px;
+  text-transform:uppercase;
+  font-size:1rem;
+  font-weight:600;
+  margin-bottom:20px;
 }
 
 .hero h1{
-font-size:clamp(3rem,8vw,6rem);
-color:var(--gold-soft);
-margin-bottom:25px;
-line-height:.95;
+  font-size:clamp(3.8rem,8vw,6.4rem);
+  line-height:.92;
+  color:var(--gold-soft);
+  font-weight:600;
+  margin-bottom:28px;
 }
 
 .hero p{
-max-width:850px;
-margin:auto;
-font-size:1.5rem;
-color:#efe2cc;
+  max-width:850px;
+  margin:auto;
+  font-size:1.45rem;
+  color:#efe2cc;
 }
 
 .blog-container{
-max-width:1200px;
-margin:auto;
-padding:40px 8% 100px;
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-gap:35px;
+  max-width:1200px;
+  margin:auto;
+  padding:40px 8% 110px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(310px,1fr));
+  gap:30px;
 }
 
 .post{
-background:rgba(255,255,255,.04);
-border:1px solid rgba(232,211,154,.18);
-border-radius:28px;
-padding:35px;
-transition:.4s;
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(232,211,154,.18);
+  border-radius:30px;
+  padding:34px;
+  transition:.35s;
 }
 
 .post:hover{
-transform:translateY(-8px);
-box-shadow:0 20px 40px rgba(0,0,0,.4);
+  transform:translateY(-8px);
+  box-shadow:0 25px 60px rgba(0,0,0,.38);
 }
 
 .post-date{
-color:var(--gold);
-letter-spacing:2px;
-font-size:.9rem;
-text-transform:uppercase;
-margin-bottom:15px;
+  color:var(--gold);
+  letter-spacing:3px;
+  font-size:.9rem;
+  text-transform:uppercase;
+  margin-bottom:16px;
+  font-weight:600;
 }
 
 .post h2{
-font-size:2rem;
-color:var(--gold-soft);
-margin-bottom:18px;
+  color:var(--gold-soft);
+  font-size:2.15rem;
+  line-height:1.05;
+  margin-bottom:18px;
+  font-weight:600;
 }
 
 .post p{
-font-size:1.15rem;
-color:#efe2cc;
-margin-bottom:20px;
+  color:#efe2cc;
+  font-size:1.18rem;
+  margin-bottom:24px;
 }
 
 .read-more{
-display:inline-block;
-padding:12px 25px;
-background:#e8d26f;
-color:#14080c;
-text-decoration:none;
-border-radius:999px;
-font-weight:bold;
+  display:inline-block;
+  padding:13px 28px;
+  border-radius:999px;
+  background:#e8d26f;
+  color:#14080c;
+  text-decoration:none;
+  font-weight:700;
+  font-size:1rem;
+  transition:.3s;
 }
 
 .read-more:hover{
-opacity:.9;
+  transform:translateY(-3px);
+  box-shadow:0 12px 25px rgba(232,210,111,.35);
 }
 
-.newsletter{
-max-width:900px;
-margin:0 auto 100px;
-text-align:center;
-padding:60px;
-background:rgba(255,255,255,.04);
-border:1px solid rgba(232,211,154,.15);
-border-radius:30px;
+.feature{
+  max-width:950px;
+  margin:0 auto 100px;
+  padding:65px 8%;
+  text-align:center;
+  border-radius:34px;
+  background:linear-gradient(135deg,rgba(232,211,154,.12),rgba(255,255,255,.04));
+  border:1px solid rgba(232,211,154,.18);
 }
 
-.newsletter h2{
-font-size:3rem;
-color:var(--gold-soft);
-margin-bottom:20px;
+.feature h2{
+  font-size:clamp(2.8rem,5vw,4.5rem);
+  color:var(--gold-soft);
+  line-height:1;
+  margin-bottom:24px;
+  font-weight:600;
 }
 
-.newsletter p{
-font-size:1.3rem;
-margin-bottom:30px;
+.feature p{
+  font-size:1.28rem;
+  color:#efe2cc;
+  margin-bottom:35px;
 }
 
-.newsletter a{
-display:inline-block;
-padding:16px 35px;
-background:#e8d26f;
-color:#14080c;
-text-decoration:none;
-border-radius:999px;
-font-weight:bold;
+.feature a{
+  display:inline-block;
+  padding:16px 36px;
+  border-radius:999px;
+  background:#e8d26f;
+  color:#14080c;
+  text-decoration:none;
+  font-weight:700;
 }
 
 footer{
-text-align:center;
-padding:50px;
-color:#bfae95;
+  text-align:center;
+  padding:45px 8%;
+  color:#bfae95;
+  font-size:1rem;
 }
 
-@media(max-width:768px){
+@media(max-width:950px){
 
-nav ul{
-gap:15px;
-flex-wrap:wrap;
-}
+  nav ul{
+    gap:18px;
+    flex-wrap:wrap;
+    padding:20px 5%;
+  }
 
-nav a{
-font-size:15px;
-}
+  nav a{
+    font-size:15px;
+  }
 
-.hero{
-padding-top:160px;
-}
+  .hero{
+    padding-top:170px;
+  }
 
-.hero p{
-font-size:1.2rem;
-}
+  .hero p{
+    font-size:1.2rem;
+  }
 
 }
 
@@ -219,92 +246,106 @@ font-size:1.2rem;
 <body>
 
 <header>
-<nav>
-<ul>
-<li><a href="index.html">Inicio</a></li>
-<li><a href="biografia.html">Biografía</a></li>
-<li><a href="libros.html">Libros</a></li>
-<li><a href="blog.html">Blog</a></li>
-<li><a href="cursos.html">Cursos</a></li>
-<li><a href="historiasdeexito.html">Historias de Éxito</a></li>
-<li><a href="prensa.html">Prensa</a></li>
-<li><a href="contacto.html">Contacto</a></li>
-</ul>
-</nav>
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="biografia.html">Biografía</a></li>
+      <li><a href="libros.html">Libros</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="cursos.html">Cursos</a></li>
+      <li><a href="historiasdeexito.html">Historias de éxito</a></li>
+      <li><a href="prensa.html">Prensa</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
 </header>
 
 <section class="hero">
 
-<h1>Blog de Aris Gómez</h1>
+  <p class="kicker">Reflexiones · Resiliencia · Libertad</p>
 
-<p>
-Un espacio dedicado a la resiliencia, el crecimiento personal, la libertad emocional y las experiencias que transforman nuestra vida.
-</p>
+  <h1>Blog de Aris Gómez</h1>
+
+  <p>
+    Un espacio dedicado a la superación personal, la reconstrucción emocional,
+    la libertad interior y las experiencias que transforman una vida.
+  </p>
 
 </section>
 
 <section class="blog-container">
 
-<article class="post">
+  <article class="post">
+    <div class="post-date">Artículo destacado</div>
+    <h2>Cómo transformar el dolor en fortaleza</h2>
+    <p>
+      Las heridas emocionales no definen quién eres. Descubre cómo convertir las experiencias más difíciles en una oportunidad de crecimiento personal y reconstrucción interior.
+    </p>
+    <a href="#" class="read-more">Leer artículo</a>
+  </article>
 
-<div class="post-date">24 Mayo 2026</div>
+  <article class="post">
+    <div class="post-date">Crecimiento personal</div>
+    <h2>Las señales silenciosas del abuso psicológico</h2>
+    <p>
+      Identificar el abuso emocional no siempre es fácil. Existen señales invisibles que afectan profundamente a la autoestima, la seguridad y el bienestar emocional.
+    </p>
+    <a href="#" class="read-more">Leer artículo</a>
+  </article>
 
-<h2>Cómo transformar el dolor en fortaleza</h2>
+  <article class="post">
+    <div class="post-date">Autoestima</div>
+    <h2>La importancia de reconstruir la autoestima</h2>
+    <p>
+      Recuperar la confianza en uno mismo es uno de los pasos más importantes para volver a vivir con libertad, dignidad y plenitud.
+    </p>
+    <a href="#" class="read-more">Leer artículo</a>
+  </article>
 
-<p>
-Las heridas emocionales no definen quién eres. Descubre cómo convertir las experiencias más difíciles en una oportunidad de crecimiento personal y reconstrucción interior.
-</p>
+  <article class="post">
+    <div class="post-date">Caso Torbe · Operación Manguera</div>
+    <h2>Mi experiencia tras el Caso Torbe y la Operación Manguera</h2>
+    <p>
+      Una reflexión personal sobre las consecuencias emocionales, mediáticas y humanas que marcaron una etapa de mi vida, así como el proceso de reconstrucción personal que me permitió recuperar mi libertad y mi identidad.
+    </p>
+    <a href="#" class="read-more">Leer artículo</a>
+  </article>
 
-<a href="#" class="read-more">Leer artículo</a>
+  <article class="post">
+    <div class="post-date">Relaciones tóxicas</div>
+    <h2>Reconstruirse después de una relación destructiva</h2>
+    <p>
+      Volver a encontrarse después de una relación marcada por la manipulación, la dependencia emocional o el abuso requiere tiempo, conciencia y amor propio.
+    </p>
+    <a href="#" class="read-more">Leer artículo</a>
+  </article>
 
-</article>
-
-<article class="post">
-
-<div class="post-date">22 Mayo 2026</div>
-
-<h2>Las señales silenciosas del abuso psicológico</h2>
-
-<p>
-Identificar el abuso emocional no siempre es fácil. Existen señales invisibles que afectan profundamente a la autoestima y al bienestar emocional.
-</p>
-
-<a href="#" class="read-more">Leer artículo</a>
-
-</article>
-
-<article class="post">
-
-<div class="post-date">20 Mayo 2026</div>
-
-<h2>La importancia de reconstruir la autoestima</h2>
-
-<p>
-Recuperar la confianza en uno mismo es uno de los pasos más importantes para volver a vivir con libertad y plenitud.
-</p>
-
-<a href="#" class="read-more">Leer artículo</a>
-
-</article>
+  <article class="post">
+    <div class="post-date">Libro</div>
+    <h2>De la oscuridad a la libertad: el origen de mi historia</h2>
+    <p>
+      Una mirada al nacimiento del libro, a su propósito y al mensaje de esperanza que busca transmitir a quienes atraviesan momentos difíciles.
+    </p>
+    <a href="libros.html" class="read-more">Ver libro</a>
+  </article>
 
 </section>
 
-<section class="newsletter">
+<section class="feature">
 
-<h2>¿Quieres seguir leyendo?</h2>
+  <h2>Una historia que también vive en el libro</h2>
 
-<p>
-Descubre nuevos artículos, reflexiones y recursos para el crecimiento personal y la transformación emocional.
-</p>
+  <p>
+    En <em>Aris: de la oscuridad a la libertad</em>, Aris Gómez comparte una historia real de resiliencia,
+    superación y transformación emocional.
+  </p>
 
-<a href="contacto.html">Contactar con Aris</a>
+  <a href="libros.html">Conocer el libro</a>
 
 </section>
 
 <footer>
-
-© 2026 Aris Gómez · Todos los derechos reservados
-
+  © 2026 Aris Gómez. Todos los derechos reservados.
 </footer>
 
 </body>
