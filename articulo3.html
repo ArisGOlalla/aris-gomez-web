@@ -29,6 +29,7 @@ nav{
     display:flex;
     justify-content:center;
     gap:40px;
+    flex-wrap:wrap;
 }
 
 nav a{
@@ -133,6 +134,43 @@ footer{
     padding:40px;
     border-top:1px solid rgba(255,255,255,.1);
     margin-top:60px;
+}
+    @media(max-width:768px){
+
+h1{
+font-size:2.35rem;
+line-height:1.12;
+letter-spacing:-1px;
+overflow-wrap:break-word;
+}
+
+main{
+padding:130px 24px 80px;
+max-width:100%;
+}
+
+.intro{
+font-size:1.15rem;
+line-height:1.7;
+}
+
+p{
+font-size:1.05rem;
+line-height:1.8;
+}
+
+nav{
+overflow-x:auto;
+justify-content:flex-start;
+padding:16px 20px;
+gap:28px;
+}
+
+nav a{
+white-space:nowrap;
+font-size:1rem;
+}
+
 }
 </style>
 </head>
