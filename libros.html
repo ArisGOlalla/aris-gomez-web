@@ -1,36 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Libros de Aris Gómez | De la Oscuridad a la Libertad</title>
 
-<meta name="description" content="Descubre los libros de Aris Gómez y su obra De la Oscuridad a la Libertad, publicada con Editorial Círculo Rojo. Un testimonio de resiliencia, superación y transformación emocional.">
+<title>Libros de Aris Gómez | De la Oscuridad a la Libertad</title>
 
-<meta name="keywords" content="libros Aris Gómez, De la Oscuridad a la Libertad, libro Aris Gómez, Editorial Círculo Rojo, libro autobiográfico, resiliencia, superación personal">
+<meta name="description" content="Descubre De la Oscuridad a la Libertad, el libro autobiográfico de Aris Gómez. Una historia real de resiliencia, superación, abuso psicológico y transformación personal. Disponible en Amazon.">
+
+<meta name="keywords" content="libros Aris Gómez, De la Oscuridad a la Libertad, libro Aris Gómez, Amazon Aris Gómez, autobiografía, resiliencia, superación personal, abuso emocional, violencia psicológica, Caso Torbe, Operación Manguera">
 
 <meta name="author" content="Aris Gómez">
-
 <link rel="canonical" href="https://arisgomez.com/libros.html">
-
 <meta name="robots" content="index, follow">
 
 <meta property="og:title" content="De la Oscuridad a la Libertad | Aris Gómez">
-<meta property="og:description" content="De la Oscuridad a la Libertad, obra testimonial de Aris Gómez publicada con Editorial Círculo Rojo.">
+<meta property="og:description" content="Libro autobiográfico de Aris Gómez. Una historia real de resiliencia, superación y transformación personal. Disponible en Amazon.">
 <meta property="og:image" content="https://arisgomez.com/libro.png">
 <meta property="og:url" content="https://arisgomez.com/libros.html">
 <meta property="og:type" content="book">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="De la Oscuridad a la Libertad | Aris Gómez">
-<meta name="twitter:description" content="De la Oscuridad a la Libertad, una historia real de resiliencia y transformación emocional.">
+<meta name="twitter:description" content="Una historia real de resiliencia, superación y transformación emocional. Disponible en Amazon.">
 <meta name="twitter:image" content="https://arisgomez.com/libro.png">
 
-
 <style>
-
 *{
 margin:0;
 padding:0;
@@ -45,14 +40,37 @@ line-height:1.7;
 overflow-x:hidden;
 }
 
-/* HERO */
+.top-nav{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:22px 8%;
+display:flex;
+justify-content:center;
+gap:34px;
+background:rgba(5,2,8,.78);
+backdrop-filter:blur(10px);
+z-index:10;
+}
+
+.top-nav a{
+color:#f6ead2;
+text-decoration:none;
+font-size:.95rem;
+letter-spacing:.08em;
+text-transform:uppercase;
+}
+
+.top-nav a:hover{
+color:#ffe66d;
+}
 
 .hero{
 min-height:100vh;
 display:flex;
 align-items:center;
-padding:120px 8%;
-
+padding:130px 8% 80px;
 background:
 radial-gradient(circle at top left, rgba(98,44,112,.45), transparent 35%),
 linear-gradient(135deg,#050208,#16051c,#050208);
@@ -69,434 +87,297 @@ align-items:center;
 
 .hero-image img{
 width:100%;
+max-width:480px;
 border-radius:36px;
-box-shadow:0 30px 80px rgba(0,0,0,.45);
-border:1px solid rgba(215,180,106,.16);
+box-shadow:0 30px 80px rgba(0,0,0,.6);
+display:block;
+margin:auto;
 }
 
 .kicker{
-display:block;
-margin-bottom:24px;
-color:#d7b46a;
-font-size:13px;
-letter-spacing:3px;
+color:#ffe66d;
+font-size:.85rem;
+letter-spacing:.22em;
 text-transform:uppercase;
+font-weight:bold;
+margin-bottom:18px;
 }
 
-.hero h1{
-font-size:78px;
+h1{
+font-size:clamp(2.7rem,6vw,5.5rem);
 line-height:1;
-margin-bottom:30px;
-color:white;
+color:#fff3b0;
+margin-bottom:26px;
 }
 
-.hero p{
-font-size:21px;
-color:rgba(255,255,255,.76);
-max-width:760px;
+.subtitle{
+font-size:1.35rem;
+color:#f6ead2;
+max-width:700px;
+margin-bottom:26px;
+}
+
+.description{
+font-size:1.05rem;
+color:#e8d8bb;
+margin-bottom:30px;
+max-width:720px;
 }
 
 .book-info{
-margin-top:40px;
-display:flex;
-gap:40px;
-flex-wrap:wrap;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:18px;
+margin:32px 0;
+max-width:650px;
 }
 
-.book-info div{
-color:#d7b46a;
-font-size:15px;
+.info-box{
+border:1px solid rgba(255,230,109,.35);
+border-radius:18px;
+padding:18px;
+background:rgba(255,255,255,.04);
 }
 
-.book-info strong{
+.info-box span{
 display:block;
-font-size:26px;
-color:white;
-margin-top:6px;
-}
-
-/* SECCIONES */
-
-section{
-padding:120px 8%;
-}
-
-.section-title{
-margin-bottom:70px;
-text-align:center;
-}
-
-.section-title span{
-display:block;
-margin-bottom:18px;
-color:#d7b46a;
-font-size:13px;
-letter-spacing:3px;
+font-size:.78rem;
+color:#ffe66d;
 text-transform:uppercase;
+letter-spacing:.12em;
+margin-bottom:6px;
 }
 
-.section-title h2{
-font-size:58px;
-color:white;
+.info-box strong{
+font-size:1rem;
+color:#fff;
 }
 
-/* SINOPSIS */
+.buttons{
+display:flex;
+flex-wrap:wrap;
+gap:18px;
+margin-top:35px;
+}
 
-.synopsis{
+.btn{
+display:inline-block;
+padding:16px 28px;
+border-radius:999px;
+text-decoration:none;
+font-weight:bold;
+letter-spacing:.04em;
+transition:.3s;
+}
+
+.btn-primary{
+background:#ffe66d;
+color:#16051c;
+}
+
+.btn-primary:hover{
+background:#fff3a6;
+transform:translateY(-3px);
+}
+
+.btn-secondary{
+border:1px solid #ffe66d;
+color:#ffe66d;
+}
+
+.btn-secondary:hover{
+background:rgba(255,230,109,.12);
+transform:translateY(-3px);
+}
+
+.section{
+padding:90px 8%;
 max-width:1100px;
 margin:auto;
-padding:70px;
-border-radius:36px;
-
-background:
-linear-gradient(160deg, rgba(215,180,106,.10), rgba(255,255,255,.02)),
-#120818;
-
-border:1px solid rgba(215,180,106,.18);
 }
 
-.synopsis p{
-font-size:21px;
-color:rgba(255,255,255,.76);
-margin-bottom:28px;
+.section h2{
+font-size:2.6rem;
+color:#fff3b0;
+margin-bottom:24px;
 }
 
-/* FRASE */
+.section p{
+color:#e8d8bb;
+font-size:1.08rem;
+margin-bottom:20px;
+}
 
-.quote-section{
-background:#030303;
-text-align:center;
+.list{
+margin-top:28px;
+display:grid;
+gap:16px;
+}
+
+.list div{
+padding:18px 22px;
+border-left:4px solid #ffe66d;
+background:rgba(255,255,255,.04);
+border-radius:12px;
+color:#f6ead2;
 }
 
 .quote{
-max-width:1000px;
-margin:auto;
-font-size:42px;
-line-height:1.4;
-color:white;
+margin-top:40px;
+padding:35px;
+border-radius:28px;
+background:linear-gradient(135deg,rgba(255,230,109,.12),rgba(255,255,255,.04));
+font-size:1.4rem;
+color:#fff3b0;
 font-style:italic;
 }
 
-.quote span{
-display:block;
-margin-top:30px;
-font-size:16px;
-letter-spacing:2px;
-text-transform:uppercase;
-color:#d7b46a;
-font-style:normal;
-}
-
-/* PLATAFORMAS */
-
-.platforms{
-max-width:1300px;
-margin:auto;
-display:flex;
-gap:24px;
-overflow-x:auto;
-padding-bottom:20px;
-}
-
-.platform-card{
-min-width:260px;
-height:180px;
-border-radius:30px;
-
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-
-background:
-linear-gradient(160deg, rgba(215,180,106,.10), rgba(255,255,255,.02)),
-#120818;
-
-border:1px solid rgba(215,180,106,.15);
-
-transition:.3s;
-}
-
-.platform-card:hover{
-transform:translateY(-8px);
-border-color:#d7b46a;
-}
-
-.platform-card h3{
-font-size:32px;
-margin-bottom:10px;
-color:white;
-}
-
-.platform-card p{
-color:rgba(255,255,255,.7);
-}
-
-/* CTA */
-
-.cta{
-text-align:center;
-padding:140px 8%;
-
-background:
-radial-gradient(circle at top, rgba(215,180,106,.10), transparent 40%),
-#040106;
-}
-
-.cta h2{
-font-size:60px;
-margin-bottom:30px;
-color:white;
-}
-
-.cta p{
-max-width:760px;
-margin:0 auto 40px;
-font-size:20px;
-color:rgba(255,255,255,.72);
-}
-
-.cta a{
-display:inline-block;
-padding:20px 44px;
-border-radius:999px;
-background:#d7b46a;
-color:#050208;
-font-weight:bold;
-text-decoration:none;
-font-size:18px;
-transition:.3s;
-}
-
-.cta a:hover{
-transform:translateY(-4px);
-}
-
-/* FOOTER */
-
 footer{
-padding:50px 8%;
+padding:40px 8%;
 text-align:center;
-background:#020103;
-border-top:1px solid rgba(215,180,106,.15);
+color:#bfae95;
+font-size:.9rem;
 }
 
-footer p{
-color:rgba(255,255,255,.5);
-}
-
-/* RESPONSIVE */
-
-@media(max-width:980px){
-
+@media(max-width:900px){
 .hero-grid{
+grid-template-columns:1fr;
+text-align:center;
+gap:45px;
+}
+
+.book-info{
 grid-template-columns:1fr;
 }
 
-.hero h1{
-font-size:54px;
+.buttons{
+justify-content:center;
 }
 
-.section-title h2{
-font-size:42px;
+.top-nav{
+gap:16px;
+font-size:.8rem;
+flex-wrap:wrap;
 }
-
-.quote{
-font-size:30px;
 }
-
-.cta h2{
-font-size:42px;
-}
-
-.synopsis{
-padding:40px;
-}
-
-}
-
 </style>
-
 </head>
 
 <body>
 
-<section class="hero">
+<nav class="top-nav">
+<a href="index.html">Inicio</a>
+<a href="biografia.html">Biografía</a>
+<a href="libros.html">Libros</a>
+<a href="cursos.html">Cursos</a>
+<a href="historiasdeexito.html">Historias de éxito</a>
+<a href="prensa.html">Prensa</a>
+<a href="contacto.html">Contacto</a>
+</nav>
 
+<section class="hero">
 <div class="hero-grid">
 
 <div class="hero-image">
-
-<img src="portada.jpg" alt="Libro Aris Gómez">
-
+<img src="libro.png" alt="Portada del libro Aris de la Oscuridad a la Libertad">
 </div>
 
-<div>
+<div class="hero-content">
+<div class="kicker">Obra autobiográfica</div>
 
-<span class="kicker">
-Obra autobiográfica
-</span>
+<h1>Aris: de la oscuridad a la libertad</h1>
 
-<h1>
-Aris: de la oscuridad a la libertad
-</h1>
+<p class="subtitle">
+Cuando la vida te empuja al abismo, solo la libertad puede salvarte.
+</p>
 
-<p>
-Un relato profundamente humano sobre
-la resiliencia, la reconstrucción emocional
-y la búsqueda de libertad interior.
+<p class="description">
+<em>Aris: de la Oscuridad a la Libertad</em> es el testimonio real, valiente y profundamente humano de una mujer que se negó a rendirse ante el dolor, el abuso y las circunstancias más adversas.
+</p>
+
+<p class="description">
+Una historia de resiliencia, reconstrucción emocional y búsqueda de libertad interior. Un relato para quienes necesitan recordar que incluso después de la noche más oscura, siempre puede nacer una nueva vida.
 </p>
 
 <div class="book-info">
-
-<div>
-ISBN
-<strong>979-1370463540</strong>
+<div class="info-box">
+<span>Autora</span>
+<strong>Aris Gómez</strong>
 </div>
 
-<div>
-Idioma
+<div class="info-box">
+<span>Idioma</span>
 <strong>Español</strong>
 </div>
 
-<div>
-Editorial
-<strong>Círculo Rojo</strong>
+<div class="info-box">
+<span>Disponible</span>
+<strong>Amazon Kindle</strong>
+</div>
+</div>
+
+<div class="buttons">
+<a href="PEGA_AQUI_EL_ENLACE_DE_AMAZON" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+Comprar en Amazon
+</a>
+
+<a href="https://www.amazon.es/s?k=Aris+de+la+oscuridad+a+la+libertad" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+Buscar en Amazon
+</a>
 </div>
 
 </div>
-
 </div>
-
-</div>
-
 </section>
 
-<section>
+<section class="section">
+<h2>Sobre el libro</h2>
 
-<div class="section-title">
+<p>
+Desde una infancia marcada por heridas invisibles, carencias afectivas y experiencias traumáticas, Aris Gómez emprende un viaje de supervivencia, autoconocimiento y transformación personal.
+</p>
 
-<span>Sinopsis</span>
+<p>
+La autora relata con honestidad cómo logró levantarse tras verse envuelta en uno de los episodios mediáticos más controvertidos de España, conocido públicamente como el Caso Torbe y la Operación Manguera, afrontando la exposición pública, el juicio social y las secuelas emocionales de una experiencia que cambió su vida para siempre.
+</p>
 
-<h2>
-Una historia real de transformación
-</h2>
+<p>
+Pero este libro no habla únicamente del sufrimiento. Habla de fuerza, dignidad, reconstrucción, esperanza y libertad.
+</p>
 
+<div class="list">
+<div>Una historia real de resiliencia y superación personal.</div>
+<div>Reflexiones sobre el abuso psicológico y sus consecuencias emocionales.</div>
+<div>El proceso de reconstrucción emocional tras la adversidad.</div>
+<div>Un mensaje de esperanza, fortaleza y libertad personal.</div>
+<div>La demostración de que siempre existe una oportunidad para volver a empezar.</div>
 </div>
-
-<div class="synopsis">
-
-<p>
-“Aris: de la oscuridad a la libertad”
-es una obra nacida desde la experiencia,
-la supervivencia emocional y el deseo
-de transformar el dolor en propósito.
-</p>
-
-<p>
-A través de un relato íntimo y honesto,
-Aris Gómez comparte una historia marcada
-por la lucha interior, la resiliencia
-y la reconstrucción personal.
-</p>
-
-<p>
-El libro busca dar voz a historias silenciadas
-y transmitir un mensaje de esperanza,
-fortaleza y libertad emocional.
-</p>
-
-</div>
-
-</section>
-
-<section class="quote-section">
 
 <div class="quote">
-
-“No puedes cambiar el pasado,
-pero sí transformar lo que haces con él.”
-
-<span>
-Aris Gómez
-</span>
-
+“Porque ninguna historia está escrita para terminar en la oscuridad.”
 </div>
-
 </section>
 
-<section>
-
-<div class="section-title">
-
-<span>Distribución oficial</span>
-
-<h2>
-Disponible en plataformas
-</h2>
-
-</div>
-
-<div class="platforms">
-
-<a class="platform-card"
-href="https://libros.cc/ARIS-DE-LA-OSCURIDAD-A-LA-LIBERTAD.htm?isbn=9791370463540"
-target="_blank"
-style="text-decoration:none;">
-
-<h3>Libros.cc</h3>
-<p>Disponible online</p>
-
-</a>
-
-<div class="platform-card">
-<h3>Amazon</h3>
-<p>Próximamente</p>
-</div>
-
-<div class="platform-card">
-<h3>Casa del Libro</h3>
-<p>Próximamente</p>
-</div>
-
-<div class="platform-card">
-<h3>Apple Books</h3>
-<p>Próximamente</p>
-</div>
-
-<div class="platform-card">
-<h3>Google Books</h3>
-<p>Próximamente</p>
-</div>
-
-</div>
-
-</section>
-
-<section class="cta">
-
-<h2>
-Descubre la obra
-</h2>
+<section class="section">
+<h2>Una obra acompañada de fuerza y verdad</h2>
 
 <p>
-Una historia escrita desde la experiencia,
-la transformación y el deseo de ayudar
-a otras personas.
+La obra incluye una emotiva reflexión de Mabel Lozano, reconocida directora, guionista y activista en la lucha contra la explotación sexual, quien pone en valor el coraje de transformar las heridas en fuerza y esperanza.
 </p>
 
-<a href="https://libros.cc/ARIS-DE-LA-OSCURIDAD-A-LA-LIBERTAD.htm?isbn=9791370463540" target="_blank">
-Comprar libro
-</a>
+<p>
+Además, el libro incorpora la canción original <strong>“Guerrera”</strong>, cuya letra fue escrita por Aris Gómez e interpretada por <strong>MK Maik</strong>, convirtiéndose en la banda sonora emocional de esta historia de superación.
+</p>
 
+<div class="buttons">
+<a href="https://www.amazon.es/ARIS-OSCURIDAD-LIBERTAD-CUANDO-SALVARTE/dp/B0H2352BCK/ref=sr_1_1?dib=eyJ2IjoiMSJ9.QfZsFjfDkt4j_tKozmC1CA.A5Y8h3XXr8iA6_zqatsLu9NSzTgiAALVipf9O_0IHUk&dib_tag=se&qid=1779613725&refinements=p_27%3AAris+Gómez+Olalla&s=books&sr=1-1" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+Comprar ahora en Amazon
+</a>
+</div>
 </section>
 
 <footer>
-
-<p>
-© 2026 Aris Gómez · Obra oficial
-</p>
-
+© 2026 Aris Gómez. Todos los derechos reservados.
 </footer>
 
 </body>
