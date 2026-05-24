@@ -276,11 +276,55 @@ padding:42px 28px;
 font-size:2.6rem;
 }
 }
+  /* ===== MENÚ PRINCIPAL ===== */
+
+nav{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+z-index:9999;
+background:rgba(5,2,8,.92);
+backdrop-filter:blur(10px);
+border-bottom:1px solid rgba(232,211,154,.10);
+}
+
+nav ul{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:40px;
+list-style:none;
+padding:25px 0;
+margin:0;
+}
+
+nav li{
+list-style:none;
+}
+
+nav a{
+text-decoration:none;
+color:#f4d97b;
+font-family:Georgia,serif;
+font-size:18px;
+font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+color:#ffffff;
+}
+
+body{
+padding-top:90px;
+}
 </style>
 </head>
 
 <body>
 
+<header>
 <nav>
 <ul>
 <li><a href="index.html">Inicio</a></li>
@@ -293,6 +337,7 @@ font-size:2.6rem;
 <li><a href="contacto.html">Contacto</a></li>
 </ul>
 </nav>
+</header>
 
 <header class="hero">
   <div class="hero-inner">
