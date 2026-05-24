@@ -31,9 +31,7 @@
   --gold:#e8d39a;
   --gold-soft:#fff3b0;
   --cream:#f6ead2;
-  --muted:#d8c6a8;
   --dark:#050208;
-  --purple:#17051d;
 }
 
 *{
@@ -51,8 +49,6 @@ body{
   line-height:1.75;
   overflow-x:hidden;
 }
-
-/* NAV IGUAL AL INICIO */
 
 header{
   position:fixed;
@@ -85,8 +81,6 @@ nav a{
 nav a:hover{
   color:white;
 }
-
-/* HERO */
 
 .hero{
   min-height:100vh;
@@ -193,7 +187,9 @@ h1{
   margin-top:34px;
 }
 
-.btn{
+.btn,
+.buy-btn,
+.outline-btn{
   display:inline-block;
   padding:16px 34px;
   border-radius:999px;
@@ -203,27 +199,29 @@ h1{
   transition:.3s;
 }
 
-.btn-primary{
+.btn-primary,
+.buy-btn{
   background:#e8d26f;
   color:#14080c;
 }
 
-.btn-primary:hover{
+.btn-primary:hover,
+.buy-btn:hover{
   transform:translateY(-3px);
   box-shadow:0 12px 25px rgba(232,210,111,.35);
 }
 
-.btn-outline{
+.btn-outline,
+.outline-btn{
   border:1px solid var(--gold);
   color:var(--gold);
 }
 
-.btn-outline:hover{
+.btn-outline:hover,
+.outline-btn:hover{
   background:rgba(232,211,154,.12);
   transform:translateY(-3px);
 }
-
-/* SECCIONES */
 
 .section{
   padding:95px 8%;
@@ -269,39 +267,43 @@ h1{
   font-style:italic;
 }
 
-.platforms{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:20px;
-  margin-top:38px;
+.availability{
+  max-width:900px;
+  margin:120px auto;
+  text-align:center;
+  padding:0 8%;
 }
 
-.platform-card{
-  padding:26px;
-  border-radius:24px;
-  background:rgba(255,255,255,.04);
-  border:1px solid rgba(232,211,154,.24);
-}
-
-.platform-card span{
-  display:block;
+.section-kicker{
   color:var(--gold);
-  font-size:.85rem;
-  letter-spacing:.16em;
+  letter-spacing:7px;
   text-transform:uppercase;
-  margin-bottom:8px;
+  font-size:.95rem;
+  font-weight:600;
+  margin-bottom:16px;
+}
+
+.availability h2{
+  font-size:clamp(3rem,6vw,5rem);
+  color:var(--gold-soft);
+  line-height:1;
+  margin-bottom:26px;
   font-weight:600;
 }
 
-.platform-card h3{
-  color:var(--gold-soft);
-  font-size:1.55rem;
-  margin-bottom:12px;
+.availability-text{
+  max-width:760px;
+  margin:auto;
+  font-size:1.35rem;
+  color:#efe7d6;
 }
 
-.platform-card p{
-  font-size:1.08rem;
-  margin-bottom:20px;
+.availability-buttons{
+  margin-top:46px;
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
 }
 
 footer{
@@ -310,8 +312,6 @@ footer{
   color:#bfae95;
   font-size:1rem;
 }
-
-/* RESPONSIVE */
 
 @media(max-width:950px){
   nav ul{
@@ -336,10 +336,6 @@ footer{
 
   .buttons{
     justify-content:center;
-  }
-
-  .platforms{
-    grid-template-columns:1fr;
   }
 }
 </style>
@@ -455,31 +451,29 @@ footer{
 </section>
 
 <section class="availability">
-
   <p class="section-kicker">Disponible actualmente</p>
 
   <h2>Dónde conseguir el libro</h2>
 
   <p class="availability-text">
-    <em>Aris: de la oscuridad a la libertad</em> está disponible en formato Kindle y a través de la red de distribución de Editorial Círculo Rojo.
+    <em>Aris: de la oscuridad a la libertad</em> está disponible en formato Kindle en Amazon y a través de Libros.cc dentro de la red de distribución editorial de Círculo Rojo.
   </p>
 
   <div class="availability-buttons">
-
-    <a href="https://www.amazon.es/ARIS-OSCURIDAD-LIBERTAD-CUANDO-SALVARTE/dp/B0H2352BCK/ref=sr_1_1?dib=eyJ2IjoiMSJ9.QfZsFjfDkt4j_tKozmC1CA.A5Y8h3XXr8iA6_zqatsLu9NSzTgiAALVipf9O_0IHUk&dib_tag=se&qid=1779613725&refinements=p_27%3AAris+Gómez+Olalla&s=books&sr=1-1"
+    <a href="https://www.amazon.es/s?k=Aris+de+la+oscuridad+a+la+libertad+Aris+G%C3%B3mez"
        target="_blank"
+       rel="noopener noreferrer"
        class="buy-btn">
        Comprar en Amazon
     </a>
 
     <a href="https://libros.cc/ARIS-DE-LA-OSCURIDAD-A-LA-LIBERTAD.htm?isbn=9791370463540"
        target="_blank"
+       rel="noopener noreferrer"
        class="outline-btn">
        Ver en Libros.cc
     </a>
-
   </div>
-
 </section>
 
 <section class="section">
