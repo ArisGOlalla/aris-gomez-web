@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +7,6 @@
 <title>Cómo transformar el dolor en fortaleza | Aris Gómez</title>
 
 <style>
-
 *{
 margin:0;
 padding:0;
@@ -17,57 +15,15 @@ box-sizing:border-box;
 
 body{
 background:
-
-@media(max-width:768px){
-h1{
-font-size:2.35rem;
-line-height:1.12;
-letter-spacing:-1px;
-}
-
-main{
-padding:130px 24px 80px;
-max-width:100%;
-}
-
-body{
-background:
 radial-gradient(circle at top right, rgba(91,36,92,.45), transparent 35%),
 linear-gradient(135deg,#050208,#1b0a25,#050208);
 color:#f6ead2;
-font-family:Georgia,serif;
+font-family:Georgia, serif;
 line-height:1.9;
 overflow-x:hidden;
 }
 
-@media(max-width:768px){
-h1{
-font-size:2.35rem;
-line-height:1.12;
-letter-spacing:-1px;
-}
-
-main{
-padding:130px 24px 80px;
-max-width:100%;
-}
-
-
-
-@media(max-width:768px){
-h1{
-font-size:2.35rem;
-line-height:1.12;
-letter-spacing:-1px;
-}
-
-main{
-padding:130px 24px 80px;
-max-width:100%;
-}
-
-
-nav{
+header{
 position:fixed;
 top:0;
 left:0;
@@ -78,24 +34,25 @@ border-bottom:1px solid rgba(212,175,55,.15);
 z-index:9999;
 }
 
-nav ul{
+nav{
 display:flex;
 justify-content:center;
 gap:40px;
-list-style:none;
 padding:22px 0;
+flex-wrap:wrap;
 }
 
 nav a{
 text-decoration:none;
 color:#d4af37;
-font-size:18px;
+font-size:16px;
+font-weight:600;
 }
 
 main{
 max-width:900px;
 margin:auto;
-padding:150px 30px 100px;
+padding:140px 30px 100px;
 }
 
 .categoria{
@@ -104,14 +61,14 @@ text-transform:uppercase;
 letter-spacing:4px;
 font-size:14px;
 margin-bottom:20px;
+font-weight:bold;
 }
 
 h1{
 font-size:4rem;
-font-weight:400;
+line-height:1.1;
 color:#f5dc82;
 margin-bottom:30px;
-line-height:1.1;
 }
 
 .intro{
@@ -121,18 +78,60 @@ margin-bottom:50px;
 }
 
 p{
-font-size:1.15rem;
+font-size:1.16rem;
 margin-bottom:28px;
 }
 
 blockquote{
 margin:50px 0;
-padding:35px;
-border-left:4px solid #d4af37;
-background:rgba(255,255,255,.03);
-font-style:italic;
-font-size:1.3rem;
+padding:30px;
+border-left:5px solid #d4af37;
+background:rgba(255,255,255,.04);
 color:#f5dc82;
+font-style:italic;
+font-size:1.4rem;
+}
+
+.comments-section{
+margin-top:80px;
+padding:40px;
+border-radius:25px;
+border:1px solid rgba(212,175,55,.4);
+background:rgba(255,255,255,.03);
+}
+
+.comments-section h2{
+color:#f5dc82;
+margin-bottom:20px;
+font-size:2rem;
+}
+
+.comments-section form{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.comments-section input,
+.comments-section textarea{
+width:100%;
+padding:15px;
+border-radius:12px;
+border:1px solid rgba(212,175,55,.4);
+background:transparent;
+color:white;
+font-size:1rem;
+}
+
+.comments-section button{
+width:fit-content;
+padding:14px 28px;
+border:none;
+border-radius:30px;
+background:#f5dc82;
+color:#111;
+cursor:pointer;
+font-weight:bold;
 }
 
 .volver{
@@ -140,188 +139,64 @@ display:inline-block;
 margin-top:40px;
 padding:14px 28px;
 border:1px solid #d4af37;
-border-radius:999px;
-color:#d4af37;
+border-radius:30px;
 text-decoration:none;
-transition:.3s;
-}
-
-.volver:hover{
-background:rgba(212,175,55,.15);
+color:#d4af37;
 }
 
 footer{
-padding:50px;
 text-align:center;
+padding:50px;
+margin-top:60px;
 border-top:1px solid rgba(212,175,55,.15);
-color:rgba(255,255,255,.5);
+color:rgba(255,255,255,.6);
 }
 
 @media(max-width:768px){
 
 h1{
-font-size:2.7rem;
+font-size:2.4rem;
+line-height:1.15;
 }
 
 main{
 padding:130px 25px 80px;
 }
 
-nav ul{
-overflow-x:auto;
-justify-content:flex-start;
-padding:15px;
-gap:15px;
-}
-
-nav a{
-white-space:nowrap;
-}
-
-}
-.comments-section{
-  margin-top:70px;
-  padding:40px;
-  border-radius:28px;
-  border:1px solid rgba(212,175,55,.35);
-  background:rgba(255,255,255,.03);
-}
-
-.comments-section h2{
-  color:#f5dc82;
-  font-size:2.4rem;
-  margin-bottom:18px;
-}
-
-.comments-section p{
-  color:#f6ead2;
-  margin-bottom:25px;
-}
-
-.comments-section input,
-.comments-section textarea{
-  width:100%;
-  margin-bottom:18px;
-  padding:16px 18px;
-  border-radius:14px;
-  border:1px solid rgba(212,175,55,.35);
-  background:rgba(5,2,8,.75);
-  color:#f6ead2;
-  font-family:Georgia,serif;
-  font-size:1rem;
-}
-
-.comments-section input::placeholder,
-.comments-section textarea::placeholder{
-  color:rgba(246,234,210,.65);
-}
-
-.comments-section button{
-  padding:14px 30px;
-  border-radius:999px;
-  border:1px solid #d4af37;
-  background:#f5dc82;
-  color:#120812;
-  font-family:Georgia,serif;
-  font-weight:bold;
-  cursor:pointer;
-}
-  <section class="comentarios">
-
-.comentarios{
-margin-top:80px;
-padding:40px;
-background:rgba(255,255,255,.03);
-border:1px solid rgba(212,175,55,.18);
-border-radius:24px;
-}
-
-.comentarios h2{
-color:#f4d97b;
-font-size:2rem;
-margin-bottom:15px;
-font-family:Georgia,serif;
-}
-
-.comentarios p{
-margin-bottom:25px;
-color:#f6ead2;
-}
-
-.comentarios input,
-.comentarios textarea{
-width:100%;
-padding:16px;
-margin-bottom:16px;
-background:#120b18;
-border:1px solid rgba(212,175,55,.25);
-border-radius:12px;
-color:white;
-font-size:16px;
-}
-
-.comentarios textarea{
-min-height:150px;
-resize:vertical;
-}
-
-.comentarios button{
-background:#f4d97b;
-color:#111;
-border:none;
-padding:15px 28px;
-border-radius:999px;
-font-weight:bold;
-cursor:pointer;
-transition:.3s;
-}
-
-.comentarios button:hover{
-transform:translateY(-2px);
-}
-  body{
-background:
-
-@media(max-width:768px){
-h1{
-font-size:2.35rem;
-line-height:1.12;
-letter-spacing:-1px;
-}
-
-main{
-padding:130px 24px 80px;
-max-width:100%;
-}
-
 .intro{
 font-size:1.15rem;
-line-height:1.7;
 }
 
 p{
 font-size:1.05rem;
-line-height:1.8;
 }
+
+nav{
+gap:25px;
+padding:18px;
+}
+
+nav a{
+font-size:15px;
+}
+
 }
 </style>
 </head>
 
 <body>
 
+<header>
 <nav>
-<ul>
-<li><a href="index.html">Inicio</a></li>
-<li><a href="blog.html">Blog</a></li>
-<li><a href="contacto.html">Contacto</a></li>
-</ul>
+<a href="index.html">Inicio</a>
+<a href="blog.html">Blog</a>
+<a href="contacto.html">Contacto</a>
 </nav>
+</header>
 
 <main>
 
-<div class="categoria">
-Crecimiento personal
-</div>
+<div class="categoria">Crecimiento Personal</div>
 
 <h1>Cómo transformar el dolor en fortaleza</h1>
 
@@ -362,34 +237,40 @@ También descubrí que pedir ayuda no es una señal de debilidad. En los momento
 </blockquote>
 
 <p>
-La resiliencia se construye poco a poco, en cada decisión de levantarse después de una caída, en cada límite que aprendemos a poner y en cada vez que elegimos avanzar a pesar del miedo.
+Con el tiempo comprendí que cada experiencia difícil podía enseñarme algo sobre mí mismo. Aprendí a escuchar mis emociones, a establecer límites y a reconstruir una identidad que ya no estuviera basada únicamente en el sufrimiento.
 </p>
 
 <p>
-Hoy miro atrás y veo a aquella niña que sufrió en silencio. No puedo cambiar lo que vivió, pero sí honrar su lucha. Cada obstáculo superado se convirtió en una lección y cada herida sanada en una herramienta para ayudar a otras personas.
+La resiliencia no nace de la ausencia de dolor. Nace precisamente de la capacidad de atravesarlo sin rendirse.
 </p>
 
 <p>
-Porque incluso después de la noche más larga, siempre termina amaneciendo.
+Hoy sé que ninguna historia está completamente escrita. Siempre existe la posibilidad de empezar de nuevo, recuperar la esperanza y construir una vida diferente.
 </p>
+
+<p>
+Por eso comparto mi experiencia. Porque sé que detrás de cada persona que lucha en silencio existe una fuerza que aún no ha descubierto completamente.
+</p>
+
+<p>
+Y porque incluso después de la noche más larga, siempre termina amaneciendo.
+</p>
+
 <section class="comments-section">
-  <h2>Deja tu comentario</h2>
+<h2>Deja tu comentario</h2>
 
-  <p>
-    Si este artículo te ha inspirado o quieres compartir tu reflexión, puedes dejar tu mensaje aquí.
-  </p>
+<form>
+<input type="text" placeholder="Tu nombre" required>
 
-  <form action="https://formspree.io/f/xdajlooa" method="POST">
-    <input type="text" name="nombre" placeholder="Tu nombre" required>
-    <input type="email" name="email" placeholder="Tu email" required>
-    <textarea name="comentario" rows="6" placeholder="Escribe tu comentario..." required></textarea>
+<input type="email" placeholder="Tu correo electrónico" required>
 
-    <button type="submit">Enviar comentario</button>
-  </form>
+<textarea rows="6" placeholder="Escribe tu comentario..." required></textarea>
+
+<button type="submit">Enviar comentario</button>
+</form>
 </section>
-<a href="blog.html" class="volver">
-← Volver al blog
-</a>
+
+<a href="blog.html" class="volver">← Volver al blog</a>
 
 </main>
 
