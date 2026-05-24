@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Cómo transformar el dolor en fortaleza | Aris Gómez</title>
+
+<meta name="description" content="Artículo de Aris Gómez sobre cómo transformar el dolor en fortaleza, resiliencia y libertad interior.">
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 *{
@@ -18,7 +23,7 @@ background:
 radial-gradient(circle at top right, rgba(91,36,92,.45), transparent 35%),
 linear-gradient(135deg,#050208,#1b0a25,#050208);
 color:#f6ead2;
-font-family:Georgia, serif;
+font-family:'Cormorant Garamond', serif;
 line-height:1.9;
 overflow-x:hidden;
 }
@@ -45,65 +50,75 @@ flex-wrap:wrap;
 nav a{
 text-decoration:none;
 color:#d4af37;
-font-size:16px;
-font-weight:600;
+font-size:1.2rem;
+font-weight:500;
 }
 
 main{
 max-width:900px;
 margin:auto;
-padding:140px 30px 100px;
+padding:150px 30px 100px;
 }
 
 .categoria{
 color:#d4af37;
 text-transform:uppercase;
-letter-spacing:4px;
-font-size:14px;
-margin-bottom:20px;
-font-weight:bold;
+letter-spacing:8px;
+font-size:1.1rem;
+margin-bottom:25px;
+font-weight:500;
 }
 
 h1{
-font-size:4rem;
-line-height:1.1;
+font-size:5rem;
+font-weight:500;
+line-height:.95;
+letter-spacing:-1px;
 color:#f5dc82;
-margin-bottom:30px;
+margin-bottom:40px;
 }
 
 .intro{
-font-size:1.4rem;
+font-size:2rem;
+line-height:1.6;
 color:#e8d8a8;
-margin-bottom:50px;
+margin-bottom:60px;
 }
 
 p{
-font-size:1.16rem;
-margin-bottom:28px;
+font-size:1.55rem;
+line-height:1.9;
+color:#f6ead2;
+margin-bottom:30px;
 }
 
 blockquote{
-margin:50px 0;
-padding:30px;
+margin:60px 0;
+padding:35px;
 border-left:5px solid #d4af37;
 background:rgba(255,255,255,.04);
 color:#f5dc82;
 font-style:italic;
-font-size:1.4rem;
+font-size:1.8rem;
 }
 
 .comments-section{
-margin-top:80px;
+margin-top:90px;
 padding:40px;
 border-radius:25px;
-border:1px solid rgba(212,175,55,.4);
+border:1px solid rgba(212,175,55,.35);
 background:rgba(255,255,255,.03);
 }
 
 .comments-section h2{
 color:#f5dc82;
+font-size:2.5rem;
 margin-bottom:20px;
-font-size:2rem;
+}
+
+.comments-section p{
+font-size:1.3rem;
+margin-bottom:20px;
 }
 
 .comments-section form{
@@ -118,30 +133,39 @@ width:100%;
 padding:15px;
 border-radius:12px;
 border:1px solid rgba(212,175,55,.4);
-background:transparent;
-color:white;
-font-size:1rem;
+background:rgba(0,0,0,.15);
+color:#fff;
+font-family:'Cormorant Garamond', serif;
+font-size:1.2rem;
+}
+
+.comments-section input::placeholder,
+.comments-section textarea::placeholder{
+color:rgba(246,234,210,.65);
 }
 
 .comments-section button{
 width:fit-content;
-padding:14px 28px;
+padding:14px 30px;
 border:none;
-border-radius:30px;
+border-radius:999px;
 background:#f5dc82;
 color:#111;
+font-family:'Cormorant Garamond', serif;
+font-size:1.2rem;
+font-weight:600;
 cursor:pointer;
-font-weight:bold;
 }
 
 .volver{
 display:inline-block;
 margin-top:40px;
-padding:14px 28px;
+padding:14px 30px;
 border:1px solid #d4af37;
-border-radius:30px;
+border-radius:999px;
 text-decoration:none;
 color:#d4af37;
+font-size:1.15rem;
 }
 
 footer{
@@ -150,25 +174,40 @@ padding:50px;
 margin-top:60px;
 border-top:1px solid rgba(212,175,55,.15);
 color:rgba(255,255,255,.6);
+font-size:1.1rem;
 }
 
 @media(max-width:768px){
-
-h1{
-font-size:2.4rem;
-line-height:1.15;
-}
 
 main{
 padding:130px 25px 80px;
 }
 
+h1{
+font-size:3.2rem;
+line-height:1;
+}
+
 .intro{
-font-size:1.15rem;
+font-size:1.6rem;
 }
 
 p{
-font-size:1.05rem;
+font-size:1.35rem;
+line-height:1.8;
+}
+
+blockquote{
+font-size:1.5rem;
+padding:25px;
+}
+
+.comments-section{
+padding:25px;
+}
+
+.comments-section h2{
+font-size:2rem;
 }
 
 nav{
@@ -177,7 +216,7 @@ padding:18px;
 }
 
 nav a{
-font-size:15px;
+font-size:1rem;
 }
 
 }
@@ -196,7 +235,7 @@ font-size:15px;
 
 <main>
 
-<div class="categoria">Crecimiento Personal</div>
+<div class="categoria">Crecimiento personal</div>
 
 <h1>Cómo transformar el dolor en fortaleza</h1>
 
@@ -233,11 +272,11 @@ También descubrí que pedir ayuda no es una señal de debilidad. En los momento
 </p>
 
 <blockquote>
-"La verdadera victoria no consiste en no caer nunca. Consiste en levantarse una vez más de las que fueron necesarias."
+“La verdadera victoria no consiste en no caer nunca. Consiste en levantarse una vez más de las que fueron necesarias.”
 </blockquote>
 
 <p>
-Con el tiempo comprendí que cada experiencia difícil podía enseñarme algo sobre mí mismo. Aprendí a escuchar mis emociones, a establecer límites y a reconstruir una identidad que ya no estuviera basada únicamente en el sufrimiento.
+Con el tiempo comprendí que cada experiencia difícil podía enseñarme algo sobre mí misma. Aprendí a escuchar mis emociones, a establecer límites y a reconstruir una identidad que ya no estuviera basada únicamente en el sufrimiento.
 </p>
 
 <p>
@@ -257,17 +296,21 @@ Y porque incluso después de la noche más larga, siempre termina amaneciendo.
 </p>
 
 <section class="comments-section">
+
 <h2>Deja tu comentario</h2>
 
-<form>
-<input type="text" placeholder="Tu nombre" required>
+<p>
+Si este artículo te ha inspirado o quieres compartir tu reflexión, puedes dejar tu mensaje aquí.
+</p>
 
-<input type="email" placeholder="Tu correo electrónico" required>
-
-<textarea rows="6" placeholder="Escribe tu comentario..." required></textarea>
+<form action="https://formspree.io/f/xdajlooa" method="POST">
+<input type="text" name="nombre" placeholder="Tu nombre" required>
+<input type="email" name="email" placeholder="Tu correo electrónico" required>
+<textarea name="comentario" rows="6" placeholder="Escribe tu comentario..." required></textarea>
 
 <button type="submit">Enviar comentario</button>
 </form>
+
 </section>
 
 <a href="blog.html" class="volver">← Volver al blog</a>
