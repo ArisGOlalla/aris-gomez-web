@@ -134,7 +134,106 @@ white-space:nowrap;
 }
 
 }
+.comments-section{
+  margin-top:70px;
+  padding:40px;
+  border-radius:28px;
+  border:1px solid rgba(212,175,55,.35);
+  background:rgba(255,255,255,.03);
+}
 
+.comments-section h2{
+  color:#f5dc82;
+  font-size:2.4rem;
+  margin-bottom:18px;
+}
+
+.comments-section p{
+  color:#f6ead2;
+  margin-bottom:25px;
+}
+
+.comments-section input,
+.comments-section textarea{
+  width:100%;
+  margin-bottom:18px;
+  padding:16px 18px;
+  border-radius:14px;
+  border:1px solid rgba(212,175,55,.35);
+  background:rgba(5,2,8,.75);
+  color:#f6ead2;
+  font-family:Georgia,serif;
+  font-size:1rem;
+}
+
+.comments-section input::placeholder,
+.comments-section textarea::placeholder{
+  color:rgba(246,234,210,.65);
+}
+
+.comments-section button{
+  padding:14px 30px;
+  border-radius:999px;
+  border:1px solid #d4af37;
+  background:#f5dc82;
+  color:#120812;
+  font-family:Georgia,serif;
+  font-weight:bold;
+  cursor:pointer;
+}
+  <section class="comentarios">
+
+.comentarios{
+margin-top:80px;
+padding:40px;
+background:rgba(255,255,255,.03);
+border:1px solid rgba(212,175,55,.18);
+border-radius:24px;
+}
+
+.comentarios h2{
+color:#f4d97b;
+font-size:2rem;
+margin-bottom:15px;
+font-family:Georgia,serif;
+}
+
+.comentarios p{
+margin-bottom:25px;
+color:#f6ead2;
+}
+
+.comentarios input,
+.comentarios textarea{
+width:100%;
+padding:16px;
+margin-bottom:16px;
+background:#120b18;
+border:1px solid rgba(212,175,55,.25);
+border-radius:12px;
+color:white;
+font-size:16px;
+}
+
+.comentarios textarea{
+min-height:150px;
+resize:vertical;
+}
+
+.comentarios button{
+background:#f4d97b;
+color:#111;
+border:none;
+padding:15px 28px;
+border-radius:999px;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+}
+
+.comentarios button:hover{
+transform:translateY(-2px);
+}
 </style>
 </head>
 
@@ -203,13 +302,61 @@ Hoy miro atrás y veo a aquella niña que sufrió en silencio. No puedo cambiar 
 <p>
 Porque incluso después de la noche más larga, siempre termina amaneciendo.
 </p>
+<section class="comments-section">
+  <h2>Deja tu comentario</h2>
 
+  <p>
+    Si este artículo te ha inspirado o quieres compartir tu reflexión, puedes dejar tu mensaje aquí.
+  </p>
+
+  <form action="https://formspree.io/f/TU_CODIGO_AQUI" method="POST">
+    <input type="text" name="nombre" placeholder="Tu nombre" required>
+    <input type="email" name="email" placeholder="Tu email" required>
+    <textarea name="comentario" rows="6" placeholder="Escribe tu comentario..." required></textarea>
+
+    <button type="submit">Enviar comentario</button>
+  </form>
+</section>
 <a href="blog.html" class="volver">
 ← Volver al blog
 </a>
 
 </main>
+<section class="comentarios">
 
+<h2>Comparte tu experiencia</h2>
+
+<p>
+¿Te ha ayudado este artículo?
+Puedes dejar tu reflexión, experiencia o mensaje.
+</p>
+
+<form action="https://formspree.io/f/xdajlooa" method="POST">
+
+<input
+type="text"
+name="nombre"
+placeholder="Tu nombre"
+required>
+
+<input
+type="email"
+name="email"
+placeholder="Tu correo electrónico"
+required>
+
+<textarea
+name="comentario"
+placeholder="Escribe tu comentario..."
+required></textarea>
+
+<button type="submit">
+Enviar comentario
+</button>
+
+</form>
+
+</section>
 <footer>
 © 2026 Aris Gómez · Sitio Oficial
 </footer>
