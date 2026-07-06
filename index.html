@@ -613,9 +613,3 @@
   </footer>
 </body>
 </html>
-'''
-
-path = Path("/mnt/data/index.html")
-path.write_text(html, encoding="utf-8")
-print(f"Archivo creado: {path}")
-print(f"Tamaño: {path.stat().st_size} bytes")
