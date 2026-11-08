@@ -30,6 +30,13 @@ section.band{border-top:1px solid var(--line);padding:52px 0}.grid{display:grid;
 .frecuencia-foto{grid-area:foto;align-self:center;justify-self:center;max-width:265px;width:100%;margin:0}
 .frecuencia-foto img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--line)}
 @media(max-width:680px){.card.frecuencia-ficha{grid-template-columns:minmax(0,1fr);grid-template-areas:"titulo" "foto" "texto";row-gap:16px}.frecuencia-titulo h3{margin-bottom:0}.frecuencia-foto{max-width:225px}}
+
+#canciones .grid{align-items:stretch}
+#canciones .grid > .card:not(.feature){min-width:0;align-items:stretch}
+#canciones .grid > .card:not(.feature) > .kicker{margin-bottom:12px}
+#canciones .grid > .card:not(.feature) > h3{margin-bottom:14px}
+#canciones .grid > .card:not(.feature) > p:not(.kicker){line-height:1.6;margin:0 0 12px;text-align:left}
+#canciones .grid > .card:not(.feature) > .actions{margin-top:auto;padding-top:10px;align-items:center}
 </style>
 </head>
 <body>
@@ -50,7 +57,7 @@ section.band{border-top:1px solid var(--line);padding:52px 0}.grid{display:grid;
 <main id="contenido">
 <section class="hero" aria-labelledby="titulo">
 <div><p class="kicker">Aris Gómez · Letras y música</p><h1 id="titulo">Escribo historias.<br>También canciones.</h1><p class="lead">Escribo letras para otros artistas y publico mi propia música como <strong>ARIS G</strong>. A veces una historia pide un libro. Otras veces pide un estribillo.</p>
-<div class="actions"><a class="button primary" href="#canciones">Canciones que he escrito</a><a class="button" href="#aris-g">Mi música como ARIS G</a></div></div>
+<div class="actions"><a class="button primary" href="#canciones">Canciones que he escrito</a><a class="button" href="aris-g.html">Mi música como ARIS G</a></div></div>
 <div class="graphic" aria-hidden="true"><svg class="wave" viewBox="0 0 360 130" fill="none"><path d="M0 65h360" stroke="currentColor" opacity=".25"/><path d="M4 65h35l9-8 10 17 12-32 13 43 14-59 14 79 15-61 16 38 17-63 18 94 18-106 18 86 17-60 16 46 14-32 14 26 12-19 11 13 11-7h38" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
 </section>
 <section class="band artist" id="aris-g" aria-labelledby="nombre-artistico">
@@ -72,7 +79,7 @@ section.band{border-top:1px solid var(--line);padding:52px 0}.grid{display:grid;
 <div class="actions"><a class="button primary" href="https://music.apple.com/us/album/frecuencia-single/1875877980">Escuchar «Frecuencia»</a><a class="button" href="https://www.mkmaik.com/">Web de MK MAIK</a></div></div>
 </article>
 <article class="card"><p class="kicker">Letra · MK MAIK</p><h3>ChupyChupy</h3><p>La idea de «ChupyChupy» nació una tarde en el sofá, mientras mi pareja, MK MAIK, y yo tomábamos unos Chupa Chups con mi perrita Pelusa al lado. De ese momento salió una canción divertida dedicada a la marca: yo escribí la letra y MK MAIK la interpretó.</p><p>La canción sonó en <em>Luar</em>, en la Televisión de Galicia, y la propia marca Chupa Chups reaccionó en Instagram.</p><div class="actions"><a class="button" href="https://music.apple.com/us/album/mk-maik-chupychupy-single/6771137442">Escuchar «ChupyChupy»</a><a class="button" href="https://youtu.be/fEtCwoDPhmA?si=ZT_YDS20xWDSzW9K">Ver en Luar ↗</a></div></article>
-<article class="card"><p class="kicker">Letra · Banda sonora · MK MAIK</p><h3>Guerrera</h3><p>Escribí la letra de «Guerrera», interpretada por MK MAIK. Es la banda sonora de mi libro <cite>ARIS: De la oscuridad a la libertad</cite>, y lleva al terreno de la música la historia de supervivencia y reconstrucción que cuento en sus páginas.</p><div class="actions"><a class="button" href="https://music.apple.com/us/album/guerrera-single/1879557861">Escuchar «Guerrera»</a><a class="button" href="libros.html">Ver el libro</a></div></article>
+<article class="card"><p class="kicker">Letra · Banda sonora · MK MAIK</p><h3>Guerrera</h3><p>Escribí «Guerrera» para que la interpretara MK MAIK. La canción es la banda sonora de mi libro <cite>ARIS: De la oscuridad a la libertad</cite> y nace de la misma historia que cuento en sus páginas: cómo volví a tomar las riendas de mi vida.</p><p>Quise que la letra recogiera algo que para mí también es valentía: seguir adelante incluso cuando todavía tienes miedo.</p><div class="actions"><a class="button" href="https://music.apple.com/us/album/guerrera-single/1879557861">Escuchar «Guerrera»</a><a class="button" href="libros.html">Ver el libro</a></div></article>
 </div>
 </section>
 <section class="band contact" aria-labelledby="propuesta">
