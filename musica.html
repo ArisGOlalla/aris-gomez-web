@@ -44,6 +44,18 @@ section.band{border-top:1px solid var(--line);padding:52px 0}.grid{display:grid;
 #canciones .grid > .card:not(.feature) > h3{margin-bottom:14px}
 #canciones .grid > .card:not(.feature) > p:not(.kicker){line-height:1.6;margin:0 0 12px;text-align:left}
 #canciones .grid > .card:not(.feature) > .actions{margin-top:auto;padding-top:10px;align-items:center}
+
+/* Presentación concisa del concepto musical, sin tarjetas duplicadas */
+.editorial-music{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(240px,.8fr);align-items:center;gap:clamp(35px,6vw,76px)}
+.editorial-music h2{font-size:clamp(39px,5.5vw,69px);line-height:.96;margin-bottom:23px}.editorial-music h2 em{font-style:italic;color:var(--gold)}
+.editorial-music .muted{max-width:600px;font-size:21px;line-height:1.5}
+.editorial-music-tracks{padding:28px 30px;border-top:1px solid var(--gold);border-bottom:1px solid var(--line);background:linear-gradient(130deg,rgba(108,42,120,.09),transparent)}
+.editorial-music-tracks ol{counter-reset:songs;list-style:none;margin:16px 0 19px;padding:0}
+.editorial-music-tracks li{counter-increment:songs;display:flex;gap:14px;align-items:center;border-bottom:1px solid var(--line);padding:14px 0;font-size:23px;line-height:1.2}
+.editorial-music-tracks li::before{content:"0"counter(songs);color:var(--gold);font:500 12px system-ui,sans-serif;letter-spacing:.12em}
+.editorial-music-tracks .muted{font-size:17px}
+.editorial-music-tracks>a{text-underline-offset:5px;font-size:19px}
+@media(max-width:760px){.editorial-music{grid-template-columns:1fr}.editorial-music-tracks{padding:22px}}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","@id":"https://www.arisgomez.com/musica.html#pagina","url":"https://www.arisgomez.com/musica.html","name":"Música y composición | Aris Gómez y ARIS G","inLanguage":"es","about":{"@id":"https://www.arisgomez.com/#aris-gomez"},"mainEntity":{"@type":"Person","@id":"https://www.arisgomez.com/#aris-gomez"}}</script>
 </head>
@@ -68,11 +80,19 @@ section.band{border-top:1px solid var(--line);padding:52px 0}.grid{display:grid;
 <div class="actions"><a class="button primary" href="#canciones">Canciones que he escrito</a><a class="button" href="aris-g.html">Mi música como ARIS G</a></div></div>
 <div class="graphic" aria-hidden="true"><svg class="wave" viewBox="0 0 360 130" fill="none"><path d="M0 65h360" stroke="currentColor" opacity=".25"/><path d="M4 65h35l9-8 10 17 12-32 13 43 14-59 14 79 15-61 16 38 17-63 18 94 18-106 18 86 17-60 16 46 14-32 14 26 12-19 11 13 11-7h38" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
 </section>
-<section class="band artist" id="aris-g" aria-labelledby="nombre-artistico">
-<div class="artist-intro"><p class="kicker">Proyecto musical propio · Mis primeros lanzamientos</p><h2 id="nombre-artistico">ARIS G</h2><p class="muted">ARIS G es el nombre con el que publico mi propia música. Como letrista, lancé mis dos primeros sencillos, «Putito Grillo» y «El ego tiene wifi», a través de DistroKid para su distribución en plataformas musicales.</p><p class="muted">En estas canciones mezclo pop y ritmos urbanos con humor e ironía para hablar de lo que nos pasa por dentro.</p></div>
-<div class="grid">
-<article class="card"><p class="kicker">Primer sencillo · ARIS G</p><h3>Putito Grillo</h3><p>Una canción sobre esa voz interior que opina de todo, incluso cuando nadie le ha pedido consejo. Con «Putito Grillo» empecé a llevar mi forma de escribir al pop urbano.</p><div class="actions"><a class="button" href="https://open.spotify.com/search/Putito%20Grillo%20ARIS%20G">Buscar «Putito Grillo» en Spotify</a></div></article>
-<article class="card"><p class="kicker">Segundo sencillo · ARIS G</p><h3>El ego tiene wifi</h3><p>Una mirada con ironía al ego en la era de las redes. Porque basta tener conexión para que esa parte de nosotros que quiere llamar la atención se ponga en línea.</p><div class="actions"><a class="button" href="https://open.spotify.com/search/El%20ego%20tiene%20wifi%20ARIS%20G">Buscar «El ego tiene wifi» en Spotify</a></div></article>
+<section class="band artist editorial-music" id="aris-g" aria-labelledby="nombre-artistico">
+<div class="editorial-music-text">
+<p class="kicker">Mi proyecto musical · ARIS G</p>
+<h2 id="nombre-artistico">PSICOLOGÍA<br><em>SIN FILTRO</em></h2>
+<p class="muted">Tres canciones, una misma forma de mirar lo que pasa por dentro: <strong>«Putito Grillo»</strong>, <strong>«El ego tiene wifi»</strong> y <strong>«Drama que te drama»</strong>. Humor, ironía y ritmos urbanos para hablar de las emociones sin perder el sentido del humor.</p>
+<p class="muted">También escribo y publico canciones independientes que exploran otros temas, como <strong>«Que hable mi voz, VOX en debate»</strong>, fuera de esta colección.</p>
+<div class="actions"><a class="button primary" href="aris-g.html#psicologia-sin-filtro">Descubrir Psicología sin filtro</a><a class="button" href="aris-g.html#otras-canciones">Otras canciones de ARIS G</a></div>
+</div>
+<div class="editorial-music-tracks" aria-label="Canciones de Psicología sin filtro">
+<p class="kicker">La colección · ARIS G</p>
+<ol><li>Putito Grillo</li><li>El ego tiene wifi</li><li>Drama que te drama</li></ol>
+<p class="muted">La música y el concepto, reunidos en una misma página de escucha.</p>
+<a href="aris-g.html">Explorar discografía <span aria-hidden="true">↗</span></a>
 </div>
 </section>
 <section class="band" id="canciones" aria-labelledby="titulo-canciones">
