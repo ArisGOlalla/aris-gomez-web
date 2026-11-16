@@ -6,23 +6,34 @@ main{max-width:1270px;padding:0 26px 85px;margin:auto}.eyebrow{font:600 11px/1.5
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.story{transition:none}}
 
 /* Reconocimiento Amazon 15: editorial, fotografías originales, sin filtros ni recortes */
-.amazon-feature{border-top:1px solid var(--line);padding:72px 0 76px}
-.amazon-feature-head{display:flex;align-items:start;justify-content:space-between;gap:35px;margin-bottom:34px}
-.amazon-feature-head h2{max-width:810px;font-size:clamp(43px,5.4vw,69px);line-height:1.04;margin:12px 0 15px}
-.amazon-feature-head h2 em{font-style:italic;color:var(--gold);font-weight:400}
-.amazon-feature-head>p{max-width:290px;color:var(--muted);font-size:13px;line-height:1.9;margin-top:35px}
-.amazon-feature-body{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(20px,4vw,54px);align-items:center}
-.amazon-photo-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-rows:repeat(2,minmax(0,1fr));gap:10px;height:440px}
-.amazon-photo-grid figure{margin:0;border:1px solid rgba(228,199,137,.26);background:#100b15;overflow:hidden}
+/* Reconocimiento Amazon · diseño editorial premium */
+.amazon-feature{position:relative;isolation:isolate;margin:60px -12px 82px;padding:clamp(38px,6vw,84px) clamp(22px,5.5vw,78px);overflow:hidden;border:1px solid rgba(228,199,137,.24);background:radial-gradient(ellipse 55% 75% at 96% 4%,rgba(131,78,86,.17),transparent 75%),linear-gradient(135deg,#1b111e 0%,#0e0a12 60%,#16101a 100%);box-shadow:0 28px 90px rgba(0,0,0,.23)}
+.amazon-feature:before{content:"";position:absolute;inset:12px;pointer-events:none;border:1px solid rgba(228,199,137,.12);z-index:-1}
+.amazon-feature:after{content:"15";position:absolute;right:2%;top:-62px;font:400 clamp(210px,32vw,480px)/1 'Cormorant Garamond',Georgia,serif;letter-spacing:-.09em;color:rgba(228,199,137,.045);pointer-events:none;z-index:-1}
+.amazon-feature-head{position:relative;margin-bottom:42px;max-width:970px}
+.amazon-feature-head .eyebrow{display:flex;align-items:center;gap:14px;margin:0 0 25px;font-size:10px;letter-spacing:.24em}
+.amazon-feature-head .eyebrow:before{content:"";display:block;width:44px;height:1px;background:var(--gold)}
+.amazon-feature-head h2{font-size:clamp(48px,7vw,91px);font-weight:400;line-height:.98;letter-spacing:-.032em;max-width:880px;margin:0 0 26px;text-wrap:balance;color:#fff7e9}
+.amazon-feature-head h2 em{display:block;font-style:italic;font-weight:400;color:var(--gold);padding-top:6px}
+.amazon-feature-head>p{max-width:680px;font-size:clamp(14px,1.4vw,17px);line-height:1.85;color:#d8cad3;margin:0;padding-left:21px;border-left:1px solid rgba(228,199,137,.6)}
+.amazon-feature-body{display:grid;grid-template-columns:minmax(0,1.22fr) minmax(300px,.78fr);gap:clamp(28px,4.6vw,65px);align-items:center}
+.amazon-photo-grid{display:grid;grid-template-columns:1.12fr .88fr;grid-template-rows:repeat(2,minmax(0,1fr));gap:12px;aspect-ratio:1.2;max-height:580px}
+.amazon-photo-grid figure{position:relative;margin:0;min-width:0;min-height:0;overflow:hidden;background:#100b15;border:1px solid rgba(228,199,137,.2);box-shadow:0 16px 30px rgba(0,0,0,.17)}
 .amazon-photo-grid figure:first-child{grid-row:1/3}
-.amazon-photo-grid img{display:block;width:100%;height:100%;object-fit:contain}
-.amazon-feature-copy p{color:var(--muted);font-size:15px;line-height:1.88}
-.amazon-feature-copy .amazon-feature-kicker{color:var(--gold);font-size:11px;letter-spacing:.14em;text-transform:uppercase}
-.amazon-feature-copy strong{color:var(--cream)}
-.amazon-feature-copy .button{margin-top:18px}
-.amazon-photo-note{color:#ad9fae;font-size:11px;margin-top:14px}
-@media(max-width:890px){.amazon-feature-head{display:block}.amazon-feature-head>p{margin:0 0 22px;max-width:660px}.amazon-feature-body{grid-template-columns:1fr}.amazon-photo-grid{height:410px}.amazon-feature-copy{max-width:720px}}
-@media(max-width:540px){.amazon-feature{padding:48px 0}.amazon-feature-head h2{font-size:44px}.amazon-photo-grid{height:auto;display:flex;flex-direction:column}.amazon-photo-grid figure{width:100%}.amazon-photo-grid img{height:auto;max-height:440px;object-fit:contain}.amazon-feature-copy p{font-size:14px}}
+.amazon-photo-grid img{display:block;width:100%;height:100%;object-fit:contain;transition:transform .45s ease;background:#130d17}
+.amazon-photo-grid figure:hover img{transform:scale(1.025)}
+.amazon-feature-copy{position:relative;padding:12px 0 12px clamp(0px,1.5vw,18px);border-left:1px solid rgba(228,199,137,.24)}
+.amazon-feature-copy p{color:#d2c6cf;font-size:14px;line-height:1.95;margin:0 0 19px}
+.amazon-feature-copy .amazon-feature-kicker{color:var(--gold);font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;margin-bottom:27px}
+.amazon-feature-copy .amazon-feature-kicker:after{content:"";display:block;width:48px;height:1px;background:rgba(228,199,137,.6);margin-top:15px}
+.amazon-feature-copy strong{color:#fff7e9;font-weight:600}
+.amazon-feature-copy em{color:#fff0d7}
+.amazon-feature-copy .button{margin-top:16px;border-color:var(--gold);padding:14px 22px;letter-spacing:.03em;transition:transform .2s ease,box-shadow .2s ease}
+.amazon-feature-copy .button:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(228,199,137,.13)}
+.amazon-photo-note{color:#b4a6af;font-size:11px;letter-spacing:.03em;margin:16px 0 0}
+@media(max-width:960px){.amazon-feature{margin:48px 0 70px}.amazon-feature-body{grid-template-columns:1fr}.amazon-feature-copy{max-width:780px;padding-left:22px}.amazon-photo-grid{aspect-ratio:1.5;max-height:none}}
+@media(max-width:600px){.amazon-feature{padding:40px 22px 48px;margin:34px -8px 56px}.amazon-feature:before{inset:7px}.amazon-feature-head{margin-bottom:30px}.amazon-feature-head h2{font-size:clamp(43px,11vw,64px)}.amazon-feature-head .eyebrow{font-size:9px;letter-spacing:.14em;gap:9px}.amazon-feature-head .eyebrow:before{width:23px}.amazon-feature-head>p{font-size:13px;padding-left:14px}.amazon-photo-grid{grid-template-columns:1fr 1fr;grid-template-rows:250px 170px;aspect-ratio:auto;gap:8px}.amazon-photo-grid figure:first-child{grid-column:1/3;grid-row:1}.amazon-photo-grid img{object-fit:contain}.amazon-feature-copy{padding-left:15px}.amazon-feature-copy p{font-size:13px;line-height:1.85}.amazon-photo-note{font-size:10px}.amazon-feature:after{top:50px;right:-10px}}
+@media(prefers-reduced-motion:reduce){.amazon-photo-grid img,.amazon-feature-copy .button{transition:none}}
 </style></head><body><a class="skip" href="#principal">Saltar al contenido</a><header class="site-header">
 <nav aria-label="Menú principal"><ul>
 <li><a href="index.html">Inicio</a></li>
