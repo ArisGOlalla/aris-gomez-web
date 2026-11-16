@@ -97,6 +97,12 @@ footer{border-top:1px solid rgba(228,199,137,.19);padding:30px 20px;font-size:11
 @media(max-width:900px){.hero{grid-template-columns:1fr;gap:38px}.hero-photo{width:100%;max-width:450px}.bio-block{grid-template-columns:1fr}.bio-block>div:last-child{padding-left:24px}.section-heading{align-items:flex-start!important;flex-direction:column}.section-heading>.button{align-self:flex-start}}
 @media(max-width:620px){.site-header nav{padding:15px 12px}.site-header a{font-size:16px}main{padding:0 16px 64px}.hero{padding:54px 2px 57px}.hero h1{font-size:clamp(63px,14vw,83px);margin:23px 0}.hero .eyebrow{font-size:9px}.hero .eyebrow:before{width:22px}.hero .lead{font-size:14px;line-height:1.8}.hero-photo{max-width:420px;padding:8px}.hero-photo:after{inset:14px}.hero-photo figcaption{letter-spacing:.12em}.links{gap:10px}.links .button{width:100%}.panel{padding:58px 0}.panel .section-heading{display:flex;gap:18px;margin-bottom:27px}.section-heading h2{font-size:clamp(44px,11vw,60px)}.section-heading p:not(.eyebrow){font-size:13px}.feature-grid,.editorial-grid{grid-template-columns:1fr}.feature-grid .story:first-child{grid-column:auto}.story,.editorial-grid .story{min-height:245px;padding:27px}.story h3{font-size:34px;margin-top:23px}.bio-block{padding:40px 25px;margin:15px 0 32px}.bio-block:before{inset:8px}.bio-block h2{font-size:55px}.bio-block>div:last-child{padding-left:18px}.bio-block>div:last-child p{font-size:13px}.cta{padding:66px 25px}.cta:before{inset:8px}.cta h2{font-size:58px}.cta p:not(.eyebrow){font-size:13px}}
 @media(prefers-reduced-motion:reduce){.story,.button{transition:none}.story:hover,.button:hover{transform:none}}
+
+/* Ajuste de continuidad visual entre cabecera y reconocimiento Amazon */
+.hero{padding-bottom:38px}
+.amazon-feature{margin-top:20px}
+@media(max-width:960px){.hero{padding-bottom:35px}.amazon-feature{margin-top:16px}}
+@media(max-width:620px){.hero{padding-bottom:26px}.amazon-feature{margin-top:12px}}
 </style></head><body><a class="skip" href="#principal">Saltar al contenido</a><header class="site-header">
 <nav aria-label="Menú principal"><ul>
 <li><a href="index.html">Inicio</a></li>
