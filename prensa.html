@@ -103,6 +103,16 @@ footer{border-top:1px solid rgba(228,199,137,.19);padding:30px 20px;font-size:11
 .amazon-feature{margin-top:20px}
 @media(max-width:960px){.hero{padding-bottom:35px}.amazon-feature{margin-top:16px}}
 @media(max-width:620px){.hero{padding-bottom:26px}.amazon-feature{margin-top:12px}}
+
+/* Nueva presentación de autora: retrato editorial en arco, sin caja rectangular */
+.hero-photo{position:relative;isolation:isolate;box-sizing:border-box;width:100%;max-width:445px;margin:0 auto;padding:18px 18px 0;border:0;border-radius:0;background:transparent;box-shadow:none;overflow:visible}
+.hero-photo:before{content:"";position:absolute;z-index:-1;left:0;right:38px;top:0;bottom:58px;border:1px solid rgba(228,199,137,.47);border-radius:48% 48% 2px 2px / 30% 30% 2px 2px;pointer-events:none;background:linear-gradient(150deg,rgba(228,199,137,.08),transparent 58%)}
+.hero-photo:after{content:"";position:absolute;z-index:-1;inset:34px 0 74px 48px;border:1px solid rgba(228,199,137,.20);background:rgba(62,36,64,.28);pointer-events:none}
+.hero-photo img{position:relative;z-index:1;display:block;box-sizing:border-box;width:100%;max-width:100%;height:auto;max-height:none;object-fit:contain;object-position:center top;border:1px solid rgba(228,199,137,.18);border-radius:48% 48% 2px 2px / 30% 30% 2px 2px;box-shadow:0 24px 65px rgba(0,0,0,.34)}
+.hero-photo figcaption{position:relative;z-index:1;display:flex;justify-content:center;align-items:center;gap:14px;margin:25px 0 0;padding:0 0 4px;text-align:center;font:600 10px/1.6 Manrope,Arial,sans-serif;letter-spacing:.20em;text-transform:uppercase;color:#eed09a}
+.hero-photo figcaption:before,.hero-photo figcaption:after{content:"";height:1px;flex:1;max-width:42px;background:rgba(228,199,137,.48)}
+@media(max-width:900px){.hero-photo{max-width:430px}}
+@media(max-width:620px){.hero-photo{max-width:min(410px,100%);padding:12px 12px 0}.hero-photo:before{right:28px;bottom:52px}.hero-photo:after{inset:26px 0 66px 34px}.hero-photo figcaption{margin-top:20px;font-size:9px;gap:9px;letter-spacing:.12em}.hero-photo figcaption:before,.hero-photo figcaption:after{max-width:22px}}
 </style></head><body><a class="skip" href="#principal">Saltar al contenido</a><header class="site-header">
 <nav aria-label="Menú principal"><ul>
 <li><a href="index.html">Inicio</a></li>
