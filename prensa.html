@@ -4,6 +4,115 @@
 main{max-width:1270px;padding:0 26px 85px;margin:auto}.eyebrow{font:600 11px/1.5 Manrope,sans-serif;letter-spacing:.23em;text-transform:uppercase;color:var(--gold)}h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;line-height:1.08}h1{font-size:clamp(62px,8vw,108px);margin:14px 0 25px}h1 em{font-style:normal;color:var(--gold)}h2{font-size:clamp(39px,5vw,58px);margin:12px 0 16px}h3{font-size:30px;margin:16px 0 13px;color:#f3e4ce}.muted,.lead{color:var(--muted)}.lead{font-size:17px;max-width:645px}.hero{display:grid;grid-template-columns:1fr minmax(315px,.8fr);align-items:center;gap:58px;padding:75px 0 80px}.hero-photo{margin:0;border:1px solid var(--line);padding:13px;border-radius:28px;background:#211722;box-shadow:0 25px 70px #0008}.hero-photo img{display:block;width:100%;height:auto;object-fit:contain;object-position:center top;border-radius:18px}.hero-photo figcaption{text-align:center;color:var(--gold);font:500 11px Manrope,sans-serif;letter-spacing:.16em;text-transform:uppercase;padding:15px 5px 5px}.links{display:flex;flex-wrap:wrap;gap:12px;margin-top:27px}.button{display:inline-flex;align-items:center;gap:15px;text-decoration:none;padding:12px 21px;border:1px solid var(--line);border-radius:999px;font:600 13px Manrope,sans-serif}.button.primary{background:var(--gold);color:#17101c;border-color:var(--gold)}.button:hover{border-color:var(--gold)}.panel{border-top:1px solid var(--line);padding:67px 0}.section-heading{display:flex;align-items:end;justify-content:space-between;gap:25px;margin-bottom:30px}.section-heading p{max-width:620px;color:var(--muted);margin:0}.feature-grid{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:17px}.story{min-height:318px;display:flex;flex-direction:column;align-items:flex-start;text-decoration:none;padding:27px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(145deg,#24162b,#110b17)}.story:first-child{background:radial-gradient(circle at 0 0,#3b2443,transparent 75%),#160e1d}.story small{color:var(--gold);font:600 11px Manrope,sans-serif;letter-spacing:.12em}.story p{color:var(--muted);font-size:13px}.story strong{margin-top:auto;color:var(--gold);font-size:13px}.story:hover{border-color:var(--gold);transform:translateY(-3px)}.bio-block{display:grid;grid-template-columns:.85fr 1.15fr;gap:65px;align-items:start;background:radial-gradient(circle at 0 0,#28162e,transparent 80%),#130d18;border:1px solid var(--line);border-radius:25px;padding:clamp(28px,4vw,55px);margin:55px 0}.bio-block p{color:var(--muted)}.bio-block .signature{font:500 34px 'Cormorant Garamond',Georgia,serif;color:var(--gold)}.editorial-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.editorial-grid .story{min-height:235px}.cta{text-align:center;border:1px solid var(--line);border-radius:22px;padding:48px 24px;background:radial-gradient(circle at 90% 0,#331a37,transparent 60%),#140c18}.cta p{max-width:620px;margin:0 auto 25px;color:var(--muted)}footer{border-top:1px solid var(--line);padding:23px;text-align:center;color:var(--muted);font-size:12px}
 @media(max-width:900px){.hero{grid-template-columns:1fr;gap:30px}.hero-photo{max-width:460px;margin:auto}.feature-grid,.editorial-grid{grid-template-columns:repeat(2,1fr)}.bio-block{grid-template-columns:1fr;gap:12px}}@media(max-width:620px){.site-header nav{padding:16px 12px}.site-header ul{gap:7px 13px}.site-header a{font-size:16px}main{padding:0 14px 60px}.hero{padding:44px 0 45px}h1{font-size:61px}.lead{font-size:15px}.panel{padding:45px 0}.section-heading{display:block}.feature-grid,.editorial-grid{grid-template-columns:1fr}.story,.editorial-grid .story{min-height:240px}.bio-block{margin:38px 0}.cta{padding:36px 18px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.story{transition:none}}
+
+/* Reconocimiento Amazon 15: editorial, fotografías originales, sin filtros ni recortes */
+/* Reconocimiento Amazon · diseño editorial premium */
+.amazon-feature{position:relative;isolation:isolate;margin:60px -12px 82px;padding:clamp(38px,6vw,84px) clamp(22px,5.5vw,78px);overflow:hidden;border:1px solid rgba(228,199,137,.24);background:radial-gradient(ellipse 55% 75% at 96% 4%,rgba(131,78,86,.17),transparent 75%),linear-gradient(135deg,#1b111e 0%,#0e0a12 60%,#16101a 100%);box-shadow:0 28px 90px rgba(0,0,0,.23)}
+.amazon-feature:before{content:"";position:absolute;inset:12px;pointer-events:none;border:1px solid rgba(228,199,137,.12);z-index:-1}
+.amazon-feature:after{content:"15";position:absolute;right:2%;top:-62px;font:400 clamp(210px,32vw,480px)/1 'Cormorant Garamond',Georgia,serif;letter-spacing:-.09em;color:rgba(228,199,137,.045);pointer-events:none;z-index:-1}
+.amazon-feature-head{position:relative;margin-bottom:42px;max-width:970px}
+.amazon-feature-head .eyebrow{display:flex;align-items:center;gap:14px;margin:0 0 25px;font-size:10px;letter-spacing:.24em}
+.amazon-feature-head .eyebrow:before{content:"";display:block;width:44px;height:1px;background:var(--gold)}
+.amazon-feature-head h2{font-size:clamp(48px,7vw,91px);font-weight:400;line-height:.98;letter-spacing:-.032em;max-width:880px;margin:0 0 26px;text-wrap:balance;color:#fff7e9}
+.amazon-feature-head h2 em{display:block;font-style:italic;font-weight:400;color:var(--gold);padding-top:6px}
+.amazon-feature-head>p{max-width:680px;font-size:clamp(14px,1.4vw,17px);line-height:1.85;color:#d8cad3;margin:0;padding-left:21px;border-left:1px solid rgba(228,199,137,.6)}
+.amazon-feature-body{display:grid;grid-template-columns:minmax(0,1.22fr) minmax(300px,.78fr);gap:clamp(28px,4.6vw,65px);align-items:center}
+.amazon-photo-grid{display:grid;grid-template-columns:1.12fr .88fr;grid-template-rows:repeat(2,minmax(0,1fr));gap:12px;aspect-ratio:1.2;max-height:580px}
+.amazon-photo-grid figure{position:relative;margin:0;min-width:0;min-height:0;overflow:hidden;background:#100b15;border:1px solid rgba(228,199,137,.2);box-shadow:0 16px 30px rgba(0,0,0,.17)}
+.amazon-photo-grid figure:first-child{grid-row:1/3}
+.amazon-photo-grid img{display:block;width:100%;height:100%;object-fit:cover;object-position:center center;transition:transform .45s ease;background:#130d17}
+.amazon-photo-grid figure:first-child img{object-position:center 35%}
+.amazon-photo-grid figure:nth-child(2) img{object-position:center 35%}
+.amazon-photo-grid figure:nth-child(3) img{object-position:center 40%}
+.amazon-photo-grid figure:hover img{transform:scale(1.025)}
+.amazon-feature-copy{position:relative;padding:12px 0 12px clamp(0px,1.5vw,18px);border-left:1px solid rgba(228,199,137,.24)}
+.amazon-feature-copy p{color:#d2c6cf;font-size:14px;line-height:1.95;margin:0 0 19px}
+.amazon-feature-copy .amazon-feature-kicker{color:var(--gold);font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;margin-bottom:27px}
+.amazon-feature-copy .amazon-feature-kicker:after{content:"";display:block;width:48px;height:1px;background:rgba(228,199,137,.6);margin-top:15px}
+.amazon-feature-copy strong{color:#fff7e9;font-weight:600}
+.amazon-feature-copy em{color:#fff0d7}
+.amazon-feature-copy .button{margin-top:16px;border-color:var(--gold);padding:14px 22px;letter-spacing:.03em;transition:transform .2s ease,box-shadow .2s ease}
+.amazon-feature-copy .button:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(228,199,137,.13)}
+.amazon-photo-note{color:#b4a6af;font-size:11px;letter-spacing:.03em;margin:16px 0 0}
+@media(max-width:960px){.amazon-feature{margin:48px 0 70px}.amazon-feature-body{grid-template-columns:1fr}.amazon-feature-copy{max-width:780px;padding-left:22px}.amazon-photo-grid{aspect-ratio:1.5;max-height:none}}
+@media(max-width:600px){.amazon-feature{padding:40px 22px 48px;margin:34px -8px 56px}.amazon-feature:before{inset:7px}.amazon-feature-head{margin-bottom:30px}.amazon-feature-head h2{font-size:clamp(43px,11vw,64px)}.amazon-feature-head .eyebrow{font-size:9px;letter-spacing:.14em;gap:9px}.amazon-feature-head .eyebrow:before{width:23px}.amazon-feature-head>p{font-size:13px;padding-left:14px}.amazon-photo-grid{grid-template-columns:1fr 1fr;grid-template-rows:250px 170px;aspect-ratio:auto;gap:8px}.amazon-photo-grid figure:first-child{grid-column:1/3;grid-row:1}.amazon-photo-grid img{object-fit:cover}.amazon-photo-grid figure:first-child img{object-position:center 36%}.amazon-photo-grid figure:nth-child(2) img{object-position:center 36%}.amazon-photo-grid figure:nth-child(3) img{object-position:center 40%}.amazon-feature-copy{padding-left:15px}.amazon-feature-copy p{font-size:13px;line-height:1.85}.amazon-photo-note{font-size:10px}.amazon-feature:after{top:50px;right:-10px}}
+@media(prefers-reduced-motion:reduce){.amazon-photo-grid img,.amazon-feature-copy .button{transition:none}}
+
+/* Identidad editorial premium: armonización del resto de la página de Prensa */
+.site-header{position:relative;z-index:10;border-bottom:1px solid rgba(228,199,137,.22);background:linear-gradient(90deg,#100b15,#190e1c 50%,#100b15)}
+.site-header nav{max-width:1300px;padding:20px 26px}
+.site-header ul{gap:10px clamp(13px,1.9vw,25px)}
+.site-header a{position:relative;display:inline-block;font-size:18px;transition:color .2s ease}
+.site-header a[aria-current]{border:0;color:#fff4df}
+.site-header a[aria-current]:after{content:"";height:1px;background:var(--gold);position:absolute;bottom:-5px;left:0;right:0}
+main{max-width:1320px}
+.hero{position:relative;grid-template-columns:minmax(0,1.15fr) minmax(300px,.85fr);gap:clamp(35px,6vw,92px);padding:clamp(64px,7vw,105px) clamp(4px,1.4vw,18px) 88px}
+.hero:before{content:"";position:absolute;pointer-events:none;inset:0 -10px auto auto;width:min(56vw,700px);height:90%;background:radial-gradient(ellipse at center,rgba(92,53,93,.14),transparent 68%);z-index:-1}
+.hero .eyebrow{display:flex;align-items:center;gap:13px;letter-spacing:.22em}
+.hero .eyebrow:before{content:"";width:39px;height:1px;background:var(--gold)}
+.hero h1{font-size:clamp(66px,8.5vw,116px);font-weight:400;line-height:.91;letter-spacing:-.038em;margin:30px 0 31px;text-wrap:balance}
+.hero h1 em{font-style:italic;font-weight:400}
+.hero .lead{max-width:550px;font-size:clamp(15px,1.35vw,18px);line-height:1.93;color:#d0c3ce}
+.hero-photo{position:relative;max-width:500px;border-radius:0;padding:12px;border:1px solid rgba(228,199,137,.28);background:linear-gradient(145deg,#28182b,#110b16);box-shadow:0 30px 80px rgba(0,0,0,.29)}
+.hero-photo:after{content:"";pointer-events:none;position:absolute;inset:20px;border:1px solid rgba(228,199,137,.12)}
+.hero-photo img{border-radius:0;max-height:595px;object-fit:contain}
+.hero-photo figcaption{padding:20px 6px 8px;font-size:10px;letter-spacing:.23em}
+.links{gap:12px;margin-top:34px}
+.button{justify-content:center;border-radius:2px;min-height:46px;padding:12px 23px;font-size:12px;letter-spacing:.045em;border-color:rgba(228,199,137,.4);transition:color .2s ease,background .2s ease,border-color .2s ease,transform .2s ease}
+.button:hover{transform:translateY(-2px);background:rgba(228,199,137,.10)}
+.button.primary:hover{background:#f6dea7;border-color:#f6dea7}
+.panel{position:relative;border-top:1px solid rgba(228,199,137,.23);padding:clamp(66px,7.5vw,103px) 0}
+.panel .section-heading{align-items:end;gap:32px;margin-bottom:42px}
+.section-heading .eyebrow{margin-bottom:20px;letter-spacing:.21em}
+.section-heading h2,.bio-block h2,.cta h2{font-weight:400;font-size:clamp(46px,5.4vw,74px);line-height:1.02;letter-spacing:-.025em;text-wrap:balance;margin:0 0 22px;color:#fff5e6}
+.section-heading p:not(.eyebrow){max-width:690px;font-size:14px;line-height:1.9;color:#d4c5d0}
+.section-heading>.button{white-space:nowrap;flex-shrink:0}
+.feature-grid,.editorial-grid{gap:15px}
+.story,.story:first-child{position:relative;isolation:isolate;border-radius:0;background:linear-gradient(145deg,rgba(43,26,49,.9),rgba(16,10,20,.98));border:1px solid rgba(228,199,137,.23);padding:clamp(25px,3vw,37px);min-height:345px;overflow:hidden;transition:transform .25s ease,border-color .25s ease,background .25s ease,box-shadow .25s ease}
+.story:before{content:"";position:absolute;left:0;top:0;height:2px;width:72px;background:var(--gold)}
+.story:after{content:"";position:absolute;right:-22px;bottom:-63px;width:180px;height:180px;border:1px solid rgba(228,199,137,.065);border-radius:50%;pointer-events:none}
+.story small{color:var(--gold);font-size:10px;line-height:1.7;letter-spacing:.12em;text-transform:uppercase}
+.story h3{font-size:clamp(29px,2.65vw,39px);font-weight:400;line-height:1.14;color:#fdf0df;margin:28px 0 15px;overflow-wrap:anywhere}
+.story p{color:#c6bac6;font-size:13px;line-height:1.85;margin:0 0 28px}
+.story strong{display:inline-block;color:#eed09a;font-size:12px;font-weight:600;letter-spacing:.02em;line-height:1.5}
+.story:hover{transform:translateY(-5px);border-color:rgba(228,199,137,.7);box-shadow:0 20px 45px rgba(0,0,0,.19)}
+.bio-block{position:relative;overflow:hidden;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);align-items:center;gap:clamp(30px,5vw,75px);margin:24px 0 48px;border-radius:0;border:1px solid rgba(228,199,137,.25);background:radial-gradient(ellipse at 0% 0%,rgba(89,52,94,.29),transparent 58%),linear-gradient(125deg,#201323,#0f0a13 75%);padding:clamp(38px,6vw,83px)}
+.bio-block:before{content:"";position:absolute;inset:12px;border:1px solid rgba(228,199,137,.10);pointer-events:none}
+.bio-block .eyebrow{margin:0 0 25px}
+.bio-block h2{font-size:clamp(52px,5vw,75px);margin:0 0 23px}
+.bio-block .signature{margin:0;font:italic 400 clamp(25px,3vw,35px)/1.3 'Cormorant Garamond',Georgia,serif;color:var(--gold)}
+.bio-block>div:last-child{position:relative;border-left:1px solid rgba(228,199,137,.35);padding-left:clamp(23px,3vw,42px)}
+.bio-block>div:last-child p{color:#d5c9d3;font-size:14px;line-height:1.95;margin:0 0 23px}
+.bio-block .button{margin-top:6px}
+.editorial-grid .story{min-height:286px}
+.editorial-grid .story h3{font-size:clamp(27px,2.45vw,35px)}
+.cta{position:relative;isolation:isolate;border-radius:0;margin:25px 0 5px;padding:clamp(62px,8vw,110px) 24px;border:1px solid rgba(228,199,137,.34);background:radial-gradient(ellipse 60% 85% at 50% 0%,rgba(111,66,105,.25),transparent 80%),linear-gradient(145deg,#1c101e,#0c0910)}
+.cta:before{content:"";position:absolute;inset:12px;border:1px solid rgba(228,199,137,.12);pointer-events:none}
+.cta .eyebrow{position:relative;margin-bottom:23px;font-size:10px;letter-spacing:.22em}
+.cta h2{position:relative;font-size:clamp(52px,6.3vw,84px);margin:0 0 22px}
+.cta p:not(.eyebrow){position:relative;max-width:550px;font-size:15px;line-height:1.85;margin:0 auto 32px;color:#d2c5cf}
+.cta .button{position:relative}
+footer{border-top:1px solid rgba(228,199,137,.19);padding:30px 20px;font-size:11px;letter-spacing:.11em}
+@media(max-width:1000px){.hero{gap:35px}.hero h1{font-size:clamp(65px,8vw,100px)}.feature-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.feature-grid .story:first-child{grid-column:1/-1;min-height:280px}.editorial-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.bio-block{gap:30px}}
+@media(max-width:900px){.hero{grid-template-columns:1fr;gap:38px}.hero-photo{width:100%;max-width:450px}.bio-block{grid-template-columns:1fr}.bio-block>div:last-child{padding-left:24px}.section-heading{align-items:flex-start!important;flex-direction:column}.section-heading>.button{align-self:flex-start}}
+@media(max-width:620px){.site-header nav{padding:15px 12px}.site-header a{font-size:16px}main{padding:0 16px 64px}.hero{padding:54px 2px 57px}.hero h1{font-size:clamp(63px,14vw,83px);margin:23px 0}.hero .eyebrow{font-size:9px}.hero .eyebrow:before{width:22px}.hero .lead{font-size:14px;line-height:1.8}.hero-photo{max-width:420px;padding:8px}.hero-photo:after{inset:14px}.hero-photo figcaption{letter-spacing:.12em}.links{gap:10px}.links .button{width:100%}.panel{padding:58px 0}.panel .section-heading{display:flex;gap:18px;margin-bottom:27px}.section-heading h2{font-size:clamp(44px,11vw,60px)}.section-heading p:not(.eyebrow){font-size:13px}.feature-grid,.editorial-grid{grid-template-columns:1fr}.feature-grid .story:first-child{grid-column:auto}.story,.editorial-grid .story{min-height:245px;padding:27px}.story h3{font-size:34px;margin-top:23px}.bio-block{padding:40px 25px;margin:15px 0 32px}.bio-block:before{inset:8px}.bio-block h2{font-size:55px}.bio-block>div:last-child{padding-left:18px}.bio-block>div:last-child p{font-size:13px}.cta{padding:66px 25px}.cta:before{inset:8px}.cta h2{font-size:58px}.cta p:not(.eyebrow){font-size:13px}}
+@media(prefers-reduced-motion:reduce){.story,.button{transition:none}.story:hover,.button:hover{transform:none}}
+
+/* Ajuste de continuidad visual entre cabecera y reconocimiento Amazon */
+.hero{padding-bottom:38px}
+.amazon-feature{margin-top:20px}
+@media(max-width:960px){.hero{padding-bottom:35px}.amazon-feature{margin-top:16px}}
+@media(max-width:620px){.hero{padding-bottom:26px}.amazon-feature{margin-top:12px}}
+
+/* Nueva presentación de autora: retrato editorial en arco, sin caja rectangular */
+.hero-photo{position:relative;isolation:isolate;box-sizing:border-box;width:100%;max-width:445px;margin:0 auto;padding:18px 18px 0;border:0;border-radius:0;background:transparent;box-shadow:none;overflow:visible}
+.hero-photo:before{content:"";position:absolute;z-index:-1;left:0;right:38px;top:0;bottom:58px;border:1px solid rgba(228,199,137,.47);border-radius:48% 48% 2px 2px / 30% 30% 2px 2px;pointer-events:none;background:linear-gradient(150deg,rgba(228,199,137,.08),transparent 58%)}
+.hero-photo:after{content:"";position:absolute;z-index:-1;inset:34px 0 74px 48px;border:1px solid rgba(228,199,137,.20);background:rgba(62,36,64,.28);pointer-events:none}
+.hero-photo img{position:relative;z-index:1;display:block;box-sizing:border-box;width:100%;max-width:100%;height:auto;max-height:none;object-fit:contain;object-position:center top;border:1px solid rgba(228,199,137,.18);border-radius:48% 48% 2px 2px / 30% 30% 2px 2px;box-shadow:0 24px 65px rgba(0,0,0,.34)}
+.hero-photo figcaption{position:relative;z-index:1;display:flex;justify-content:center;align-items:center;gap:14px;margin:25px 0 0;padding:0 0 4px;text-align:center;font:600 10px/1.6 Manrope,Arial,sans-serif;letter-spacing:.20em;text-transform:uppercase;color:#eed09a}
+.hero-photo figcaption:before,.hero-photo figcaption:after{content:"";height:1px;flex:1;max-width:42px;background:rgba(228,199,137,.48)}
+@media(max-width:900px){.hero-photo{max-width:430px}}
+@media(max-width:620px){.hero-photo{max-width:min(410px,100%);padding:12px 12px 0}.hero-photo:before{right:28px;bottom:52px}.hero-photo:after{inset:26px 0 66px 34px}.hero-photo figcaption{margin-top:20px;font-size:9px;gap:9px;letter-spacing:.12em}.hero-photo figcaption:before,.hero-photo figcaption:after{max-width:22px}}
 </style></head><body><a class="skip" href="#principal">Saltar al contenido</a><header class="site-header">
 <nav aria-label="Menú principal"><ul>
 <li><a href="index.html">Inicio</a></li>
@@ -20,6 +129,31 @@ main{max-width:1270px;padding:0 26px 85px;margin:auto}.eyebrow{font:600 11px/1.5
 </ul></nav>
 </header><main id="principal">
 <section class="hero"><div><p class="eyebrow">Sala de prensa · Aris Gómez Olalla</p><h1>Una voz.<br><em>Muchas historias.</em></h1><p class="lead">Escritura, testimonios, conversaciones y nuevas páginas por contar. Aquí encontrarás una selección de publicaciones sobre mi trayectoria, mis libros y mi trabajo como autora.</p><div class="links"><a class="button primary" href="prensa-ultimas-publicaciones.html">Noticias recientes ↗</a><a class="button" href="prensa-biografia.html">Conocer mi trayectoria ↗</a></div></div><figure class="hero-photo"><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3HpgCbp8PHQ2zTf1E8xLh22Xn4l/ed651ae4-0be6-40e6-905f-25cec6f9e0cc.png" alt="Aris Gómez Olalla sentada, con traje blanco y moño alto" loading="eager"><figcaption>Aris Gómez Olalla · Autora</figcaption></figure></section>
+
+<section class="amazon-feature" id="los-15-de-amazon" aria-labelledby="amazon-feature-title">
+  <div class="amazon-feature-head">
+    <div><p class="eyebrow">Reconocimientos · Octubre de 2026</p>
+      <h2 id="amazon-feature-title">Una historia elegida para <em>Los 15 de Amazon</em></h2></div>
+    <p>La historia que inspiró «ARIS: De la oscuridad a la libertad», entre las seleccionadas por Xuso Jones en el concurso del 15.º aniversario de Amazon España.</p>
+  </div>
+  <div class="amazon-feature-body">
+    <div>
+      <div class="amazon-photo-grid" aria-label="Fotografías originales de la participación en Los 15 de Amazon">
+        <figure><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3HpgCbp8PHQ2zTf1E8xLh22Xn4l/59c72e5f-6a3e-49b7-8e97-c16408783aa3.jpg" alt="Fotografía del encuentro durante la grabación, mostrando el libro ARIS: De la oscuridad a la libertad junto a otro libro" loading="lazy" decoding="async"></figure>
+        <figure><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3HpgCbp8PHQ2zTf1E8xLh22Xn4l/03c9162e-4b28-46fc-9178-218d9c9de785.jpg" alt="Fotografía de recuerdo en el evento Los 15 de Amazon, con el logotipo de la campaña al fondo" loading="lazy" decoding="async"></figure>
+        <figure><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_3HpgCbp8PHQ2zTf1E8xLh22Xn4l/46d72d02-0e5b-43ad-947c-58f5c60f7268.jpg" alt="Fotografía de grupo durante la jornada de grabación del concurso" loading="lazy" decoding="async"></figure>
+      </div>
+      <p class="amazon-photo-note">Imágenes originales del encuentro, presentadas sin retoques ni recreaciones.</p>
+    </div>
+    <div class="amazon-feature-copy">
+      <p class="amazon-feature-kicker">15.º aniversario de Amazon en España</p>
+      <p>La historia personal de <strong>Aris Gómez Olalla</strong>, plasmada en su libro <em>ARIS: De la oscuridad a la libertad</em>, fue elegida por <strong>Xuso Jones</strong> como una de las historias ganadoras de la iniciativa «Los 15 de Amazon».</p>
+      <p>La celebración contó también con la participación de creadores como <strong>Lola Lolita</strong> y <strong>Peldanyos</strong>. Para la autora, la experiencia supuso la oportunidad de compartir el recorrido de una historia de supervivencia, reconstrucción y libertad.</p>
+      <p>Las fotografías recogen momentos de la jornada y el encuentro con los participantes, con el libro como testimonio de un camino llevado a las páginas.</p>
+      <a class="button primary" href="https://www.instagram.com/reel/DfWtHMjiYMI/" target="_blank" rel="noopener noreferrer" aria-label="Ver vídeo de Los 15 de Amazon en Instagram">Ver reel de la campaña ↗</a>
+    </div>
+  </div>
+</section>
 <section class="panel"><div class="section-heading"><div><p class="eyebrow">Actualidad en los medios</p><h2>Noticias y entrevistas</h2><p>Una selección de las publicaciones recientes. Descubre el resto en el espacio dedicado a actualidad.</p></div><a class="button" href="prensa-ultimas-publicaciones.html">Todas las noticias ↗</a></div><div class="feature-grid"><a class="story" href="https://www.farodevigo.es/arousa/2026/09/18/mk-maik-aris-gomez-infancia-134418281.html" target="_blank" rel="noopener noreferrer"><small>Faro de Vigo · 18 septiembre 2026</small><h3>MK MAIK y Aris Gómez en Faro de Vigo</h3><p>Una publicación de Arousa sobre MK MAIK y Aris Gómez.</p><strong>Leer en el medio original ↗</strong></a><a class="story" href="https://www.farodevigo.es/arousa/2026/06/22/aris-gomez-victima-trata-lanza-131690400.html" target="_blank" rel="noopener noreferrer"><small>Faro de Vigo · 22 junio 2026</small><h3>Aris Gómez: una historia llevada a los medios</h3><p>Artículo publicado en Faro de Vigo en junio de 2026.</p><strong>Leer en el medio original ↗</strong></a><a class="story" href="https://www.farodevigo.es/videos/arousa/2026/06/20/aris-gomez-victima-trata-personas-131613960.html" target="_blank" rel="noopener noreferrer"><small>Faro de Vigo · Vídeo · 20 junio 2026</small><h3>Un testimonio en primera persona</h3><p>Entrevista audiovisual publicada por Faro de Vigo.</p><strong>Leer en el medio original ↗</strong></a></div></section>
 <section class="bio-block"><div><p class="eyebrow">La persona detrás de las palabras</p><h2>Sobre Aris Gómez</h2><p class="signature">Escritora · Autora · ARIS G</p></div><div><p>Aris Gómez Olalla es escritora y autora de <em>ARIS: De la oscuridad a la libertad</em>, publicado por Editorial Círculo Rojo, y de <em>La vida psicológica es un SUGUS</em>. Su escritura aborda la resiliencia, las emociones y la reconstrucción personal desde una mirada íntima y directa.</p><p>Su trabajo se extiende a proyectos musicales como ARIS G y a conversaciones en medios donde comparte su trayectoria.</p><a class="button primary" href="prensa-biografia.html">Leer biografía de prensa ↗</a></div></section>
 <section class="panel"><div class="section-heading"><div><p class="eyebrow">Publicaciones sobre el libro</p><h2>ARIS: De la oscuridad a la libertad</h2><p>Noticias y notas publicadas en medios sobre la obra editada por Círculo Rojo. Accede a una selección de artículos y al archivo completo.</p></div><a class="button" href="prensa-archivo.html">Ver publicaciones del libro ↗</a></div><div class="editorial-grid"><a class="story" href="https://d-cerca.com/aris-de-la-oscuridad-a-la-libertad-el-relato-resiliente-que-cautiva/" target="_blank" rel="noopener noreferrer"><small>DCerca · Publicación editorial</small><h3>«ARIS: De la oscuridad a la libertad», un relato de resiliencia</h3><strong>Leer publicación ↗</strong></a><a class="story" href="https://www.madridiario.es/actualidad-empresarial/aris-gomez-publica-aris-de-la-oscuridad-a-la-libertad-una-historia-de-vida-repleta-de-superacion-y-heridas-invisibles-1848" target="_blank" rel="noopener noreferrer"><small>Madrid Diario · Publicación editorial</small><h3>Aris Gómez publica su historia de superación</h3><strong>Leer publicación ↗</strong></a><a class="story" href="https://www.periodistadigital.com/notas-empresa/?notaid=aris-gomez-publica-aris-de-la-oscuridad-a-la-libertad-una-historia-de-vida-repleta-de-superacion-y-heridas-invisibles-1207" target="_blank" rel="noopener noreferrer"><small>Periodista Digital · Publicación editorial</small><h3>Una historia de vida y heridas invisibles</h3><strong>Leer publicación ↗</strong></a></div></section>
