@@ -217,7 +217,7 @@ function enhanceBiography(html) {
 
 function enhanceBooks(html) {
   // Preserve the full book catalog, imagery, purchase links and existing metadata.
-  const css = \`<style id="ag-books-premium-design">
+  const css = `<style id="ag-books-premium-design">
 body.ag-books-premium{--ag-book-gold:#dfc395;--ag-book-line:rgba(231,204,157,.22);--ag-book-cream:#f4e9d7;background:radial-gradient(ellipse at 90% 0%,rgba(111,59,107,.22),transparent 42%),linear-gradient(155deg,#07040a 0%,#160b1d 55%,#07040a 100%);color:var(--ag-book-cream)}
 .ag-books-premium main{max-width:1220px;margin-inline:auto}
 .ag-books-premium .ag-books-editorial-intro{width:min(1100px,calc(100% - 42px));margin:0 auto 12px;padding:clamp(44px,7vw,85px) 0 15px;border-bottom:1px solid var(--ag-book-line)}
@@ -236,7 +236,7 @@ body.ag-books-premium{--ag-book-gold:#dfc395;--ag-book-line:rgba(231,204,157,.22
 .ag-books-premium main :is(section,article){scroll-margin-top:28px}
 @media(max-width:700px){.ag-books-premium .ag-books-editorial-intro{padding:36px 0 8px}.ag-books-premium .ag-books-editorial-kicker{font-size:10px;letter-spacing:.12em}.ag-books-premium main h1{overflow-wrap:anywhere}}
 @media(prefers-reduced-motion:reduce){.ag-books-premium main :is(.btn,.button,.cta,.buy-button,.comprar,.btn-primary,.btn-secondary){transition:none}}
-</style>\`;
+</style>`;
   let result=html.replace(/<body\b([^>]*)>/i, (tag,attrs) => {
     if (/\bclass\s*=\s*["']/i.test(attrs)) return tag.replace(/\bclass\s*=\s*(["'])(.*?)\1/i, (_match, quote, classes) => 'class='+quote+classes+' ag-books-premium'+quote);
     return '<body'+attrs+' class="ag-books-premium">';
