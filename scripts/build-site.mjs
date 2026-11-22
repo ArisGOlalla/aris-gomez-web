@@ -7,6 +7,7 @@ const output = 'dist';
 function withoutBlogNavigation(html) {
   return html.replace(/<nav\b[^>]*>[\s\S]*?<\/nav>/gi, (nav) =>
     nav
+      .replace(/href\s*=\s*(["'])https:\/\/oscuridadylibertad\.hotmart\.host\/especialista-trata\1/gi, 'href="/cursos.html"')
       .replace(/<li\b[^>]*>\s*<a\b[^>]*href\s*=\s*["'](?:\.\/|\/)?blog\.html(?:[?#][^"']*)?["'][^>]*>[\s\S]*?<\/a>\s*<\/li>/gi, '')
       .replace(/<a\b[^>]*href\s*=\s*["'](?:\.\/|\/)?blog\.html(?:[?#][^"']*)?["'][^>]*>[\s\S]*?<\/a>/gi, '')
   );
