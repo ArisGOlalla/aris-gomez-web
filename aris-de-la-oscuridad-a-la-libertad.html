@@ -26,17 +26,30 @@
 <style>
 :root{--gold:#e8d39a;--soft:#fff3b0;--cream:#f6ead2;--muted:#d8cbb9;--line:rgba(232,211,154,.22)}
 *{box-sizing:border-box}body{margin:0;color:var(--cream);background:radial-gradient(ellipse at 90% 0%,#381440,transparent 42%),linear-gradient(135deg,#050208,#15031d 48%,#050208);font:20px/1.65 'Cormorant Garamond',Georgia,serif}a{color:var(--soft)}a:focus-visible{outline:2px solid var(--gold);outline-offset:5px}
-header{border-bottom:1px solid var(--line)}nav{max-width:1160px;margin:auto;padding:22px 24px}nav ul{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 23px;list-style:none;padding:0;margin:0}nav a{font-size:18px;text-decoration:none}nav a:hover{text-decoration:underline}
+header{border-bottom:1px solid var(--line);background:rgba(5,2,8,.9)}nav{max-width:1200px;margin:auto;padding:22px 24px}nav ul{display:flex;justify-content:center;flex-wrap:wrap;gap:14px 30px;list-style:none;padding:0;margin:0}nav a{display:block;text-decoration:none;font-size:18px;line-height:1.5}nav a[aria-current]{border-bottom:1px solid var(--gold);color:white}nav a:hover{color:white}.skip{position:absolute;top:8px;left:16px;transform:translateY(-150%);z-index:2;background:#050208;padding:8px 16px}.skip:focus{transform:translateY(0)}
 main{width:min(940px,calc(100% - 40px));margin:auto;padding:clamp(55px,10vw,110px) 0 95px}.kicker{font:600 12px/1.5 Manrope,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}h1{font-size:clamp(44px,7vw,83px);font-weight:500;line-height:1.05;letter-spacing:-.025em;color:var(--soft);margin:22px 0 30px}.lead{font-size:clamp(24px,3vw,31px);max-width:720px;line-height:1.35}.description{color:var(--muted);max-width:740px;font-size:23px}hr{border:0;border-top:1px solid var(--line);margin:40px 0}.actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:36px}.button{display:inline-block;border-radius:99px;border:1px solid var(--gold);padding:12px 24px;text-decoration:none;font-size:19px}.button:first-child{background:var(--gold);color:#15091a}.button:hover{background:var(--soft);color:#15091a}footer{text-align:center;border-top:1px solid var(--line);color:var(--muted);padding:25px;font-size:16px}
-@media(max-width:600px){nav{padding:16px 12px}nav ul{gap:8px 14px}nav a{font-size:16px}main{width:calc(100% - 32px);padding:48px 0 64px}h1{overflow-wrap:break-word}.actions{flex-direction:column;align-items:stretch}.actions .button{text-align:center;padding:13px 18px}.description{font-size:21px}}
+@media(max-width:680px){nav{padding:18px}nav ul{gap:10px 20px}nav a{font-size:17px}}@media(max-width:600px){main{width:calc(100% - 32px);padding:48px 0 64px}h1{overflow-wrap:break-word}.actions{flex-direction:column;align-items:stretch}.actions .button{text-align:center;padding:13px 18px}.description{font-size:21px}}
 
 .book-context{margin:36px 0 20px;padding-top:22px;border-top:1px solid var(--line)}.book-context h2{font-size:clamp(30px,4vw,42px);font-weight:500;line-height:1.18;color:var(--soft);margin:0 0 17px}.book-context p{margin:0 0 17px}.book-context a{text-underline-offset:4px}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://www.arisgomez.com/"},{"@type":"ListItem","position":2,"name":"Libros","item":"https://www.arisgomez.com/libros.html"},{"@type":"ListItem","position":3,"name":"ARIS: De la oscuridad a la libertad","item":"https://www.arisgomez.com/aris-de-la-oscuridad-a-la-libertad.html"}]}</script>
 </head>
 <body>
-<header><nav aria-label="Menú principal"><ul><li><a href="/">Inicio</a></li><li><a href="biografia.html">Biografía</a></li><li><a href="libros.html" aria-current="page">Libros</a></li><li><a href="musica.html">Música</a></li><li><a href="blog.html">Blog</a></li><li><a href="prensa.html">Prensa</a></li><li><a href="contacto.html">Contacto</a></li></ul></nav></header>
-<main><p class="kicker">Autobiografía · Testimonio · Aris Gómez · 2024</p><h1>ARIS: De la oscuridad a la libertad</h1><p class="lead">Una historia autobiográfica narrada en tercera persona sobre supervivencia, resiliencia y reconstrucción personal.</p><hr><p class="description">En esta obra autobiográfica escrita en tercera persona, Aris Gómez relata su experiencia vital y su proceso de búsqueda de libertad personal. Un testimonio sobre afrontar la adversidad, recuperar la propia voz y encontrar nuevos caminos.</p><p class="description">Publicado por Círculo Rojo. Con prólogo de Mabel Lozano.</p>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header><nav aria-label="Menú principal"><ul>
+<li><a href="index.html">Inicio</a></li>
+<li><a href="biografia.html">Biografía</a></li>
+<li><a href="libros.html" aria-current="page">Libros</a></li>
+<li><a href="juegos.html">Juegos</a></li>
+<li><a href="musica.html">Música</a></li>
+<li><a href="blog.html">Blog</a></li>
+<li><a href="https://oscuridadylibertad.hotmart.host/especialista-trata">Cursos</a></li>
+<li><a href="Relatos.html">Relatos</a></li>
+<li><a href="medios-audiovisuales.html">Televisión</a></li>
+<li><a href="prensa.html">Prensa</a></li>
+<li><a href="contacto.html">Contacto</a></li>
+</ul></nav></header>
+<main id="contenido"><p class="kicker">Autobiografía · Testimonio · Aris Gómez · 2024</p><h1>ARIS: De la oscuridad a la libertad</h1><p class="lead">Una historia autobiográfica narrada en tercera persona sobre supervivencia, resiliencia y reconstrucción personal.</p><hr><p class="description">En esta obra autobiográfica escrita en tercera persona, Aris Gómez relata su experiencia vital y su proceso de búsqueda de libertad personal. Un testimonio sobre afrontar la adversidad, recuperar la propia voz y encontrar nuevos caminos.</p><p class="description">Publicado por Círculo Rojo. Con prólogo de Mabel Lozano.</p>
 <section class="book-context" aria-labelledby="sobre-aris">
 <h2 id="sobre-aris">Sobre el libro autobiográfico de Aris Gómez</h2>
 <p class="description"><em>ARIS: De la oscuridad a la libertad</em> narra en tercera persona un recorrido marcado por la adversidad y el deseo de recuperar la libertad. A través del testimonio personal, la autora aborda la supervivencia, la resiliencia y el significado de reconstruir la propia vida.</p>
