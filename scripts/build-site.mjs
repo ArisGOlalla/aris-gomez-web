@@ -96,7 +96,7 @@ function enhanceHomePage(html) {
 function enhanceBiography(html) {
   // Reuse the existing original portrait embedded in the biography.
   const portrait = html.match(/<figure class="portrait">[\s\S]*?<\/figure>/i)?.[0] || '<figure class="portrait"><img src="/autora.png" alt="Retrato de Aris Gómez Olalla" loading="eager"></figure>';
-  const page = String.raw\`
+  const page = String.raw`
 <main id="contenido" class="ag-bio">
   <section class="ag-bio-hero" aria-labelledby="ag-bio-title">
     <div class="ag-bio-hero-copy">
@@ -111,7 +111,7 @@ function enhanceBiography(html) {
       <div class="ag-bio-identities"><span>LITERATURA</span><span>COMPOSICIÓN</span><span>PROYECTOS ARTÍSTICOS</span></div>
     </div>
     <div class="ag-bio-photo">
-      \${portrait}
+      ${portrait}
       <div class="ag-bio-photo-caption"><span>ARIS GÓMEZ</span><span>Autora y artista</span></div>
     </div>
   </section>
@@ -159,8 +159,8 @@ function enhanceBiography(html) {
     <p>Para conocer mis proyectos, publicaciones y propuestas de colaboración.</p>
     <a class="ag-bio-btn ag-bio-btn-solid" href="/contacto.html">Contactar <span aria-hidden="true">↗</span></a>
   </section>
-</main>\`;
-  const css = String.raw\`<style id="ag-bio-premium">
+</main>`;
+  const css = String.raw`<style id="ag-bio-premium">
 .ag-bio{--ag-gold:#dec395;--ag-text:#eee3d4;--ag-muted:#cdbfae;--ag-stroke:rgba(225,196,143,.25);font-family:'Cormorant Garamond',Georgia,serif;color:var(--ag-text);width:min(1200px,calc(100% - 72px));margin:0 auto}
 .ag-bio *{box-sizing:border-box}.ag-bio a:focus-visible{outline:2px solid #fff2d0;outline-offset:5px}
 .ag-bio-eyebrow{font:600 11px/1.6 system-ui,sans-serif!important;letter-spacing:.2em;color:var(--ag-gold)!important;margin:0 0 20px!important}
@@ -205,7 +205,7 @@ function enhanceBiography(html) {
 @media(max-width:900px){.ag-bio{width:min(100% - 42px,1200px)}.ag-bio-hero{gap:36px}.ag-bio-path-grid{grid-template-columns:1fr 1fr}.ag-bio-path-item{min-height:340px}.ag-bio-editorial{gap:35px;padding:42px 35px}}
 @media(max-width:680px){.ag-bio{width:calc(100% - 36px)}.ag-bio-hero{grid-template-columns:1fr;padding:52px 0 65px}.ag-bio h1{font-size:clamp(48px,11vw,65px)!important}.ag-bio-photo{max-width:420px;justify-self:center;padding-left:14px}.ag-bio-statement,.ag-bio-path{padding:55px 0}.ag-bio-statement-text,.ag-bio-section-head,.ag-bio-path-grid,.ag-bio-editorial{grid-template-columns:1fr}.ag-bio-statement-text{gap:20px;margin-top:30px}.ag-bio-path-item{min-height:290px}.ag-bio-section-head{gap:18px}.ag-bio-editorial{margin-bottom:45px;padding:30px 23px;gap:20px}.ag-bio-outro{padding:55px 0 75px}}
 @media(prefers-reduced-motion:reduce){.ag-bio-btn{transition:none}}
-</style>\`;
+</style>`;
   let result = html.replace(/<main\b[^>]*>[\s\S]*?<\/main>/i, page);
   if (result === html) throw new Error('Biography main content not found');
   result = result.replace(/<\/head>/i, css + '</head>');
