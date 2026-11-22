@@ -214,6 +214,40 @@ function enhanceBiography(html) {
   return result;
 }
 
+
+function enhanceBooks(html) {
+  // Preserve the full book catalog, imagery, purchase links and existing metadata.
+  const css = \`<style id="ag-books-premium-design">
+body.ag-books-premium{--ag-book-gold:#dfc395;--ag-book-line:rgba(231,204,157,.22);--ag-book-cream:#f4e9d7;background:radial-gradient(ellipse at 90% 0%,rgba(111,59,107,.22),transparent 42%),linear-gradient(155deg,#07040a 0%,#160b1d 55%,#07040a 100%);color:var(--ag-book-cream)}
+.ag-books-premium main{max-width:1220px;margin-inline:auto}
+.ag-books-premium .ag-books-editorial-intro{width:min(1100px,calc(100% - 42px));margin:0 auto 12px;padding:clamp(44px,7vw,85px) 0 15px;border-bottom:1px solid var(--ag-book-line)}
+.ag-books-premium .ag-books-editorial-kicker{margin:0 0 18px;color:var(--ag-book-gold);font:600 11px/1.6 system-ui,sans-serif;letter-spacing:.21em}
+.ag-books-premium .ag-books-editorial-intro p:last-child{max-width:720px;margin:0 0 25px;color:#d9caba;font:400 clamp(21px,2.3vw,27px)/1.5 'Cormorant Garamond',Georgia,serif}
+.ag-books-premium main h1,.ag-books-premium main h2,.ag-books-premium main h3{font-family:'Cormorant Garamond',Georgia,serif;letter-spacing:-.025em;line-height:1.13;color:#fff0d3}
+.ag-books-premium main h1{font-size:clamp(48px,6vw,83px);font-weight:500}
+.ag-books-premium main h2{font-size:clamp(34px,4vw,56px);font-weight:500}
+.ag-books-premium main h3{font-size:clamp(26px,3vw,36px)}
+.ag-books-premium main p{line-height:1.65}
+.ag-books-premium main a:focus-visible{outline:2px solid var(--ag-book-gold);outline-offset:4px}
+.ag-books-premium main :is(.book-card,.book-item,.libro-card,.libro,.card,.book-box,.book-tile,.tarjeta-libro){border:1px solid var(--ag-book-line);border-radius:16px;background:linear-gradient(145deg,rgba(255,255,255,.035),rgba(109,65,107,.075));box-shadow:0 18px 54px rgba(0,0,0,.16)}
+.ag-books-premium main :is(.book-card,.book-item,.libro-card,.libro,.card,.book-box,.book-tile,.tarjeta-libro) img{max-width:100%;height:auto;object-fit:contain}
+.ag-books-premium main :is(.btn,.button,.cta,.buy-button,.comprar,.btn-primary,.btn-secondary){transition:background .2s,border-color .2s,transform .2s;max-width:100%}
+.ag-books-premium main :is(.btn,.button,.cta,.buy-button,.comprar):hover{transform:translateY(-2px)}
+.ag-books-premium main :is(section,article){scroll-margin-top:28px}
+@media(max-width:700px){.ag-books-premium .ag-books-editorial-intro{padding:36px 0 8px}.ag-books-premium .ag-books-editorial-kicker{font-size:10px;letter-spacing:.12em}.ag-books-premium main h1{overflow-wrap:anywhere}}
+@media(prefers-reduced-motion:reduce){.ag-books-premium main :is(.btn,.button,.cta,.buy-button,.comprar,.btn-primary,.btn-secondary){transition:none}}
+</style>\`;
+  let result=html.replace(/<body\b([^>]*)>/i, (tag,attrs) => {
+    if (/\bclass\s*=\s*["']/i.test(attrs)) return tag.replace(/\bclass\s*=\s*(["'])(.*?)\1/i, (_match, quote, classes) => 'class='+quote+classes+' ag-books-premium'+quote);
+    return '<body'+attrs+' class="ag-books-premium">';
+  });
+  const intro = '<div class="ag-books-editorial-intro"><p class="ag-books-editorial-kicker">BIBLIOTECA DE AUTORA · ARIS GÓMEZ OLALLA</p><p>Obras que exploran las emociones, la identidad y la libertad. Una selección de publicaciones para descubrir cada historia a tu ritmo.</p></div>';
+  if (/<main\b[^>]*>/i.test(result)) result=result.replace(/<main\b[^>]*>/i, tag=>tag+intro);
+  else result=result.replace(/<header\b/i, intro+'<header');
+  result=result.replace(/<\/head>/i,css+'</head>');
+  return result;
+}
+
 async function build(directory = '.') {
   for (const entry of await readdir(directory, { withFileTypes: true })) {
     if (entry.name.startsWith('.') || ['dist', 'scripts', 'node_modules', 'vercel.json'].includes(entry.name)) continue;
@@ -227,6 +261,7 @@ async function build(directory = '.') {
       let page = withoutBlogNavigation(html);
       if (directory === '.' && entry.name === 'index.html') page = enhanceHomePage(page);
       if (directory === '.' && entry.name === 'biografia.html') page = enhanceBiography(page);
+      if (directory === '.' && entry.name === 'libros.html') page = enhanceBooks(page);
       await writeFile(target, page);
     } else {
       await cp(file, target);
