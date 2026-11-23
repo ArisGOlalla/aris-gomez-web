@@ -72,6 +72,53 @@ footer{border-top:1px solid var(--line);padding:26px 20px;text-align:center;colo
 @media(max-width:600px){nav{padding:17px 12px}nav ul{gap:9px 15px}nav a{font-size:16px}.wrap,.quote-band{width:calc(100% - 32px)}.book-hero{padding:20px 0 49px}.book-hero h1{font-size:55px}.book-hero h1 span{font-size:35px}.book-hero .cover{max-width:260px}.book-hero .intro{font-size:19px}.metadata{gap:8px}.metadata span{font-size:15px}.actions{flex-direction:column}.button{width:100%;max-width:360px}.quote-band{margin-bottom:56px;padding:27px 20px}.reading-section{padding:0 21px 54px}.reading-section p{font-size:20px}.prologue{padding-top:52px}.prologue blockquote{padding:17px 19px}.closing{padding:50px 19px 65px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
 
+
+/* Alineación editorial estricta: sin columnas ni texto centrado */
+html{direction:ltr}
+body{direction:ltr}
+main#contenido{display:block;direction:ltr;text-align:left;width:100%;max-width:100%;margin:0;padding:0}
+main#contenido .wrap,main#contenido .reading-section,main#contenido .quote-band{
+  box-sizing:border-box;
+  display:block;
+  width:min(100% - 48px,880px);
+  max-width:880px;
+  margin-left:auto;
+  margin-right:auto;
+  padding-left:0;
+  padding-right:0;
+  text-align:left;
+  float:none;
+  clear:both;
+}
+main#contenido .book-hero{padding-top:34px;padding-bottom:62px;text-align:left}
+main#contenido .book-hero h1{max-width:760px;margin:0 0 24px;text-align:left;font-size:clamp(51px,6vw,76px)}
+main#contenido .book-hero h1 span{font-size:clamp(32px,3.7vw,47px)}
+main#contenido .book-hero .cover{display:block;width:min(100%,290px);margin:20px 0 27px;max-width:290px}
+main#contenido .book-hero .lead,main#contenido .book-hero .intro{max-width:700px;margin:0 0 17px;text-align:left}
+main#contenido .book-hero .metadata{display:flex;justify-content:flex-start;margin:25px 0}
+main#contenido .actions{justify-content:flex-start}
+main#contenido .quote-band{max-width:880px;margin:0 auto 70px;padding:31px 35px;border-radius:22px}
+main#contenido .quote-band p{margin:0;text-align:left;max-width:730px}
+main#contenido .reading-section{max-width:880px;padding:0 0 70px}
+main#contenido .reading-section>p,main#contenido .reading-section>h2,main#contenido .reading-section>h3,
+main#contenido .reading-section>blockquote{max-width:720px;text-align:left;margin-left:0;margin-right:0}
+main#contenido .prologue{padding-top:58px}
+main#contenido .closing{display:block;width:100%;max-width:100%;text-align:left;padding:50px max(24px,calc((100% - 880px)/2)) 80px}
+main#contenido .closing h2{margin:10px 0 25px;text-align:left}
+main#contenido .closing .actions{margin-left:0}
+main#contenido .closing p{text-align:left}
+@media(max-width:600px){
+ main#contenido .wrap,main#contenido .reading-section,main#contenido .quote-band{width:calc(100% - 40px);padding-left:0;padding-right:0}
+ main#contenido .book-hero h1{font-size:clamp(48px,11vw,61px)}
+ main#contenido .book-hero .cover{width:min(100%,250px)}
+ main#contenido .book-hero .metadata{justify-content:flex-start}
+ main#contenido .actions{align-items:flex-start}
+ main#contenido .button{width:auto;max-width:100%}
+ main#contenido .quote-band{padding:23px 22px;margin-bottom:52px}
+ main#contenido .reading-section{padding-bottom:51px}
+ main#contenido .closing{padding:49px 20px 65px}
+}
+
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://www.arisgomez.com/"},{"@type":"ListItem","position":2,"name":"Libros","item":"https://www.arisgomez.com/libros.html"},{"@type":"ListItem","position":3,"name":"ARIS: De la oscuridad a la libertad","item":"https://www.arisgomez.com/aris-de-la-oscuridad-a-la-libertad.html"}]}</script>
 </head>
